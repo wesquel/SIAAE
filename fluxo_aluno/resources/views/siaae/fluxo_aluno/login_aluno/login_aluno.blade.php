@@ -32,30 +32,23 @@
         <div class="e444_903"></div>
         <div class="e444_905"></div>
         <div class="e444_906"></div>
-        <span class="e444_908">Comece agora</span>
         <div class=e444_909>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">CPNJ/CPF</label>
+        <div class="entrada_matricula">
+          <label for="exampleInputEmail1" class="form-label">Matrícula</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         </div>
         <div class=e444_910>
-            <div class="ei444_910_89_62"></div>
-            <span class="ei444_910_89_63">Senha</span>
-            <div class="ei444_910_89_92"></div>
-            <span class="ei444_910_89_96">**************</span>
+        <div class="entrada_senha">
+          <label for="exampleInputEmail1" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
         </div>
         <div class="e444_911"></div>
-        <div class=e444_931>
-            <div class="e444_929"></div>
-            <span class="e444_930">Entrar</span>
-        </div>
+        <a href="/termos_uso"><div class=button>Entrar</div></a>
         <div class="e444_914"></div>
         <div class="e444_915"></div>
-        <div class=e618_2339>
-            <div class="e618_2340">
-            </div><span class="e618_2341">Comece agora</span>
-        </div>
+        <a href="/configuracoes"><div class="button_comece_agora">Comece agora</div></a> /* Alterar link para página inicial */
     </div>
 </body>
 

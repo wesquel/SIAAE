@@ -166,37 +166,40 @@
 	background-repeat:no-repeat;
 	background-size:cover;
 }
-.e444_931 { 
+
+.button {
 	width:247px;
 	height:75px;
 	position:absolute;
 	left:1310px;
 	top:797px;
-}
-.e444_929 { 
-	background-color:rgba(98.00000175833702, 0, 0, 1);
-	width:247px;
-	height:75px;
-	position:absolute;
-	left:0px;
-	top:0px;
+	background-color:rgb(92, 0, 0);
+	color:rgba(255, 255, 255, 1);
 	border-top-left-radius:86px;
 	border-top-right-radius:86px;
 	border-bottom-left-radius:86px;
 	border-bottom-right-radius:86px;
-}
-.e444_930 { 
-	color:rgba(255, 255, 255, 1);
-	width:82px;
-	height:36px;
-	position:absolute;
-	left:82px;
-	top:20px;
+	cursor: pointer;
 	font-family:Futura Bk BT;
-	text-align:left;
+	text-align:center;
 	font-size:30px;
 	letter-spacing:-2;
+	text-decoration: none;
+	padding: 15px 32px;
 }
+
+.button:hover{
+	background-color:rgb(100, 0, 0);
+}
+
+.entrada_matricula{
+	color:rgba(255, 255, 255, 1);
+}
+
+.entrada_senha{
+	color:rgba(255, 255, 255, 1);
+}
+
 .e444_914 { 
 	width:262px;
 	height:168px;
@@ -236,16 +239,23 @@
 	border-bottom-left-radius:40px;
 	border-bottom-right-radius:40px;
 }
-.e618_2341 { 
-	color:rgba(242.24999696016312, 241.24061912298203, 241.24061912298203, 1);
-	width:158px;
-	height:29px;
+
+.button_comece_agora{
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(91.00000217556953, 184.00000423192978, 93.00000205636024, 1);
+	width:259px;
+	height:65px;
 	position:absolute;
-	left:52px;
-	top:19px;
+	left:1598px;
+	top:29px;
+	border-top-left-radius:40px;
+	border-top-right-radius:40px;
+	border-bottom-left-radius:40px;
+	border-bottom-right-radius:40px;
+	color:rgba(242.24999696016312, 241.24061912298203, 241.24061912298203, 1);
 	font-family:Futura Bk BT;
-	text-align:left;
 	font-size:24px;
 	letter-spacing:0;
+	text-align: center;
+	padding: 15px 32px;
 }
-
