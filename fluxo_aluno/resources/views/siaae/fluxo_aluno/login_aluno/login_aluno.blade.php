@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre ExtraBold&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Futura+Bk BT&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/fluxo_aluno/login_aluno/app.css')}}" />
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <style>
@@ -34,10 +34,10 @@
         <div class="e444_906"></div>
         <span class="e444_908">Comece agora</span>
         <div class=e444_909>
-            <div class="ei444_909_89_62">
-            </div><span class="ei444_909_89_63">Matrícula</span>
-            <div class="ei444_909_89_92"></div>
-            <span class="ei444_909_89_96"></span>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">CPNJ/CPF</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
         </div>
         <div class=e444_910>
             <div class="ei444_910_89_62"></div>
@@ -60,3 +60,7 @@
 </body>
 
 </html>
+
+<div class="e357_539">
+       
+      </div>

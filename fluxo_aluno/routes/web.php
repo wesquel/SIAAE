@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use PHPUnit\TextUI\XmlConfiguration\Group;
+use App\Http\Controllers\siaae\ControllerAluno;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,18 @@ use PHPUnit\TextUI\XmlConfiguration\Group;
 |
 */
 
-Route::namespace('Site')->group(function(){
-   Route::get('/', 'HomeController');
- });
+//Rota página principal (Sobre)
+Route::get('/sobre', function(){ 
+  return view('sobre');
+});
+
+//Rotas do fluxo do aluno
+Route::get('/login_aluno', [ControllerAluno::class, 'login_aluno']);
+
+Route::get('/termos_uso', [ControllerAluno::class, 'termos_uso']);
+
+Route::get('/home_aluno', [ControllerAluno::class, 'home_aluno']);
+
+Route::get('/configuracoes', [ControllerAluno::class, 'configuracoes']);
+
+Route::get('/candidaturas', [ControllerAluno::class, 'candidaturas']);
