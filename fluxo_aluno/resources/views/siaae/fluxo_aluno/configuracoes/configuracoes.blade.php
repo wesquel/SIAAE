@@ -28,34 +28,43 @@
 <body>
     <div class=e448_588>
         <div class="e448_594"></div>
-        <div class=e618_2292><span class="e618_2293">CONFIGURAÇÕES</span>
-            <div class=e618_2294>
-                <div class="e618_2295"></div>
-            </div>
-        </div>
-        <div class=e618_2273><span class="e618_2274">LISTA DE VAGAS</span>
-            <div class=e618_2275>
-                <div class=ei618_2275_7_1326>
-                    <div class="ei618_2275_7_1327"></div>
-                    <div class="ei618_2275_7_1328"></div>
-                    <div class="ei618_2275_7_1329"></div>
-                </div>
-                <div class=ei618_2275_7_1330>
-                    <div class="ei618_2275_7_1331"></div>
-                    <div class="ei618_2275_7_1332"></div>
-                    <div class="ei618_2275_7_1333"></div>
+        <a href="/configuracoes">
+            <div class=e618_2292><span class="e618_2293">CONFIGURAÇÕES</span>
+                <div class=e618_2294>
+                    <div class="e618_2295"></div>
                 </div>
             </div>
-        </div>
-        <div class=e618_2237><span class="e618_2238">CADASTRE-SE Á VAGAS</span>
-            <div class="e618_2239"></div>
-        </div>
+        </a>
+        <a href="/candidaturas">
+            <div class=e618_2273><span class="e618_2274">LISTA DE VAGAS</span>
+                <div class=e618_2275>
+                    <div class=ei618_2275_7_1326>
+                        <div class="ei618_2275_7_1327"></div>
+                        <div class="ei618_2275_7_1328"></div>
+                        <div class="ei618_2275_7_1329"></div>
+                    </div>
+                    <div class=ei618_2275_7_1330>
+                        <div class="ei618_2275_7_1331"></div>
+                        <div class="ei618_2275_7_1332"></div>
+                        <div class="ei618_2275_7_1333"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/login_aluno">
+            <div class=e618_2237><span class="e618_2238">CADASTRE-SE Á VAGAS</span>
+                <div class="e618_2239"></div>
+            </div>
+        </a>
         <div class="e448_595"></div><span class="e448_596">Bem vindo, Fulaninho!</span>
-        <div class=e448_607><span class="e448_608">SAIR</span>
-            <div class=e448_609>
-                <div class="e448_610"></div>
+        <a href="/login_aluno">
+            <div class=e448_607><span class="e448_608">SAIR</span>
+                <div class=e448_609>
+                    <div class="e448_610"></div>
+                </div>
             </div>
-        </div><span class="e357_746">Curriculo:</span><span class="e357_788">Telefone:</span><span class="e448_652">Linkedin:</span><span class="e357_773">Status do Perfil:</span><span class="e448_651">Ativado</span>
+        </a>
+        <span class="e357_746">Curriculo:</span><span class="e357_788">Telefone:</span><span class="e448_652">Linkedin:</span><span class="e357_773">Status do Perfil:</span><span class="e448_651">Ativado</span>
         <div class=e357_758>
             <div class=e357_765>
                 <div class="e357_766"></div><span class="e357_767">Enviar Curriculo (PDF,DOC, DOCX e RTF)</span>
@@ -136,10 +145,13 @@
         <div class=e618_2299>
             <div class="e618_2300"></div><span class="e618_2301">Atualizar</span>
         </div>
-        <div class=e618_2303>
-            <div class="e618_2304"></div>
-            <div class="e618_2305"></div><span class="e618_2306">Voltar</span>
-        </div>
+
+        <a href="/home_aluno">
+            <div class=e618_2303>
+                <div class="e618_2304"></div>
+                <div class="e618_2305"></div><span class="e618_2306">Voltar</span>
+            </div>
+        </a>
     </div>
 </body>
 
