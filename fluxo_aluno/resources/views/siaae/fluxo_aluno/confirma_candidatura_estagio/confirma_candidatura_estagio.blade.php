@@ -71,6 +71,13 @@
                 <div class="e618_1991"></div>
                 <div class="e618_1992"></div>
             </div>
+
+            <a href="/candidaturas">
+                <div class="posicao_sm">
+                    <div class="button_sm"></div>
+                    <div class="button_txt">Concluir</div>
+                </div>
+            </a>
         </div>
     </div>
 </body>

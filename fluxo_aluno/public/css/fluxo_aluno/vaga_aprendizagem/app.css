@@ -1,28 +1,28 @@
-.e618_1993 { 
+.e618_1901 { 
 	background-color:rgba(242.24999696016312, 241.24061912298203, 241.24061912298203, 1);
-	width:1920px;
-	height:1080px;
+	width:1912px;
+	height:953px;
 	position:absolute;
 }
-.e618_1994 { 
+.e618_1902 { 
 	background-color:rgba(234.00000125169754, 232.00000137090683, 232.00000137090683, 1);
 	width:406px;
-	height:1080px;
+	height:953px;
 	position:absolute;
 	left:0px;
 	top:0px;
 }
-.e618_1995 { 
+.e618_1903 { 
 	width:230px;
 	height:96px;
 	position:absolute;
 	left:88px;
 	top:44px;
-	background-image:url(../../../images/fluxo_aluno/vaga_aprendizagem/logo_siaae_transparente_icones_1.png);
+	background-image:url(../../../images/fluxo_aluno/vaga_estagio/logo_siaae_transparente_icones_1.png);
 	background-repeat:no-repeat;
 	background-size:cover;
 }
-.e618_1996 { 
+.e618_1904 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:296px;
 	height:36px;
@@ -34,14 +34,14 @@
 	font-size:30px;
 	letter-spacing:0;
 }
-.e618_1997 { 
+.e618_1905 { 
 	width:318px;
 	height:37.3583984375px;
 	position:absolute;
 	left:37px;
 	top:330px;
 }
-.e618_1998 { 
+.e618_1906 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:264px;
 	height:30px;
@@ -50,10 +50,10 @@
 	top:4px;
 	font-family:Futura Bk BT;
 	text-align:left;
-	font-size:25px;
+	font-size:23px;
 	letter-spacing:0;
 }
-.e618_1999 { 
+.e618_1907 { 
 	background-color:rgba(154.00000602006912, 0, 0, 1);
 	width:34.2138671875px;
 	height:37.3583984375px;
@@ -61,14 +61,14 @@
 	left:0px;
 	top:0px;
 }
-.e618_2000 { 
+.e618_1908 { 
 	width:239px;
 	height:30px;
 	position:absolute;
 	left:34px;
 	top:386px;
 }
-.e618_2001 { 
+.e618_1909 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:182px;
 	height:30px;
@@ -77,24 +77,24 @@
 	top:0px;
 	font-family:Futura Bk BT;
 	text-align:left;
-	font-size:25px;
+	font-size:23px;
 	letter-spacing:0;
 }
-.e618_2002 { 
+.e618_1910 { 
 	width:41px;
 	height:17px;
 	position:absolute;
 	left:0px;
 	top:7px;
 }
-.ei618_2002_7_1326 { 
+.ei618_1910_7_1326 { 
 	width:32.960784912109375px;
 	height:17px;
 	position:absolute;
 	left:8.039215087890625px;
 	top:0px;
 }
-.ei618_2002_7_1327 { 
+.ei618_1910_7_1327 { 
 	background-color:rgba(154.00000602006912, 0, 0, 1);
 	width:32.960784912109375px;
 	height:4.047618865966797px;
@@ -106,7 +106,7 @@
 	border-bottom-left-radius:54px;
 	border-bottom-right-radius:54px;
 }
-.ei618_2002_7_1328 { 
+.ei618_1910_7_1328 { 
 	background-color:rgba(154.00000602006912, 0, 0, 1);
 	width:32.960784912109375px;
 	height:4.047618865966797px;
@@ -118,7 +118,7 @@
 	border-bottom-left-radius:54px;
 	border-bottom-right-radius:54px;
 }
-.ei618_2002_7_1329 { 
+.ei618_1910_7_1329 { 
 	background-color:rgba(154.00000602006912, 0, 0, 1);
 	width:32.960784912109375px;
 	height:4.047618865966797px;
@@ -130,14 +130,14 @@
 	border-bottom-left-radius:54px;
 	border-bottom-right-radius:54px;
 }
-.ei618_2002_7_1330 { 
+.ei618_1910_7_1330 { 
 	width:4.0196075439453125px;
 	height:17px;
 	position:absolute;
 	left:0px;
 	top:0px;
 }
-.ei618_2002_7_1331 { 
+.ei618_1910_7_1331 { 
 	background-color:rgba(154.00000602006912, 0, 0, 1);
 	width:4.0196075439453125px;
 	height:4.047618865966797px;
@@ -149,7 +149,7 @@
 	border-bottom-left-radius:54px;
 	border-bottom-right-radius:54px;
 }
-.ei618_2002_7_1332 { 
+.ei618_1910_7_1332 { 
 	background-color:rgba(154.00000602006912, 0, 0, 1);
 	width:4.0196075439453125px;
 	height:4.047618865966797px;
@@ -161,7 +161,7 @@
 	border-bottom-left-radius:54px;
 	border-bottom-right-radius:54px;
 }
-.ei618_2002_7_1333 { 
+.ei618_1910_7_1333 { 
 	background-color:rgba(154.00000602006912, 0, 0, 1);
 	width:4.0196075439453125px;
 	height:4.047618865966797px;
@@ -173,14 +173,48 @@
 	border-bottom-left-radius:54px;
 	border-bottom-right-radius:54px;
 }
-.e618_2007 { 
+.e618_1911 { 
+	width:265px;
+	height:32px;
+	position:absolute;
+	left:38px;
+	top:435px;
+}
+.e618_1912 { 
+	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
+	width:212px;
+	height:30px;
+	position:absolute;
+	left:53px;
+	top:1px;
+	font-family:Futura Bk BT;
+	text-align:left;
+	font-size:23px;
+	letter-spacing:0;
+}
+.e618_1913 { 
+	width:32px;
+	height:32px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.e618_1914 { 
+	background-color:rgba(154.00000602006912, 0, 0, 1);
+	width:32.00110626220703px;
+	height:32.000389099121094px;
+	position:absolute;
+	left:-0.0006244080141186714px;
+	top:-0.0000028132346869824687px;
+}
+.e618_1915 { 
 	width:83px;
 	height:30px;
 	position:absolute;
 	left:41px;
-	top:1005px;
+	top:870px;
 }
-.e618_2008 { 
+.e618_1916 { 
 	color:rgba(154.00000602006912, 0, 0, 1);
 	width:49px;
 	height:30px;
@@ -192,14 +226,14 @@
 	font-size:25px;
 	letter-spacing:0;
 }
-.e618_2009 { 
+.e618_1917 { 
 	width:25.670000076293945px;
 	height:28px;
 	position:absolute;
 	left:0px;
 	top:1px;
 }
-.e618_2010 { 
+.e618_1918 { 
 	background-color:rgba(154.00000602006912, 0, 0, 1);
 	width:25.852235794067383px;
 	height:27.988332748413086px;
@@ -207,10 +241,8 @@
 	left:0.0015974711859598756px;
 	top:-0.0011661897879093885px;
 }
-.e618_2011 { 
+.e618_1919 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
-	width:667px;
-	height:54px;
 	position:absolute;
 	left:459px;
 	top:129px;
@@ -219,14 +251,14 @@
 	font-size:45px;
 	letter-spacing:0;
 }
-.e618_2012 { 
+.e618_1920 { 
 	width:140px;
 	height:65px;
 	position:absolute;
 	left:1734px;
 	top:37px;
 }
-.e618_2013 { 
+.e618_1921 { 
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color:rgba(91.00000217556953, 184.00000423192978, 93.00000205636024, 1);
 	width:140px;
@@ -239,7 +271,7 @@
 	border-bottom-left-radius:40px;
 	border-bottom-right-radius:40px;
 }
-.e618_2014 { 
+.e618_1922 { 
 	background-color:rgba(242.24999696016312, 241.24061912298203, 241.24061912298203, 1);
 	width:23px;
 	height:21px;
@@ -247,7 +279,7 @@
 	left:24px;
 	top:20px;
 }
-.e618_2015 { 
+.e618_1923 { 
 	color:rgba(242.24999696016312, 241.24061912298203, 241.24061912298203, 1);
 	width:61px;
 	height:29px;
@@ -259,18 +291,18 @@
 	font-size:24px;
 	letter-spacing:0;
 }
-.e618_2016 { 
+.e618_1924 { 
 	transform: rotate(-0.5608334497461219deg);
 	width:112.3075180053711px;
 	height:112.05364227294922px;
 	position:absolute;
 	left:458px;
 	top:216.099365234375px;
-	background-image:url(images/icone.png);
+	background-image:url(../../../images/fluxo_aluno/confirma_candidatura_estagio/icone.png);
 	background-repeat:no-repeat;
 	background-size:cover;
 }
-.e618_2017 { 
+.e618_1925 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:331px;
 	height:35px;
@@ -280,9 +312,10 @@
 	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:32px;
-	letter-spacing:-2;
+	letter-spacing:0;
+	font-weight: bold;
 }
-.e618_2018 { 
+.e618_1926 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:331px;
 	height:35px;
@@ -292,9 +325,10 @@
 	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:32px;
-	letter-spacing:-2;
+	letter-spacing:0;
+	font-weight: bold;
 }
-.e618_2019 { 
+.e618_1927 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:424px;
 	height:35px;
@@ -304,9 +338,10 @@
 	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:32px;
-	letter-spacing:-2;
+	letter-spacing:0;
+	font-weight: bold;
 }
-.e618_2020 { 
+.e618_1928 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:424px;
 	height:35px;
@@ -316,9 +351,10 @@
 	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:32px;
-	letter-spacing:-2;
+	letter-spacing:0;
+	font-weight: bold;
 }
-.e618_2021 { 
+.e618_1929 { 
 	color:rgba(90.3124974668026, 90.3124974668026, 90.3124974668026, 1);
 	width:101px;
 	height:22px;
@@ -328,21 +364,20 @@
 	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:16px;
-	letter-spacing:-2;
+	letter-spacing:0;
 }
-.e618_2022 { 
+.e618_1930 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
-	width:246px;
+	width:188px;
 	height:24px;
 	position:absolute;
 	left:458px;
 	top:383px;
-	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:20px;
-	letter-spacing:-2;
+	letter-spacing:0;
 }
-.e618_2023 { 
+.e618_1931 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:215px;
 	height:24px;
@@ -352,9 +387,9 @@
 	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:20px;
-	letter-spacing:-2;
+	letter-spacing:0;
 }
-.e618_2024 { 
+.e618_1932 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:399px;
 	height:24px;
@@ -364,9 +399,9 @@
 	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:20px;
-	letter-spacing:-2;
+	letter-spacing:0;
 }
-.e618_2025 { 
+.e618_1933 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:1253px;
 	height:58px;
@@ -376,9 +411,9 @@
 	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:24px;
-	letter-spacing:-2;
+	letter-spacing:0;
 }
-.e618_2026 { 
+.e618_1934 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:1253px;
 	height:30px;
@@ -388,9 +423,9 @@
 	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:25px;
-	letter-spacing:-2;
+	letter-spacing:0;
 }
-.e618_2027 { 
+.e618_1935 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:1253px;
 	height:58px;
@@ -400,88 +435,84 @@
 	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:24px;
-	letter-spacing:-2;
+	letter-spacing:0;
 }
-.e618_2028 { 
+.e618_1936 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:210px;
 	height:24px;
 	position:absolute;
-	left:734px;
+	left:713px;
 	top:446px;
 	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:20px;
-	letter-spacing:-2;
+	letter-spacing:0;
 }
-.e618_2029 { 
+.e618_1937 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:196px;
 	height:24px;
 	position:absolute;
-	left:983px;
+	left:962px;
 	top:446px;
 	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:20px;
-	letter-spacing:-2;
+	letter-spacing:0;
 }
-.e618_2030 { 
+.e618_1938 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
-	width:196px;
+	width:181px;
 	height:24px;
 	position:absolute;
-	left:734px;
+	left:713px;
 	top:383px;
-	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:20px;
-	letter-spacing:-2;
+	letter-spacing:0;
 }
-.e618_2031 { 
+.e618_1939 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
-	width:113px;
+	width:115px;
 	height:24px;
 	position:absolute;
-	left:983px;
+	left:962px;
 	top:383px;
-	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:20px;
-	letter-spacing:-2;
+	letter-spacing:0;
 }
-.e618_2032 { 
+.e618_1940 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
-	width:119px;
+	width:228px;
 	height:24px;
 	position:absolute;
-	left:1167px;
+	left:1146px;
 	top:383px;
-	font-family:Futura Bk BT;
 	text-align:left;
 	font-size:20px;
-	letter-spacing:-2;
+	letter-spacing:0;
 }
-.e618_2033 { 
+.e618_1941 { 
 	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
-	width:151px;
+	width:155px;
 	height:24px;
 	position:absolute;
-	left:1357px;
-	top:383px;
-	font-family:Futura Bk BT;
+	left:1442px;
+	top:385px;
 	text-align:left;
 	font-size:20px;
-	letter-spacing:-2;
+	letter-spacing:0;
 }
-.e618_2034 { 
+.e618_1942 { 
 	width:218px;
 	height:63px;
 	position:absolute;
 	left:1534px;
 	top:223px;
 }
-.ei618_2034_45_82 { 
+.ei618_1942_45_82 { 
 	background-color:rgba(91.00000217556953, 184.00000423192978, 93.00000205636024, 1);
 	width:218px;
 	height:63px;
@@ -493,49 +524,15 @@
 	border-bottom-left-radius:30px;
 	border-bottom-right-radius:30px;
 }
-.ei618_2034_45_83 { 
+.ei618_1942_45_83 { 
 	color:rgba(242.24999696016312, 241.24061912298203, 241.24061912298203, 1);
 	width:213px;
 	height:63px;
 	position:absolute;
 	left:2px;
-	top:0px;
+	top:15px;
 	font-family:Futura Bk BT;
 	text-align:center;
-	font-size:24px;
-	letter-spacing:-2;
-}
-.e618_2003 { 
-	width:265px;
-	height:32px;
-	position:absolute;
-	left:38px;
-	top:435px;
-}
-.e618_2004 { 
-	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
-	width:212px;
-	height:30px;
-	position:absolute;
-	left:53px;
-	top:1px;
-	font-family:Futura Bk BT;
-	text-align:left;
 	font-size:25px;
 	letter-spacing:0;
-}
-.e618_2005 { 
-	width:32px;
-	height:32px;
-	position:absolute;
-	left:0px;
-	top:0px;
-}
-.e618_2006 { 
-	background-color:rgba(154.00000602006912, 0, 0, 1);
-	width:32.00110626220703px;
-	height:32.000389099121094px;
-	position:absolute;
-	left:-0.0006244080141186714px;
-	top:-0.0000028132346869824687px;
 }

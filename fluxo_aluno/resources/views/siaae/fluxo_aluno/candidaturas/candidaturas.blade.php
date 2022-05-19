@@ -53,7 +53,7 @@
         </a>
 
     <a href="/vagas">
-        <div class=e618_2160><span class="e618_2161">CADASTRE-SE Á VAGAS</span>
+        <div class=e618_2160><span class="e618_2161">CADASTRE-SE À VAGAS</span>
             <div class="e618_2162"></div>
         </div>
     </a>

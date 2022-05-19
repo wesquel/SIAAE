@@ -54,7 +54,7 @@
         </a>
         
         <a href="/vagas">
-            <div class=e618_2237><span class="e618_2238">CADASTRE-SE Á VAGAS</span>
+            <div class=e618_2237><span class="e618_2238">CADASTRE-SE À VAGAS</span>
                 <div class="e618_2239"></div>
             </div>
         </a>

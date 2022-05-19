@@ -99,7 +99,7 @@
 
         <div class="vaga_2">
         <span class="e618_1830">Desenvolvedor Java</span>
-            <span class="e618_1831">Tipo: Estágio</span>
+            <span class="e618_1831">Tipo: Aprendizagem</span>
             <span class="e618_1832">Modalidade: Remoto</span>
             <span class="e618_1833">
                 Estamos procurando um Desenvolvedor
@@ -110,7 +110,7 @@
             <span class="e618_1835">empresax@gmail.com</span>
             <span class="e618_1836">João Pessoa</span>
             <div class="vaga_img"></div>
-            <a href="/vaga_estagio">
+            <a href="/vaga_aprendizagem">
                 <div class="posicao_sm">
                     <div class="button_sm"></div>
                     <div class="button_txt">Saiba Mais</div>
