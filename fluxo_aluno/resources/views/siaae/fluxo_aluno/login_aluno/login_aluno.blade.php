@@ -25,37 +25,28 @@
 
 </head>
 
-
 <body>
-  <div class = "container-fluid">
-    <div class=e444_901>
-        <div class="e444_902"></div>
-        <div class="e444_903"></div>
-        <div class="e444_905"></div>
-        <div class="e444_906"></div>
-        <div class=e444_909>
-        <div class="entrada_matricula">
-          <label for="exampleInputEmail1" class="form-label">Matrícula</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-        </div>
-        <div class=e444_910>
-        <div class="entrada_senha">
-          <label for="exampleInputEmail1" class="form-label">Senha</label>
-          <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-        </div>
-        <div class="e444_911"></div>
-        <a href="/termos_uso"><div class=button>Entrar</div></a>
-        <div class="e444_914"></div>
-        <div class="e444_915"></div>
-        <a href="/configuracoes"><div class="button_comece_agora">Comece agora</div></a> /* Alterar link para página inicial */
+  <div class=e444_901></div>
+  <div class="e444_902"></div>
+  <div class="e444_905"></div>
+  <div class="e444_906"></div>    
+  <div class=e444_909>
+    <div class="entrada_matricula">
+      <label for="exampleInputEmail1" class="form-label">Matrícula</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
   </div>
+  <div class=e444_910>
+    <div class="entrada_senha">
+      <label for="exampleInputEmail1" class="form-label">Senha</label>
+      <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+  </div>
+  <div class="e444_911"></div>
+  <a href="/termos_uso"><div class=button>Entrar</div></a>
+  <div class="e444_914"></div>
+  <a href="/configuracoes"><div class="button_comece_agora">Comece agora</div></a> <!-- Alterar link para página inicial  -->
 </body>
-
 </html>
-
-<div class="e357_539">
-       
-      </div>
+<div class="e357_539">       
+</div>

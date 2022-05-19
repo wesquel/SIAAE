@@ -1,32 +1,23 @@
 .e444_901 {
 	background-color:rgba(255, 255, 255, 1);
-	width:1980px;
-	height:1080px;
+	width:1920px;
+	height: 961px;
 }
 .e444_902 { 
-	width:1928px;
-	height:1286px;
+	width: 1920px;
+	height: 961px;;
 	position:absolute;
-	left:-8px;
+	left:0px;
 	top:0px;
 	background-image:url(../../../images/fluxo_aluno/login_aluno/instructor_explaining_corporate_software_specific_to_intern_1.png);
 	background-repeat:no-repeat;
 	background-size:cover;
 }
-.e444_903 { 
-	transform: rotate(-29.062843443229784deg);
-	width:1004px;
-	height:634px;
-	position:absolute;
-	left:908px;
-	top:731.7117309570312px;
-}
-
 .e444_905 { 
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color:rgba(154.00000602006912, 0, 0, 1);
 	width:587px;
-	height:715px;
+	height:615px;
 	position:absolute;
 	left:1140px;
 	top:240px;
@@ -38,7 +29,7 @@
 .e444_906 { 
 	background-color:rgba(234.00000125169754, 232.00000137090683, 232.00000137090683, 1);
 	width:1920px;
-	height:123px;
+	height:80px;
 	position:absolute;
 	left:0px;
 	top:0px;
@@ -110,7 +101,7 @@
 	height:84px;
 	position:absolute;
 	left:1202px;
-	top:665px;
+	top:640px;
 }
 .ei444_910_89_62 { 
 	background-color:rgba(234.00000125169754, 232.00000137090683, 232.00000137090683, 1);
@@ -156,22 +147,22 @@
 	letter-spacing:-2;
 }
 .e444_911 { 
-	width:463px;
-	height:67px;
+	width:363px;
+	height:50px;
 	position:absolute;
 	left:49px;
-	top:28px;
+	top:12px;
 	background-image:url(../../../images/fluxo_aluno/login_aluno/logo_siaae_horizontal_1.png);
 	background-repeat:no-repeat;
 	background-size:cover;
 }
 
 .button {
-	width:247px;
-	height:75px;
+	width:230px;
+	height:60px;
 	position:absolute;
 	left:1310px;
-	top:797px;
+	top:750px;
 	background-color:rgb(92, 0, 0);
 	color:rgba(255, 255, 255, 1);
 	border-top-left-radius:86px;
@@ -182,9 +173,9 @@
 	font-family:Futura Bk BT;
 	text-align:center;
 	font-size:30px;
-	letter-spacing:-2;
+	letter-spacing:0;
 	text-decoration: none;
-	padding: 15px 32px;
+	padding: 7px 32px;
 }
 
 .button:hover{
@@ -209,15 +200,6 @@
 	background-repeat:no-repeat;
 	background-size:cover;
 }
-.e444_915 { 
-	transform: rotate(-30.24013363137855deg);
-	width:822px;
-	height:519px;
-	position:absolute;
-	left:-566px;
-	top:575.9799194335938px;
-}
-
 .e618_2339 { 
 	width:259px;
 	height:65px;
@@ -242,19 +224,19 @@
 .button_comece_agora{
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color:rgba(91.00000217556953, 184.00000423192978, 93.00000205636024, 1);
-	width:259px;
-	height:65px;
+	width:200px;
+	height:50px;
 	position:absolute;
-	left:1598px;
-	top:29px;
+	left:1640px;
+	top:15px;
 	border-top-left-radius:40px;
 	border-top-right-radius:40px;
 	border-bottom-left-radius:40px;
 	border-bottom-right-radius:40px;
 	color:rgba(242.24999696016312, 241.24061912298203, 241.24061912298203, 1);
 	font-family:Futura Bk BT;
-	font-size:24px;
+	font-size:23px;
 	letter-spacing:0;
 	text-align: center;
-	padding: 15px 32px;
+	padding: 9px 32px;
 }
