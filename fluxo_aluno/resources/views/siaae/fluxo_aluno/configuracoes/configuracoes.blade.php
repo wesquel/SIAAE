@@ -69,11 +69,11 @@
         <span class="e448_652">Linkedin:</span>
         <span class="e357_773">Status do Perfil:</span>
         <span class="e448_651">Ativado</span>
-        
+              
         <div class=e357_758>
-            <div class=e357_765>                
+            <div class=e357_765>        
                 <div class="e357_766">
-                    <input type="email" class="e357_766" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Anexe o seu Currículo">
+                    <input type="file" class="anexar" id="Currículo Aluno" placeholder="Anexe o seu Currículo">
                 </div>
             </div>
         </div>
