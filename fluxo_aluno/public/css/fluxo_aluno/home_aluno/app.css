@@ -1,208 +1,253 @@
-*{
-	position:absolute;
-}
-/* div contem todo o site */
 .e444_934 { 
 	background-color:rgba(242.24999696016312, 241.24061912298203, 241.24061912298203, 1);
 	width:1920px;
 	height:1080px;
+	position:absolute;
 }
-
-/* div da barra lateral */
 .e444_935 { 
 	background-color:rgba(234.00000125169754, 232.00000137090683, 232.00000137090683, 1);
 	width:406px;
 	height:1080px;
-
+	position:absolute;
+	left:0px;
+	top:0px;
 }
-
-/* div botão configurações */
 .e618_2288 { 
 	width:265px;
 	height:32px;
+	position:absolute;
 	left:38px;
 	top:435px;
 }
-
-.cor-aluno {
-	background-color:rgba(154.00000602006912, 0, 0, 1);
-}
-
-.font-stats {
-	color:rgba(68,68,68, 1);
-	text-align:left;
-	font-family:Futura Bk BT;
-	height:30px;
-}
-
-/* span texto do botão configuraçoes */
 .e618_2289 { 
+	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:212px;
+	height:30px;
+	position:absolute;
 	left:53px;
+	top:1px;
+	font-family:Futura Bk BT;
+	text-align:left;
 	font-size:25px;
 	letter-spacing:0;
 }
-
-/* icone botão configurações */
 .e618_2290 { 
 	width:32px;
 	height:32px;
+	position:absolute;
+	left:0px;
+	top:0px;
 }
-
-/* div lista de vagas*/
+.e618_2291 { 
+	background-color:rgba(154.00000602006912, 0, 0, 1);
+	width:32.00110626220703px;
+	height:32.000389099121094px;
+	position:absolute;
+	left:-0.0006244080141186714px;
+	top:-0.0000028132346869824687px;
+}
 .e618_2262 { 
 	width:239px;
-	left: 34px;
-	top: 386px;
+	height:30px;
+	position:absolute;
+	left:34px;
+	top:386px;
 }
-
-/*span texto lista de vagas*/
 .e618_2263 { 
+	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:182px;
+	height:30px;
+	position:absolute;
 	left:57px;
+	top:0px;
+	font-family:Futura Bk BT;
+	text-align:left;
 	font-size:25px;
 	letter-spacing:0;
 }
-
-/* div quadrado e618_2264 */
 .e618_2264 { 
 	width:41px;
 	height:17px;
-	top: 7px;
+	position:absolute;
+	left:0px;
+	top:7px;
 }
-
-/* quadrados completo */
 .ei618_2264_7_1326 { 
-	width:32px;
+	width:32.960784912109375px;
 	height:17px;
+	position:absolute;
 	left:8.039215087890625px;
+	top:0px;
 }
-
-.retangulo {
-	width:32px;
-	height:4px;
+.ei618_2264_7_1327 { 
+	background-color:rgba(154.00000602006912, 0, 0, 1);
+	width:32.960784912109375px;
+	height:4.047618865966797px;
+	position:absolute;
+	left:0px;
+	top:0px;
 	border-top-left-radius:54px;
 	border-top-right-radius:54px;
 	border-bottom-left-radius:54px;
 	border-bottom-right-radius:54px;
 }
-
-/* retangulo 2 */
 .ei618_2264_7_1328 { 
+	background-color:rgba(154.00000602006912, 0, 0, 1);
+	width:32.960784912109375px;
+	height:4.047618865966797px;
+	position:absolute;
+	left:0px;
 	top:6.476190567016602px;
-}
-
-/* retangulo 3 */
-.ei618_2264_7_1329 { 
-	top:12.952381134033203px;
-}
-
-/* pontos ao lado  */
-.ei618_2264_7_1330 { 
-	width:4px;
-	height:17px;
-}
-
-.ponto {
-	width:4px;
-	height:4px;
 	border-top-left-radius:54px;
 	border-top-right-radius:54px;
 	border-bottom-left-radius:54px;
 	border-bottom-right-radius:54px;
 }
-
-
-/*ponto lado 2*/
+.ei618_2264_7_1329 { 
+	background-color:rgba(154.00000602006912, 0, 0, 1);
+	width:32.960784912109375px;
+	height:4.047618865966797px;
+	position:absolute;
+	left:0px;
+	top:12.952381134033203px;
+	border-top-left-radius:54px;
+	border-top-right-radius:54px;
+	border-bottom-left-radius:54px;
+	border-bottom-right-radius:54px;
+}
+.ei618_2264_7_1330 { 
+	width:4.0196075439453125px;
+	height:17px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.ei618_2264_7_1331 { 
+	background-color:rgba(154.00000602006912, 0, 0, 1);
+	width:4.0196075439453125px;
+	height:4.047618865966797px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:54px;
+	border-top-right-radius:54px;
+	border-bottom-left-radius:54px;
+	border-bottom-right-radius:54px;
+}
 .ei618_2264_7_1332 { 
-	top: 6.476190567016602px;
+	background-color:rgba(154.00000602006912, 0, 0, 1);
+	width:4.0196075439453125px;
+	height:4.047618865966797px;
+	position:absolute;
+	left:0px;
+	top:6.476190567016602px;
+	border-top-left-radius:54px;
+	border-top-right-radius:54px;
+	border-bottom-left-radius:54px;
+	border-bottom-right-radius:54px;
 }
-
-/*ponto lado 3*/
 .ei618_2264_7_1333 { 
-	margin-top: 12.952381134033203px;
+	background-color:rgba(154.00000602006912, 0, 0, 1);
+	width:4.0196075439453125px;
+	height:4.047618865966797px;
+	position:absolute;
+	left:0px;
+	top:12.952381134033203px;
+	border-top-left-radius:54px;
+	border-top-right-radius:54px;
+	border-bottom-left-radius:54px;
+	border-bottom-right-radius:54px;
 }
-
-/*logo siaae*/
 .e444_936 { 
 	width:230px;
 	height:96px;
-	left: 88px;
-	top: 44px;
+	position:absolute;
+	left:88px;
+	top:44px;
 	background-image:url(../../../images/fluxo_aluno/home_aluno/logo_siaae_transparente_icones_1.png);
 	background-repeat:no-repeat;
 	background-size:cover;
 }
-
-/*texto "Bem vindo, fulaninho!"*/
 .e444_937 { 
+	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:296px;
 	height:36px;
+	position:absolute;
 	left:55px;
 	top:234px;
+	font-family:Futura Bk BT;
+	text-align:left;
 	font-size:30px;
 	letter-spacing:0;
 }
-
-/*div sair*/
 .e444_948 { 
 	width:87px;
 	height:29px;
+	position:absolute;
 	left:41px;
 	top:1005px;
 }
-
-/* span text "SAIR"*/
 .e444_949 { 
 	color:rgba(154.00000602006912, 0, 0, 1);
 	width:53px;
+	height:29px;
+	position:absolute;
 	left:34px;
+	top:0px;
+	font-family:Abhaya Libre ExtraBold;
+	text-align:left;
 	font-size:25px;
 	letter-spacing:0;
 }
-
-/*div icone*/
 .e444_950 { 
-	width:25px;
+	width:25.670000076293945px;
 	height:28px;
+	position:absolute;
+	left:0px;
+	top:1px;
 }
-
-/*div icone 2*/
 .e444_951 { 
-	width:25px;
-	height:27px;
+	background-color:rgba(154.00000602006912, 0, 0, 1);
+	width:25.852235794067383px;
+	height:27.988332748413086px;
+	position:absolute;
+	left:0.0015974711859598756px;
+	top:-0.0011661897879093885px;
 }
-
-/*background area ao lado*/
 .e444_952 { 
 	width:1150px;
 	height:767px;
+	position:absolute;
 	left:513px;
 	top:156px;
 	background-image:url(../../../images/fluxo_aluno/home_aluno/illustration_1.png);
-	background-repeat: no-repeat;
+	background-repeat:no-repeat;
 	background-size:cover;
 }
-
-/*div menu "Cadastra-se"*/
 .e618_2163 { 
 	width:318px;
-	height:37px;
+	height:37.3583984375px;
+	position:absolute;
 	left:37px;
 	top:330px;
 }
-
-/*span "CADASTRE-SE Á VAGAS"*/
 .e618_2164 { 
+	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
 	width:264px;
+	height:30px;
+	position:absolute;
 	left:54px;
 	top:4px;
+	font-family:Futura Bk BT;
+	text-align:left;
 	font-size:25px;
 	letter-spacing:0;
 }
-
-/*icone*/
 .e618_2165 { 
-	width:34px;
-	height:37px;
+	background-color:rgba(154.00000602006912, 0, 0, 1);
+	width:34.2138671875px;
+	height:37.3583984375px;
+	position:absolute;
+	left:0px;
+	top:0px;
 }

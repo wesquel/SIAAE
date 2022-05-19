@@ -30,3 +30,13 @@ Route::get('/home_aluno', [ControllerAluno::class, 'home_aluno']);
 Route::get('/configuracoes', [ControllerAluno::class, 'configuracoes']);
 
 Route::get('/candidaturas', [ControllerAluno::class, 'candidaturas']);
+
+Route::get('/vagas', [ControllerAluno::class, 'vagas']);
+
+Route::get('/vaga_estagio', [ControllerAluno::class, 'vaga_estagio']);
+
+Route::get('/vaga_aprendizagem', [ControllerAluno::class, 'vaga_aprendizagem']);
+
+Route::get('/confirma_candidatura_estagio', [ControllerAluno::class, 'confirma_candidatura_estagio']);
+
+Route::get('/confirma_candidatura_aprendizagem', [ControllerAluno::class, 'confirma_candidatura_aprendizagem']);

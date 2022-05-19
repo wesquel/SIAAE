@@ -27,6 +27,7 @@
 
 
 <body>
+  <div class = "container-fluid">
     <div class=e444_901>
         <div class="e444_902"></div>
         <div class="e444_903"></div>
@@ -50,6 +51,7 @@
         <div class="e444_915"></div>
         <a href="/configuracoes"><div class="button_comece_agora">Comece agora</div></a> /* Alterar link para página inicial */
     </div>
+  </div>
 </body>
 
 </html>
