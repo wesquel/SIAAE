@@ -26,4 +26,24 @@ class ControllerAluno extends Controller
     public function candidaturas(){
         return view('siaae.fluxo_aluno.candidaturas.candidaturas');
     }
+
+    public function vagas(){
+        return view('siaae.fluxo_aluno.vagas.vagas');
+    }
+
+    public function vaga_estagio(){
+        return view('siaae.fluxo_aluno.vaga_estagio.vaga_estagio');
+    }
+
+    public function vaga_aprendizagem(){
+        return view('siaae.fluxo_aluno.vaga_aprendizagem.vaga_aprendizagem');
+    }
+
+    public function confirma_candidatura_estagio(){
+        return view('siaae.fluxo_aluno.confirma_candidatura_estagio.confirma_candidatura_estagio');
+    }
+
+    public function confirma_candidatura_aprendizagem(){
+        return view('siaae.fluxo_aluno.confirma_candidatura_aprendizagem.confirma_candidatura_aprendizagem');
+    }
 }
