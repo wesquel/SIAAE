@@ -29,42 +29,33 @@
         <div class="e618_2644"></div><span class="e618_2645">Bem vindo, Fulaninho!</span>
 
         <a href="/vagas">
-            <div class=e618_2646><span class="e618_2647">CADASTRE-SE À VAGAS</span>
-                <div class="e618_2648"></div>
+            <div class=e618_2646>
+                <span class="e618_2647">CADASTRE-SE À VAGAS</span>
+                <div class="candidatar"></div>
             </div>
         </a>
 
         <a href="/candidaturas">
-            <div class=e618_2649><span class="e618_2650">LISTA DE VAGAS</span>
-                <div class=e618_2651>
-                    <div class=ei618_2651_7_1326>
-                        <div class="ei618_2651_7_1327"></div>
-                        <div class="ei618_2651_7_1328"></div>
-                        <div class="ei618_2651_7_1329"></div>
-                    </div>
-                    <div class=ei618_2651_7_1330>
-                        <div class="ei618_2651_7_1331"></div>
-                        <div class="ei618_2651_7_1332"></div>
-                        <div class="ei618_2651_7_1333"></div>
-                    </div>
+            <div class=e618_2649>
+                <span class="e618_2650">LISTA DE VAGAS</span>
+                <div class="listar_vagas"></div>
                 </div>
             </div>
         </a>
 
         <a href="/configuracoes">
-            <div class=e618_2652><span class="e618_2653">CONFIGURAÇÕES</span>
-                <div class=e618_2654>
-                    <div class="e618_2655"></div>
-                </div>
+            <div class=e618_2652>
+                <span class="e618_2653">CONFIGURAÇÕES</span>
+                <div class=configuracoes></div>
             </div>
         </a>
 
         <a href="login_aluno">
-            <div class=e618_2656><span class="e618_2657">SAIR</span>
-                <div class=e618_2658>
-                    <div class="e618_2659"></div>
-                </div>
+            <div class=e618_2656>
+                <span class="e618_2657">SAIR</span>
+                <div class = "sair"></div>
             </div>
+            
         </a>
 
         <a href="/home_aluno">

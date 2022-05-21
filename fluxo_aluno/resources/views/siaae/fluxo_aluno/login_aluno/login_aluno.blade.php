@@ -33,13 +33,13 @@
   <div class=e444_909>
     <div class="entrada_matricula">
       <label for="exampleInputEmail1" class="form-label">Matrícula</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Matrícula">
     </div>
   </div>
   <div class=e444_910>
     <div class="entrada_senha">
       <label for="exampleInputEmail1" class="form-label">Senha</label>
-      <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Senha">
     </div>
   </div>
   <div class="e444_911"></div>

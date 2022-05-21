@@ -494,3 +494,46 @@
 	font-size:20px;
 	letter-spacing:0;
 }
+.candidatar{
+	width:35px;
+	height:35px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url(../../../images/fluxo_aluno/vagas/cadastrar.svg);
+	background-repeat:no-repeat;
+	background-size:cover;
+
+}
+.listar_vagas{
+	width:35px;
+	height:15px;
+	position:absolute;
+	left:0px;
+	top:5px;
+	background-image:url(../../../images/fluxo_aluno/vagas/listar.svg);
+	background-repeat:no-repeat;
+	background-size:cover;
+
+}
+.configuracoes{
+	width:35px;
+	height:35px;
+	position:absolute;
+	left:-4px;
+	top:-5px;
+	background-image:url(../../../images/fluxo_aluno/vagas/config.svg);
+	background-repeat:no-repeat;
+	background-size:cover;
+
+}
+.sair{
+	width:26px;
+	height:30px;
+	position:absolute;
+	left:0px;
+	top:-2px;
+	background-image:url(../../../images/fluxo_aluno/vagas/sair.svg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
