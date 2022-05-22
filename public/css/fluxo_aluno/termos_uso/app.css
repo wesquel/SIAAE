@@ -1,0 +1,136 @@
+.e561_2333 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:1912px;
+	height:953px;
+	position:absolute;
+}
+.e561_2335 { 
+	background-color:rgba(234.00000125169754, 232.00000137090683, 232.00000137090683, 1);
+	width:1912px;
+	height:80px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+.button{
+	background-color:rgba(98.00000175833702, 0, 0, 1);
+	width:210px;
+	height:55px;
+	position:absolute;
+	left:870px;
+	top:810px;
+	border-top-left-radius:40px;
+	border-top-right-radius:40px;
+	border-bottom-left-radius:40px;
+	border-bottom-right-radius:40px;
+}
+.texto_button{
+	color:rgba(242.24999696016312, 241.24061912298203, 241.24061912298203, 1);
+	cursor: pointer;
+	font-family:Futura Bk BT;
+	text-align:center;
+	font-size:25px;
+	letter-spacing:0;
+	text-decoration: none;
+	padding: 12px 32px;
+}
+.e561_2341 { 
+	width:363px;
+	height:50px;
+	position:absolute;
+	left:49px;
+	top:12px;
+	background-image:url(../../../images/fluxo_aluno/termos_uso/logo_siaae_horizontal_1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.e561_2342 { 
+	width:1037px;
+	height:595px;
+	position:absolute;
+	left:442px;
+	top:150px;
+	border-top-left-radius:23px;
+	border-top-right-radius:23px;
+	border-bottom-left-radius:23px;
+	border-bottom-right-radius:23px;
+}
+.e561_2343 { 
+	width:666px;
+	height:41px;
+	position:absolute;
+	left:629px;
+	top:720px;
+}
+
+.e561_2344 { 
+	width:42px;
+	height:41px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.e561_2345 { 
+	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
+	width:610px;
+	height:29px;
+	position:absolute;
+	left:56px;
+	top:6px;
+	font-family:Futura Bk BT;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.checkbox_t{
+	width:20px;
+	height:20px;
+}
+.e561_2346 { 
+	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
+	width:475px;
+	height:41px;
+	position:absolute;
+	left:720px;
+	top:120px;
+	font-family:Abhaya Libre ExtraBold;
+	text-align:left;
+	font-size:35px;
+	letter-spacing:0;
+}
+.e561_2347 { 
+	color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
+	width:922px;
+	height:396px;
+	position:absolute;
+	left:501px;
+	top:260px;
+	font-family:Futura Bk BT;
+	text-align:justify;
+	font-size:18px;
+	letter-spacing:0;
+	margin: 0 0 60px 15px;
+	overflow:auto;
+}
+.e618_2344 { 
+	color:rgba(242.24999696016312, 241.24061912298203, 241.24061912298203, 1);
+	width:158px;
+	height:29px;
+	position:absolute;
+	left:52px;
+	top:19px;
+	font-family:Futura Bk BT;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.h4{
+	text-align: center;
+}
+
