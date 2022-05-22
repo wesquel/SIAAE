@@ -1,0 +1,242 @@
+.e444_901 {
+	background-color:rgba(255, 255, 255, 1);
+	width:1920px;
+	height: 961px;
+}
+.e444_902 { 
+	width: 1920px;
+	height: 961px;;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url(../../../images/fluxo_aluno/login_aluno/instructor_explaining_corporate_software_specific_to_intern_1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e444_905 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(154.00000602006912, 0, 0, 1);
+	width:587px;
+	height:615px;
+	position:absolute;
+	left:1140px;
+	top:240px;
+	border-top-left-radius:16px;
+	border-top-right-radius:16px;
+	border-bottom-left-radius:16px;
+	border-bottom-right-radius:16px;
+}
+.e444_906 { 
+	background-color:rgba(234.00000125169754, 232.00000137090683, 232.00000137090683, 1);
+	width:1920px;
+	height:80px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.e444_908 { 
+	color:rgba(242.24999696016312, 241.24061912298203, 241.24061912298203, 1);
+	width:140px;
+	height:28px;
+	position:absolute;
+	left:1650px;
+	top:48px;
+	font-family:Abhaya Libre ExtraBold;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.e444_909 { 
+	width:462px;
+	height:84px;
+	position:absolute;
+	left:1202px;
+	top:540px;
+}
+.ei444_909_89_62 { 
+	background-color:rgba(234.00000125169754, 232.00000137090683, 232.00000137090683, 1);
+	width:462px;
+	height:84px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+}
+.ei444_909_89_63 { 
+	color:rgba(151.00000619888306, 151.00000619888306, 151.00000619888306, 1);
+	width:425.4193420410156px;
+	height:21px;
+	position:absolute;
+	left:23.032258987426758px;
+	top:39.5px;
+	font-family:Abhaya Libre ExtraBold;
+	text-align:left;
+	font-size:18px;
+	letter-spacing:-2;
+}
+.ei444_909_89_92 { 
+	width:1.3548383712768555px;
+	height:29.75px;
+	position:absolute;
+	left:13.54838752746582px;
+	top:40.25px;
+	border-radius:8px;
+}
+.ei444_909_89_96 { 
+	width:425.4193420410156px;
+	height:29.75px;
+	position:absolute;
+	left:13.54838752746582px;
+	top:40.25px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:-2;
+}
+.e444_910 { 
+	width:462px;
+	height:84px;
+	position:absolute;
+	left:1202px;
+	top:640px;
+}
+.ei444_910_89_62 { 
+	background-color:rgba(234.00000125169754, 232.00000137090683, 232.00000137090683, 1);
+	width:462px;
+	height:84px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+}
+.ei444_910_89_63 { 
+	color:rgba(151.00000619888306, 151.00000619888306, 151.00000619888306, 1);
+	width:425.4193420410156px;
+	height:21px;
+	position:absolute;
+	left:23.032258987426758px;
+	top:39.5px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:18px;
+	letter-spacing:-2;
+}
+.ei444_910_89_92 { 
+	width:1.3548383712768555px;
+	height:29.75px;
+	position:absolute;
+	left:13.54838752746582px;
+	top:40.25px;
+	border-radius:8px;
+}
+.ei444_910_89_96 { 
+	width:425.4193420410156px;
+	height:29.75px;
+	position:absolute;
+	left:13.54838752746582px;
+	top:40.25px;
+	font-family:Abhaya Libre ExtraBold;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:-2;
+}
+.e444_911 { 
+	width:363px;
+	height:50px;
+	position:absolute;
+	left:49px;
+	top:12px;
+	background-image:url(../../../images/fluxo_aluno/login_aluno/logo_siaae_horizontal_1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.button {
+	width:230px;
+	height:60px;
+	position:absolute;
+	left:1310px;
+	top:750px;
+	background-color:rgb(92, 0, 0);
+	color:rgba(255, 255, 255, 1);
+	border-top-left-radius:86px;
+	border-top-right-radius:86px;
+	border-bottom-left-radius:86px;
+	border-bottom-right-radius:86px;
+	cursor: pointer;
+	font-family:Futura Bk BT;
+	text-align:center;
+	font-size:30px;
+	letter-spacing:0;
+	text-decoration: none;
+	padding: 7px 32px;
+}
+
+.button:hover{
+	background-color:rgb(100, 0, 0);
+}
+
+.entrada_matricula{
+	color:rgba(255, 255, 255, 1);
+}
+
+.entrada_senha{
+	color:rgba(255, 255, 255, 1);
+}
+
+.e444_914 { 
+	width:262px;
+	height:168px;
+	position:absolute;
+	left:1302px;
+	top:321px;
+	background-image:url(../../../images/fluxo_aluno/login_aluno/logo_siaae_cinza_1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e618_2339 { 
+	width:259px;
+	height:65px;
+	position:absolute;
+	left:1598px;
+	top:29px;
+}
+.e618_2340 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(91.00000217556953, 184.00000423192978, 93.00000205636024, 1);
+	width:259px;
+	height:65px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:40px;
+	border-top-right-radius:40px;
+	border-bottom-left-radius:40px;
+	border-bottom-right-radius:40px;
+}
+
+.button_comece_agora{
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(91.00000217556953, 184.00000423192978, 93.00000205636024, 1);
+	width:200px;
+	height:50px;
+	position:absolute;
+	left:1640px;
+	top:15px;
+	border-top-left-radius:40px;
+	border-top-right-radius:40px;
+	border-bottom-left-radius:40px;
+	border-bottom-right-radius:40px;
+	color:rgba(242.24999696016312, 241.24061912298203, 241.24061912298203, 1);
+	font-family:Futura Bk BT;
+	font-size:23px;
+	letter-spacing:0;
+	text-align: center;
+	padding: 9px 32px;
+}
