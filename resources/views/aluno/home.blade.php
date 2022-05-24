@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Futura+Bk BT&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre ExtraBold&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('css/fluxo_aluno/home_aluno/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/Aluno/home_aluno/app.css')}}">
 
     <style>
         /*
@@ -36,7 +36,7 @@
                     <div class="candidatar"></div>
                 </div>
             </div>
-        </a> 
+        </a>
 
         <a href="/candidaturas">
             <div>
@@ -46,7 +46,7 @@
                 </div>
             </div>
         </a>
-        
+
         <a href="/configuracoes">
             <div class=e618_2288>
                 <span class="e618_2289">CONFIGURAÇÕES</span>

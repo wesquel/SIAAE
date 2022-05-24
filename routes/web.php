@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use PHPUnit\TextUI\XmlConfiguration\Group;
 use App\Http\Controllers\siaae\ControllerAluno;
-
+use App\Http\Controllers\testeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,9 +16,6 @@ use App\Http\Controllers\siaae\ControllerAluno;
 */
 
 //Rota página principal (Sobre)
-Route::get('/sobre', function(){ 
-  return view('sobre');
-});
 
 //Rotas do fluxo do aluno
 Route::get('/login_aluno', [ControllerAluno::class, 'login_aluno']);

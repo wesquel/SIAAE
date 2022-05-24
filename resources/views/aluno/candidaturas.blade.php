@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre ExtraBold&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Futura+Bk BT&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('css/fluxo_aluno/candidaturas/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/Aluno/candidaturas/app.css')}}">
 
     <style>
         /*
@@ -26,15 +26,15 @@
 <body>
     <div class=e444_961><span class="e444_989">Lista de Vagas</span>
     <div class="e444_1061"></div>
-    
+
     <a href="/configuracoes">
         <div class=e618_2284><span class="e618_2285">CONFIGURAÇÕES</span>
             <div class=e618_2286>
                 <div class="e618_2287"></div>
             </div>
         </div>
-    </a>    
-        
+    </a>
+
         <a href="/candidaturas">
             <div class=e618_2251><span class="e618_2252">LISTA DE VAGAS</span>
                 <div class=e618_2253>
@@ -57,7 +57,7 @@
             <div class="e618_2162"></div>
         </div>
     </a>
-       
+
         <div class="e444_1062"></div>
         <span class="e444_1063">Bem vindo, Fulaninho!</span>
 
@@ -68,8 +68,8 @@
                 </div>
             </div>
         </a>
-        
-        
+
+
         <span class="e444_1086">Nome</span>
         <span class="e444_1087">Desenvolvedor Java</span>
         <span class="e444_1088">12/01/2022</span>
@@ -98,14 +98,14 @@
         <div class="e444_1153"></div>
         <div class="e444_1151"></div>
         <div class="e444_1152"></div>
-        
+
     <a href="/home_aluno">
         <div class=e618_2311>
             <div class="e618_2312"></div>
             <div class="e618_2313"></div><span class="e618_2314">Voltar</span>
         </div>
     </a>
-        
+
     </div>
 </body>
 </html>

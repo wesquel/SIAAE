@@ -8,7 +8,7 @@
     <meta name="author" content="htmlGenerator">
     <link href="https://fonts.googleapis.com/css?family=Futura+Bk BT&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('css/fluxo_aluno/confirma_candidatura_aprendizagem/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/Aluno/confirma_candidatura_aprendizagem/app.css')}}">
 
     <style>
         /*

@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('css/fluxo_aluno/configuracoes/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/Aluno/configuracoes/app.css')}}">
 
     <style>
         /*
@@ -52,7 +52,7 @@
                 </div>
             </div>
         </a>
-        
+
         <a href="/vagas">
             <div class=e618_2237><span class="e618_2238">CADASTRE-SE À VAGAS</span>
                 <div class="e618_2239"></div>
@@ -71,9 +71,9 @@
         <span class="e448_652">Linkedin:</span>
         <span class="e357_773">Status do Perfil:</span>
         <span class="e448_651">Ativado</span>
-              
+
         <div class=e357_758>
-            <div class=e357_765>        
+            <div class=e357_765>
                 <div class="e357_766">
                     <input type="file" class="anexar" id="Currículo Aluno" placeholder="Anexe o seu Currículo">
                 </div>
@@ -113,7 +113,7 @@
                 <input type="email" class="ei413_534_89_62" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Link para seu Github">
             </div>
             <div class="ei413_534_89_92"></div>
-            
+
         </div>
 
         <span class="e357_795">Email:</span>
@@ -130,7 +130,7 @@
             <div class="ei413_514_144_341"></div><span class="ei413_514_144_320">SOBRE VOCÊ</span>
         </div> -->
         <span class="e413_547">Outros contatos</span>
-        
+
         <div class=e448_659>
             <div class="e448_660">
                 <input type="email" class="e448_660" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Título do Contato">
@@ -192,7 +192,7 @@
             <div class="ei448_680_444_700"></div>
             <div class="ei448_680_444_702"></div>
         </div>
-        
+
         <div class=e413_632>
             <div class="ei413_632_45_82"></div><span class="ei413_632_45_83">Adicionar</span>
         </div>
