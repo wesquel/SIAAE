@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Futura+Bk BT&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Futura+Md BT&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('css/fluxo_aluno/vagas/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/Aluno/vagas/app.css')}}">
 
     <style>
         /*
@@ -55,7 +55,7 @@
                 <span class="e618_2657">SAIR</span>
                 <div class = "sair"></div>
             </div>
-            
+
         </a>
 
         <a href="/home_aluno">

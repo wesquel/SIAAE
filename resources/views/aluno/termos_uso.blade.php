@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre ExtraBold&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Futura+Bk BT&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('css/fluxo_aluno/termos_uso/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/Aluno/termos_uso/app.css')}}">
 
     <style>
         /*

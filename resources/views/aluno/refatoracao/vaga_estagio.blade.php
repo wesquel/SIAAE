@@ -8,7 +8,7 @@
     <meta name="author" content="htmlGenerator">
     <link href="https://fonts.googleapis.com/css?family=Futura+Bk BT&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('css/fluxo_aluno/vaga_aprendizagem/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/Aluno/vaga_estagio/app.css')}}">
 
     <style>
         /*
@@ -26,7 +26,7 @@
     <div class=e618_1901>
         <div class="e618_1902"></div>
         <div class="e618_1903"></div><span class="e618_1904">Bem vindo, Fulaninho!</span>
-        
+
         <a href="/vagas">
             <div class=e618_1905><span class="e618_1906">CADASTRE-SE À VAGAS</span>
                 <div class="e618_1907"></div>
@@ -49,7 +49,7 @@
                 </div>
             </div>
         </a>
-       
+
         <a href="/configuracoes">
             <div class=e618_1911><span class="e618_1912">CONFIGURAÇÕES</span>
                 <div class=e618_1913>
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </a>
-        
+
         <a href="/login_aluno">
             <div class=e618_1915><span class="e618_1916">SAIR</span>
                 <div class=e618_1917>
@@ -65,8 +65,8 @@
                 </div>
             </div>
         </a>
-        
-        <span class="e618_1919">Oferta de Vaga de Aprendizagem</span>
+
+        <span class="e618_1919">Oferta de Vaga de Estágio</span>
 
         <a href="/vagas">
             <div class=e618_1920>
@@ -81,7 +81,7 @@
         <span class="e618_1927">Atividades Desempenhadas</span>
         <span class="e618_1928">Descrição da Vaga</span>
         <span class="e618_1929">Empresa X</span>
-        <span class="e618_1930">Tipo de Vaga: Aprendizagem</span>
+        <span class="e618_1930">Tipo de Vaga: Estágio</span>
         <span class="e618_1931">Data Limite: 20/02/2022</span>
         <span class="e618_1932">Auxílios: Transporte/Odontologico/Alimentação</span>
         <span class="e618_1933">
@@ -91,7 +91,7 @@
             Realizar integrações de sistemas , desenvolver em java, back end.
         </span>
         <span class="e618_1935">
-            Estamos procurando um Desenvolvedor Java Júnior para gerenciar o ciclo de vida de desenvolvimento de softwares, 
+            Estamos procurando um Desenvolvedor Java Júnior para gerenciar o ciclo de vida de desenvolvimento de softwares,
             desde o planejamento e priorização até as fases de teste e lançamento.
         </span>
         <span class="e618_1936">
@@ -121,7 +121,7 @@
                 </span>
             </div>
         </a>
-        
+
     </div>
 </body>
 
