@@ -1,67 +1,32 @@
-<html lang="en">
+@extends('layouts.appLayout')
 
-<head>
-    <meta charset="utf-8">
+@push('custom-styles')
+    <link rel="stylesheet" href="{{ asset('css/icons/icomoon.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home_aluno.css') }}">
+@endpush
 
-    <title>Html Generated</title>
-    <meta name="description" content="Figma htmlGenerator">
-    <meta name="author" content="htmlGenerator">
-    <link href="https://fonts.googleapis.com/css?family=Futura+Bk BT&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre ExtraBold&display=swap" rel="stylesheet">
+@section('content')
+    <div class="row">
+        <div id="div-nav" class="col-md-3">
+            <nav >
+                <img src="{{ asset('images/logo_siaae.png') }}" height="50px"/>
 
-    <link rel="stylesheet" href="{{asset('css/Aluno/home_aluno/app.css')}}">
-
-    <style>
-        /*
-                Figma Background for illustrative/preview purposes only.
-                You can remove this style tag with no consequence
-              */
-        body {
-            background: #E5E5E5;
-        }
-    </style>
-
-</head>
-
-<body>
-    <div class=e444_934>
-        <div class="e444_935"></div>
-        <div class="e444_936"></div>
-        <span class="e444_937">Bem vindo, Fulaninho!</span>
-
-        <a href="/vagas">
-            <div>
-                <div class=e618_2163>
-                    <span class="e618_2164">CADASTRE-SE À VAGAS</span>
-                    <div class="candidatar"></div>
-                </div>
-            </div>
-        </a>
-
-        <a href="/candidaturas">
-            <div>
-                <div class=e618_2262>
-                    <span class="e618_2263">LISTA DE VAGAS</span>
-                    <div class = "listar_vagas"></div>
-                </div>
-            </div>
-        </a>
-
-        <a href="/configuracoes">
-            <div class=e618_2288>
-                <span class="e618_2289">CONFIGURAÇÕES</span>
-                <div class=configuracoes></div>
-            </div>
-        </a>
-
-        <a href="/login_aluno">
-            <div class=e444_948>
-                <span class="e444_949">SAIR</span>
-                <div class="sair"></div>
-            </div>
-        </a>
-        <div class="e444_952"></div>
+                <h4>Bem vindo, {{ $alunoNome ?? 'Fulaninho' }}!</h4>
+                <ul>
+                    <li>
+                        <a href="{{ route('candidaturas') }}"><span class="icon icon-plus"></span>CADASTRAR-SE À VAGAS</a>
+                    </li>
+                    <li>
+                        <a><span class="icon icon-list"></span>LISTA DE VAGAS</a>
+                    </li>
+                    <li>
+                        <a><span class="icon icon-cog"></span>CONFIGURAÇÔES</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="div-page-content" class="col-md-8">
+            <img src="{{ asset('images/ilustracao_home.png') }}" width="600px" height="400px">
+        </div>
     </div>
-</body>
-
-</html>
+@endsection

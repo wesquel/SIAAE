@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Futura-medium';
+    src: url("../assets/fonts/futura.otf");
+    font-display: swap;
+}
+
+:root {
+    --cor-vermelho-escuro: #620000;
+    --cor-vermelho: #9A0000;
+    --cor-verde: #5BB85D;
+    --cor--cinza: #EAE8E8;
+    --cor--cinza-escuro: #C4C4C4;
+}
+
+body, html {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Futura-medium', serif;
+}
+
+.div-main {
+    background-color: #fff;
+}
+
+.system-button {
+    display: block;
+    border-radius: 16px;
+    width: 140px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    font-family: 'Futura-medium', serif;
+    transition: background-color 1s, border 1s;
+}
+
+.system-button-vermelho {
+    background-color: var(--cor-vermelho-escuro);
+    border: 1px solid var(--cor-vermelho-escuro);
+    color: #fff;
+
+}
+
+.system-button-vermelho:hover {
+    color: #fff;
+    background-color: var(--cor-vermelho);
+    border-color: #fff;
+}
+
+
+

@@ -22,11 +22,11 @@ Route::get('/login_aluno', [ControllerAluno::class, 'login_aluno']);
 
 Route::get('/termos_uso', [ControllerAluno::class, 'termos_uso']);
 
-Route::get('/home_aluno', [ControllerAluno::class, 'home_aluno']);
+Route::get('/home_aluno', [ControllerAluno::class, 'home_aluno'])->name('home-aluno');
 
 Route::get('/configuracoes', [ControllerAluno::class, 'configuracoes']);
 
-Route::get('/candidaturas', [ControllerAluno::class, 'candidaturas']);
+Route::get('/candidaturas', [ControllerAluno::class, 'candidaturas'])->name('candidaturas');
 
 Route::get('/vagas', [ControllerAluno::class, 'vagas']);
 
