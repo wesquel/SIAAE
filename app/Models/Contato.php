@@ -9,9 +9,4 @@ class Contato extends Model
 {
     use HasFactory;
 
-    private $id;
-    private $titulo;
-    private $tipo;
-    private $link;
-
 }
