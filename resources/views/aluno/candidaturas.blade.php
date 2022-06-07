@@ -26,7 +26,6 @@
 <body>
     <div class=e444_961><span class="e444_989">Lista de Vagas</span>
     <div class="e444_1061"></div>
-
     <a href="/configuracoes">
         <div class=e618_2284><span class="e618_2285">CONFIGURAÇÕES</span>
             <div class=e618_2286>

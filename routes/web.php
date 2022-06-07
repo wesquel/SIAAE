@@ -15,9 +15,11 @@ use App\Http\Controllers\testeController;
 |
 */
 
-//Rota página principal (Sobre)
+//Rota OnePage
+Route::get('/', 'teste@index');
+//Rotas Empresa
 
-//Rotas do fluxo do aluno
+//Rotas Aaluno
 Route::get('/login_aluno', [ControllerAluno::class, 'login_aluno']);
 
 Route::get('/termos_uso', [ControllerAluno::class, 'termos_uso']);
@@ -37,3 +39,5 @@ Route::get('/vaga_aprendizagem', [ControllerAluno::class, 'vaga_aprendizagem']);
 Route::get('/confirma_candidatura_estagio', [ControllerAluno::class, 'confirma_candidatura_estagio']);
 
 Route::get('/confirma_candidatura_aprendizagem', [ControllerAluno::class, 'confirma_candidatura_aprendizagem']);
+
+//Rotas ADMIN
