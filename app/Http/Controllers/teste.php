@@ -12,8 +12,7 @@ class teste extends Controller
 {
     //
     public function index(){
-        $endereco = Empresa::all()->endereco;
-        
-        return view('teste',['endereco' => $endereco]);
+
+        return view('index');
     }
 }

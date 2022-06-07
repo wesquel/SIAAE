@@ -15,4 +15,8 @@ class Vaga extends Model
 
     }
 
+    function registraCandidato($matricula){
+
+    }
+
 }
