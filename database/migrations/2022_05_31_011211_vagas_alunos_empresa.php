@@ -17,6 +17,7 @@ class VagasAlunosEmpresa extends Migration
             $table->id('id');
             $table->foreignId('empresa_id')->constrained()->onDelete('cascade');
             $table->foreignId('aluno_id')->constrained()->onDelete('cascade');
+            $table->boolean('status_aluno');
             $table->timestamps();
         });
     }
