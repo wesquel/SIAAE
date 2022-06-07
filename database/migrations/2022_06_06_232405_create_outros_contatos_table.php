@@ -15,6 +15,10 @@ class CreateOutrosContatosTable extends Migration
     {
         Schema::create('outros_contatos', function (Blueprint $table) {
             $table->id();
+            $table->string('tipo');
+            $table->string('titulo');
+            $table->string('link');
+            $table->foreignId('aluno_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

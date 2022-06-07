@@ -10,4 +10,11 @@ class Aluno extends Model
 
     use HasFactory;
 
+
+    public function outros_contatos(){
+
+        return $this->hasMany(Outros_contatos::class);
+
+    }
+
 }

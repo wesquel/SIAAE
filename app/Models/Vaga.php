@@ -14,9 +14,4 @@ class Vaga extends Model
         return $this->belongsTo(Empresa::class);
 
     }
-
-    function registraCandidato($matricula){
-
-    }
-
 }
