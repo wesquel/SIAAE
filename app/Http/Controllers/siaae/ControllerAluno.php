@@ -5,11 +5,18 @@ namespace App\Http\Controllers\siaae;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
 class ControllerAluno extends Controller
 {
     public function login_aluno(){
         return view('aluno.login');
+    }
+
+    public function auth(Request $request){
+        if(Auth::attempt(['id'=> $request->id, 'password' => $request->password])){
+            dd('logou');
+        }else{
+            dd('Não logou');
+        }
     }
 
     public function termos_uso(){

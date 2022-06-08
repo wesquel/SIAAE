@@ -14,16 +14,15 @@ class CreateAlunosTable extends Migration
     public function up()
     {
         Schema::create('alunos', function (Blueprint $table) {
-            $table->id('matricula');
+            $table->id('id'); // matricula
             $table->boolean('ADMIN');
-            $table->string('curriculo');
-            $table->integer('telefone');
-            $table->string('email');
-            $table->string('linkedin');
-            $table->string('lattes');
-            $table->string('github');
-            $table->text('desc');
-            $table->date('DATE_FIRST_ACCESS');
+            $table->string('curriculo')->nullable();
+            $table->integer('telefone')->nullable();
+            $table->string('email')->nullable();
+            $table->string('linkedin')->nullable();
+            $table->string('lattes')->nullable();
+            $table->string('github')->nullable();
+            $table->text('desc')->nullable();
             $table->timestamps();
         });
     }

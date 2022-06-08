@@ -6,9 +6,10 @@
 
 @section('content')
     <div class="div-form-login">
-
         <img src="{{asset('images/logo_siaae_cinza.png')}}">
-        <form class="flex-column">
+
+        <form class="flex-column" method="POST" action="{{route('auth.user')}}">
+        
             <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Matrícula">
 
             <input type="password" class="form-control" aria-describedby="emailHelp" placeholder="Senha">
@@ -19,3 +20,4 @@
         </form>
     </div>
 @endsection
+

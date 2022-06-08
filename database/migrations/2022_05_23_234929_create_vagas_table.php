@@ -28,15 +28,16 @@ class CreateVagasTable extends Migration
             $table->date('data_fim');
             $table->date('data_limite');
             $table->boolean('isBolsa');
-            $table->double('valor_bolsa');
-            $table->string('atv-ferias');
-            $table->integer('ch_teorica');
-            $table->integer('ch_pratica');
+            $table->double('valor_bolsa')->nullable();
+            $table->string('atv-ferias')->nullable();
+            $table->integer('ch_teorica')->nullable();
+            $table->integer('ch_pratica')->nullable();
             $table->text('desc');
             $table->text('atv_desempenhadas');
             $table->text('pre_requisitos');
             $table->integer('vagas');
             $table->timestamps();
+            $table->foreignId('empresa_id')->constrained()->onDelete('cascade');
         });
     }
 

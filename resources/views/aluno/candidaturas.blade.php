@@ -6,6 +6,7 @@
 
 @section('content')
 
+
     <div class="row mb-4 mt-4">
         <h4 class="title-page-content col-md-9 col-sm-9">Oferta de Vagas</h4>
         <a href="{{ route('home-aluno') }}">

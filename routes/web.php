@@ -16,7 +16,10 @@ use App\Http\Controllers\siaae\ControllerEmpresa;
 |
 */
 
-//Rota página principal (Sobre)
+//Rota OnePage
+Route::get('/', 'teste@index');
+//Rotas Empresa
+
 
 //Rotas do fluxo do aluno
 Route::get('/login_empresa', [ControllerEmpresa::class, 'login_empresa'])->name('login_empresa');
@@ -24,6 +27,7 @@ Route::get('/login_empresa', [ControllerEmpresa::class, 'login_empresa'])->name(
 Route::get('/home_empresa', [ControllerEmpresa::class, 'home_empresa'])->name('home_empresa');
 
 Route::get('/login_aluno', [ControllerAluno::class, 'login_aluno']);
+Route::post('/auth',[ControllerAluno::class, 'auth'])->name('auth.user');
 
 Route::get('/termos_uso', [ControllerAluno::class, 'termos_uso']);
 
@@ -42,3 +46,5 @@ Route::get('/vaga_aprendizagem', [ControllerAluno::class, 'vaga_aprendizagem']);
 Route::get('/confirma_candidatura_estagio', [ControllerAluno::class, 'confirma_candidatura_estagio']);
 
 Route::get('/confirma_candidatura_aprendizagem', [ControllerAluno::class, 'confirma_candidatura_aprendizagem']);
+
+//Rotas ADMIN
