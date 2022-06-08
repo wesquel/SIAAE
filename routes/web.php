@@ -21,6 +21,7 @@ Route::get('/', 'teste@index');
 
 //Rotas Aaluno
 Route::get('/login_aluno', [ControllerAluno::class, 'login_aluno']);
+Route::post('/auth',[ControllerAluno::class, 'auth'])->name('auth.user');
 
 Route::get('/termos_uso', [ControllerAluno::class, 'termos_uso']);
 
