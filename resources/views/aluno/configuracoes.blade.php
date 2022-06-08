@@ -1,213 +1,146 @@
-<html lang="en">
+@extends('layouts.appLayout')
 
-<head>
-    <meta charset="utf-8">
+@push('custom-styles')
+    <link rel="stylesheet" href="{{ asset('css/configuracoes_aluno.css') }}"
+@endpush
 
-    <title>Html Generated</title>
-    <meta name="description" content="Figma htmlGenerator">
-    <meta name="author" content="htmlGenerator">
-    <link href="https://fonts.googleapis.com/css?family=Futura+Bk BT&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre ExtraBold&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+@section('content')
 
-    <link rel="stylesheet" href="{{asset('css/Aluno/configuracoes/app.css')}}">
-
-    <style>
-        /*
-                Figma Background for illustrative/preview purposes only.
-                You can remove this style tag with no consequence
-              */
-        body {
-            background: #E5E5E5;
-        }
-    </style>
-
-</head>
-
-<body>
-    <div class=e448_588>
-        <div class="e448_594"></div>
-        <a href="/configuracoes">
-            <div class=e618_2292><span class="e618_2293">CONFIGURAÇÕES</span>
-                <div class=e618_2294>
-                    <div class="e618_2295"></div>
-                </div>
-            </div>
-        </a>
-
-        <a href="/candidaturas">
-            <div class=e618_2273><span class="e618_2274">LISTA DE VAGAS</span>
-                <div class=e618_2275>
-                    <div class=ei618_2275_7_1326>
-                        <div class="ei618_2275_7_1327"></div>
-                        <div class="ei618_2275_7_1328"></div>
-                        <div class="ei618_2275_7_1329"></div>
-                    </div>
-                    <div class=ei618_2275_7_1330>
-                        <div class="ei618_2275_7_1331"></div>
-                        <div class="ei618_2275_7_1332"></div>
-                        <div class="ei618_2275_7_1333"></div>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        <a href="/vagas">
-            <div class=e618_2237><span class="e618_2238">CADASTRE-SE À VAGAS</span>
-                <div class="e618_2239"></div>
-            </div>
-        </a>
-        <div class="e448_595"></div><span class="e448_596">Bem vindo, Fulaninho!</span>
-        <a href="/login_aluno">
-            <div class=e448_607><span class="e448_608">SAIR</span>
-                <div class=e448_609>
-                    <div class="e448_610"></div>
-                </div>
-            </div>
-        </a>
-        <span class="e357_746">Curriculo:</span>
-        <span class="e357_788">Telefone:</span>
-        <span class="e448_652">Linkedin:</span>
-        <span class="e357_773">Status do Perfil:</span>
-        <span class="e448_651">Ativado</span>
-
-        <div class=e357_758>
-            <div class=e357_765>
-                <div class="e357_766">
-                    <input type="file" class="anexar" id="Currículo Aluno" placeholder="Anexe o seu Currículo">
-                </div>
-            </div>
-        </div>
-
-        <div class=e357_778>
-            <div class="ei357_778_89_62">
-                <input type="email" class="ei357_778_89_62" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Informe seu Telefone">
-            </div>
-            <div class="ei357_778_89_92"></div>
-        </div>
-
-        <div class=e357_783>
-            <div class="ei357_783_89_62">
-                <input type="email" class="ei357_783_89_62" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Informe seu E-mail">
-            </div>
-            <div class="ei357_783_89_92"></div>
-        </div>
-
-        <div class=e413_524>
-            <div class="ei413_524_89_62">
-                <input type="email" class="ei413_524_89_62" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Link para seu Linkedin">
-            </div>
-            <div class="ei413_524_89_92"></div>
-        </div>
-
-        <div class=e413_529>
-            <div class="ei413_529_89_62">
-                <input type="email" class="ei413_529_89_62" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Link para seu Lattes">
-            </div>
-            <div class="ei413_529_89_92"></div>
-        </div>
-
-        <div class=e413_534>
-            <div class="ei413_534_89_62">
-                <input type="email" class="ei413_534_89_62" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Link para seu Github">
-            </div>
-            <div class="ei413_534_89_92"></div>
-
-        </div>
-
-        <span class="e357_795">Email:</span>
-        <span class="e448_687">Descrição</span>
-        <span class="e448_653">Lattes:</span>
-        <span class="e448_654">Github:</span>
-        <span class="e361_388">CV.pdf</span>
-
-        <div class="e448_649"></div>
-        <div class="e448_650"></div>
-       <!--  <div class=e413_514>
-            <div class="ei413_514_144_319"></div>
-            <div class="ei413_514_144_326"></div>
-            <div class="ei413_514_144_341"></div><span class="ei413_514_144_320">SOBRE VOCÊ</span>
-        </div> -->
-        <span class="e413_547">Outros contatos</span>
-
-        <div class=e448_659>
-            <div class="e448_660">
-                <input type="email" class="e448_660" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Título do Contato">
-            </div>
-            <div class="e448_662"></div>
-            <div class="e448_663"></div>
-        </div>
-
-        <div class=e448_689>
-            <div class="e448_690">
-                <input type="email" class="e448_690" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Título do Contato">
-            </div>
-            <div class="e448_692"></div>
-            <div class="e448_693"></div>
-        </div>
-
-        <div class=e448_666>
-            <div class="e448_667">
-                <input type="email" class="e448_667" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Contato">
-            </div>
-            <div class="e448_669"></div>
-            <div class="e448_670"></div>
-        </div>
-
-        <div class=e448_696>
-            <div class="e448_697">
-                <input type="email" class="e448_697" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Contato">
-            </div>
-            <div class="e448_700"></div>
-        </div>
-
-        <div class=e413_564>
-            <div class="ei413_564_45_82"></div><span class="ei413_564_45_83">Remover</span>
-        </div>
-
-        <div class=e448_688>
-            <div class="e448_677"></div><span class="e448_678">+</span>
-        </div>
-
-        <div class=e413_617>
-            <div class="ei413_617_89_62">
-                <input type="email" class="ei413_617_89_62" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Título do Contato">
-            </div>
-            <div class="ei413_617_89_92"></div>
-        </div>
-
-        <div class=e413_627>
-            <div class="ei413_627_89_62">
-                <input type="email" class="ei413_627_89_62" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Contato">
-            </div>
-            <div class="ei413_627_89_92"></div>
-        </div>
-
-        <div class=e448_680>
-            <div class="ei448_680_444_698"></div>
-            <div class="ei448_680_444_699">
-                <input type="email" class="ei448_680_444_699" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Contato">
-            </div>
-            <div class="ei448_680_444_700"></div>
-            <div class="ei448_680_444_702"></div>
-        </div>
-
-        <div class=e413_632>
-            <div class="ei413_632_45_82"></div><span class="ei413_632_45_83">Adicionar</span>
-        </div>
-
-        <div class=e618_2299>
-            <div class="e618_2300"></div><span class="e618_2301">Atualizar</span>
-        </div>
-
-        <a href="/home_aluno">
-            <div class=e618_2303>
-                <div class="e618_2304"></div>
-                <div class="e618_2305"></div><span class="e618_2306">Voltar</span>
-            </div>
-        </a>
+    <div id="div-button-voltar" class="row mb-4 mt-4">
+        <button id="button-voltar" type="button" class="system-button system-button-verde col-md-3 col-sm-3">
+            <i class="icon icon-arrow-left2"></i>Voltar
+        </button>
     </div>
-</body>
+    <div class="row">
+        <div id="dados_perfil" class="col-md-5">
+            <form>
+                <div>
+                    <label>Status do Perfil: </label>
+                    <label class="switch">
+                        <input id="input-status-perfil" class="system-input-toggle" type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <label id="text-status-perfil">Ativado</label>
+                </div>
 
-</html>
+                <div>
+                    <label>Currículo:</label>
+                    <div class='input-wrapper'>
+                        <label for='input-curriculo'>
+                            Enviar Currículo(PDF,DOC,DOCX e RTF)
+                        </label>
+                        <input id='input-curriculo' type='file' value='' />
+                        <span id='file-name'></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Telefone: </label>
+                    <input type="text" placeholder="Telefone" class="system-input mb-4">
+                </div>
+
+                <div class="form-group">
+                    <label>Email: </label>
+                    <input type="email" placeholder="Email" class="system-input mb-4">
+                </div>
+
+                <div class="form-group">
+                    <label>Linkedin: </label>
+                    <input type="text" placeholder="Linkedin" class="system-input mb-4">
+                </div>
+
+                <div class="form-group">
+                    <label>Lattes: </label>
+                    <input type="text" placeholder="Lattes" class="system-input mb-4">
+                </div>
+
+                <div class="form-group">
+                    <label>Github: </label>
+                    <input type="text" placeholder="Github" class="system-input mb-4">
+                </div>
+
+                <div class="form-group">
+                    <label>Descrição: </label>
+                    <textarea id="div-descricao" placeholder="Descrição" class="system-input mb-4"></textarea>
+                </div>
+
+            </form>
+        </div>
+        <div class="system-d-sm-none col-md-1">
+            <div class="vl"></div>
+        </div>
+        <div id="dados_contatos" class="col-md-5">
+            <div>
+                <h6>Outros contatos</h6>
+                <div id="contatos" class="mb-4">
+                    @for($i = 0; $i < 3; $i++)
+                        <div class="div-contato">
+                            <label class="col-md-3 col-sm-12" >Facebook</label>
+                            <label class="col-md-8 col-sm-12" >http://linkface.com</label>
+                        </div>
+                        <hr class="d-sm-flex d-md-none d-lg-none"/>
+                    @endfor
+                    <div id="div-acoes-contato" class="mt-2">
+                        <button class="system-button system-button-vermelho">Remover</button>
+                        <button id="button-adicionar" class="system-button"><i class="icon icon-plus"></i></button>
+                    </div>
+
+                </div>
+                <hr/>
+                <div>
+                    <form class="row">
+                        <div class="div-input col-md-4 col-sm-12">
+                            <select class="system-input">
+                                <option value="">Tipo</option>
+                                <option value="link">Link</option>
+                                <option value="telefone">Telefone</option>
+                                <option value="email">Email</option>
+                            </select>
+                        </div>
+
+                        <div class="div-input col-md-8 com-sm-12">
+                            <input class="system-input" type="text" placeholder="TÍTULO CONTATO">
+                        </div>
+
+                        <diV class="div-input col-md-12 mt-4">
+                            <input class="col-md-12 system-input" type="text" placeholder="Contato" />
+                        </diV>
+
+                        <button type="submit" class="system-button system-button-verde mt-4">Adicionar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <button id="button-atualizar" type="submit" class="system-button system-button-verde">Atualizar</button>
+
+    </div>
+
+    <script>
+        var fileInput = document.getElementById('input-curriculo');
+        var fileNameLabel = document.getElementById('file-name');
+
+        var inputStatusPerfil = document.getElementById('input-status-perfil');
+        var textStatusPerfil = document.getElementById('text-status-perfil');
+
+        fileInput.addEventListener('input', (event) => {
+            console.log(event.target);
+            console.log(event.target.value);
+            let filename = "Arquivo adicionado";
+            let regexFileName = /\\([^\\]*\..*)/.exec(event.target.value);
+            if (regexFileName.length >= 1) {
+                filename = regexFileName[1]
+            }
+            fileNameLabel.textContent = filename;
+        });
+
+        textStatusPerfil.textContent = "Ativado"
+        inputStatusPerfil.addEventListener('change', (event) => {
+            if (textStatusPerfil.textContent === "Ativado") {
+                textStatusPerfil.textContent = "Desativado";
+            } else {
+                textStatusPerfil.textContent = "Ativado"
+            }
+        })
+
+    </script>
+@endsection
