@@ -4,12 +4,11 @@
         top: 0px;
         background-color: #EAE8E8;
         width: 100%;
-        padding: 10px;
     }
     .div-header img {
-        margin-left: 20px;
         height: 40px;
         width: auto;
+        margin: 10px;
     }
 </style>
 

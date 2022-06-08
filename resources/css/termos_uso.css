@@ -57,3 +57,12 @@ body {
 .page-content button {
     margin-top: 20px;
 }
+
+@media (max-width: 425px) {
+    .div-main {
+        padding: 10px;
+    }
+    .page-content {
+        margin: 10px;
+    }
+}

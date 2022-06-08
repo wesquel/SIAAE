@@ -1,0 +1,43 @@
+#button-voltar {
+    margin-right: 20px;
+}
+
+#div-lista-vagas {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#div-lista-vagas table {
+    padding: 40px;
+}
+
+thead {
+    font-weight: bolder;
+    border-bottom: 1px solid var(--cor-grafite);
+    color: #444444;
+}
+
+tbody {
+    color: var(--cor-grafite);
+}
+
+.system-icon-circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.system-icon-circle.aceito {
+    background-color: var(--cor-verde);
+}
+
+.system-icon-circle.recusado {
+    background-color: var(--cor-vermelho);
+}
+
+.system-icon-circle.em-analise {
+    background-color: #D0B93C;
+}
+

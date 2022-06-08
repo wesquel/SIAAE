@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use PHPUnit\TextUI\XmlConfiguration\Group;
 use App\Http\Controllers\siaae\ControllerAluno;
-use App\Http\Controllers\testeController;
+use App\Http\Controllers\siaae\ControllerEmpresa;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,17 +19,21 @@ use App\Http\Controllers\testeController;
 //Rota página principal (Sobre)
 
 //Rotas do fluxo do aluno
+Route::get('/login_empresa', [ControllerEmpresa::class, 'login_empresa'])->name('login_empresa');
+
+Route::get('/home_empresa', [ControllerEmpresa::class, 'home_empresa'])->name('home_empresa');
+
 Route::get('/login_aluno', [ControllerAluno::class, 'login_aluno']);
 
 Route::get('/termos_uso', [ControllerAluno::class, 'termos_uso']);
 
 Route::get('/home_aluno', [ControllerAluno::class, 'home_aluno'])->name('home-aluno');
 
-Route::get('/configuracoes', [ControllerAluno::class, 'configuracoes']);
+Route::get('/configuracoes', [ControllerAluno::class, 'configuracoes'])->name('configuracoes');
 
 Route::get('/candidaturas', [ControllerAluno::class, 'candidaturas'])->name('candidaturas');
 
-Route::get('/vagas', [ControllerAluno::class, 'vagas']);
+Route::get('/vagas', [ControllerAluno::class, 'vagas'])->name('lista-vagas');
 
 Route::get('/vaga_estagio', [ControllerAluno::class, 'vaga_estagio']);
 

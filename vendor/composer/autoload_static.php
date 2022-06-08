@@ -530,7 +530,7 @@ class ComposerStaticInit496b045086a37e339b895bb7eb749496
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Models\\Aluno' => __DIR__ . '/../..' . '/app/Models/Aluno.php',
-        'App\\Models\\Contatos' => __DIR__ . '/../..' . '/app/Models/Contatos.php',
+        'App\\Models\\Contato' => __DIR__ . '/../..' . '/app/Models/Contato.php',
         'App\\Models\\Empresa' => __DIR__ . '/../..' . '/app/Models/Empresa.php',
         'App\\Models\\Endereco' => __DIR__ . '/../..' . '/app/Models/Endereco.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',

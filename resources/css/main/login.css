@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'Futura-medium';
-    src: url("../assets/fonts/futura.otf");
-    font-display: swap;
-}
-
 body, html {
     height: 100%;
     margin: 0px;
@@ -11,7 +5,7 @@ body, html {
 }
 
 .div-main {
-    background-image:url('../assets/images/fundo_login.png');
+    background-image:url('../../assets/images/fundo_login.png');
     background-repeat:no-repeat;
     background-size:cover;
     background-position: center;
@@ -34,18 +28,22 @@ body, html {
     border-radius: 16px;
 }
 
+.div-form-login form {
+    align-items: center;
+}
+
 .div-form-login img {
     width: 60%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    margin-top: 30px;
+    margin: 30px auto;
 }
 
 .div-form-login input {
-    margin-bottom: 20px;
     height: 50px;
+    width: 100%;
+    margin: 10px auto;
+    background-color: var(--cor--cinza);
+    border: 1px solid var(--cor--cinza);
 }
 
 .div-form-login a {
@@ -65,14 +63,14 @@ body, html {
     .div-form-login {
         width: 70%;
         font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 @media (max-width: 320px) {
     .div-form-login {
         width: 90%;
+        margin: 10px;
     }
 }
-
-
-
