@@ -3,8 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use PHPUnit\TextUI\XmlConfiguration\Group;
 use App\Http\Controllers\siaae\ControllerAluno;
-use App\Http\Controllers\siaae\ControllerEmpresa;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes

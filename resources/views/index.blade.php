@@ -16,21 +16,21 @@
             <a class="btn-no-styled" href="#sobre">Sobre</a>
             <a class="btn-no-styled" href="#como-funciona">Como Funciona</a>
             <a class="btn-no-styled" href="#funcionalidades">Funcionalidades</a>
-            <button type="button" href="#contato" class="btn btn-primary color-styled" href="">Entre em contato</button>
+            <a href="#contatos"><button type="button" class="btn btn-primary color-styled">Entre em contato</button></a>
         </div>
     </div>
 </header>
 <body>
     <div class="page-1 centralize w-75">
         <div class="area-img-1">
-            <img class="img-1" src="images/menina_1.png">
+            <img class="img-1" src={{asset('/images/menina_1.png')}}>
         </div>
         <div class="area-button-logo">
             <div class="box-btn">
-                <img class="img-2" src="images/logo-bloco.png">
+                <img class="img-2" src={{asset('/images/logo-bloco.png')}}>
                 <div class="area-btn">
-                    <button type="button" class="btn btn-primary floatLeft color-styled" href="">Sou aluno</button>
-                    <button type="button" class="btn btn-primary floatLeft color-styled" href="">Empresa</button>
+                    <a href="/login_aluno"><button type="button" class="btn btn-primary floatLeft color-styled" href="">Sou aluno</button></a>
+                    <a href="/login_empresa"><button type="button" class="btn btn-primary floatLeft color-styled" href="">Empresa</button></a>
                 </div>
             </div>
         </div>
@@ -58,23 +58,23 @@
                 <h3 class="empresa-title">Empresa</h3>
                 <div class="passos-empresa format-passos col">
                     <div class="item-passo">
-                        <img class="icon align-item" src="images/icon/icon-empresa-1.svg" alt="">
+                        <img class="icon align-item" src="{{asset('images/icon/icon-empresa-1.svg')}}" alt="">
                         <p>1- Entre usando seu login e senha do SUAP</p>
                     </div>
                     <div class="item-passo">
-                        <img class="icon align-item" src="images/icon/icon-empresa-2.svg" alt="">
+                        <img class="icon align-item" src="{{asset('images/icon/icon-empresa-2.svg')}}" alt="">
                         <p>2- Crie uma nova vaga através da opção "Criar nova vaga" no menu lateral, preenchendo os campos requisitados, e prossiga clicando em "Confirmar", e por fim, em "Finalizar"</p>
                     </div>
                     <div class="item-passo">
-                        <img class="icon align-item" src="images/icon/icon-empresa-3.svg" alt="">
+                        <img class="icon align-item" src="{{asset('images/icon/icon-empresa-3.svg')}}" alt="">
                         <p>3- Acompanhe suas publicações de vagas através da opção "Lista de vagas" no menu lateral;</p>
                     </div>
                     <div class="item-passo">
-                        <img class="icon align-item" src="images/icon/icon-empresa-4.svg" alt="">
+                        <img class="icon align-item" src="{{asset('images/icon/icon-empresa-4.svg')}}" alt="">
                         <p>4- Visualize os candidatos às vagas, clicando em "Candidatos";</p>
                     </div>
                     <div class="item-passo">
-                        <img class="icon align-item" src="images/icon/icon-empresa-5.svg" alt="">
+                        <img class="icon align-item" src="{{asset('images/icon/icon-empresa-5.svg')}}" alt="">
                         <p>5- Escolha os candidatos que mais se adequa à sua publicação, a atualizar seus status de acordo com sua opção.
                         </p>
                     </div>
@@ -83,23 +83,23 @@
                 <h3 class="aluno-title">Aluno</h3>
                 <div class="passos-aluno format-passos col">
                     <div class="item-passo">
-                        <img class="icon align-item" src="images/icon/icon-aluno-1.svg" alt="">
+                        <img class="icon align-item" src="{{asset('images/icon/icon-aluno-1.svg')}}" alt="">
                         <p>1- Entre usando seu login e senha do SUAP</p>
                     </div>
                     <div class="item-passo">
-                        <img class="icon align-item" src="images/icon/icon-aluno-2.svg" alt="">
+                        <img class="icon align-item" src="{{asset('images/icon/icon-aluno-2.svg')}}" alt="">
                         <p>2- Busque vagas através da opção "Cadastre-se à vagas" no menu lateral</p>
                     </div>
                     <div class="item-passo">
-                        <img class="icon align-item" src="images/icon/icon-aluno-3.svg" alt="">
+                        <img class="icon align-item" src="{{asset('images/icon/icon-aluno-3.svg')}}" alt="">
                         <p>3-Escolha uma das ofertas e clique em "Saiba mais"</p>
                     </div>
                     <div class="item-passo">
-                        <img class="icon align-item" src="images/icon/icon-aluno-4.svg" alt="">
+                        <img class="icon align-item" src="{{asset('images/icon/icon-aluno-4.svg')}}" alt="">
                         <p>4- Após ter acesso aos detalhes da vaga, clique em  "Candidatar-se"</p>
                     </div>
                     <div class="item-passo">
-                        <img class="icon align-item" src="images/icon/icon-aluno-5.svg" alt="">
+                        <img class="icon align-item" src="{{asset('images/icon/icon-aluno-5.svg')}}" alt="">
                         <p>5- Acompanhe o status da sua candidatura através da opção "Lista de vagas" no menu lateral</p>
                     </div>
                 </div>
@@ -108,36 +108,36 @@
             <div id="funcionalidades" class="area-funcionalidades">
                 <div class="funcionalidade-col-1 col">
                     <div class="item-funcionalidade">
-                        <img class="check-icon" src="images/icon/check_icon.svg" alt="">
+                        <img class="check-icon" src="{{asset('images/icon/check_icon.svg')}}" alt="">
                         <span>Divulgação de vagas de projetos, estágios e trabalho sem intermediários;</span>
                     </div>
                     <div class="item-funcionalidade">
-                        <img class="check-icon" src="images/icon/check_icon.svg" alt="">
+                        <img class="check-icon" src="{{asset('images/icon/check_icon.svg')}}" alt="">
                         <span>Listagem de candidatos para seleção de vagas através do sistema;</span>
                     </div>
                     <div class="item-funcionalidade">
-                        <img class="check-icon" src="images/icon/check_icon.svg" alt="">
+                        <img class="check-icon" src="{{asset('images/icon/check_icon.svg')}}" alt="">
                         <span>Alcance direto a atualizações sobre a disponibilidade ou não da vaga;</span>
                     </div>
                     <div class="item-funcionalidade">
-                        <img class="check-icon" src="images/icon/check_icon.svg" alt="">
+                        <img class="check-icon" src="{{asset('images/icon/check_icon.svg')}}" alt="">
                         <span>Mecanismos inteligentes de filtragem de candidatos com base em metadados (e.g., formação, localidade, idade);</span>
                     </div>
                     <div class="item-funcionalidade">
-                        <img class="check-icon" src="images/icon/check_icon.svg" alt="">
+                        <img class="check-icon" src="{{asset('images/icon/check_icon.svg')}}" alt="">
                         <span>Vagas disponibilizadas com direcionamento aos alunos dos Institutos Federais;</span>
                     </div>
                     <div class="item-funcionalidade">
-                        <img class="check-icon" src="images/icon/check_icon.svg" alt="">
+                        <img class="check-icon" src="{{asset('images/icon/check_icon.svg')}}" alt="">
                         <span>Centralização e melhor organização da lista de disponibilidades;</span>
                     </div>
                     <div class="item-funcionalidade">
-                        <img class="check-icon" src="images/icon/check_icon.svg" alt="">
+                        <img class="check-icon" src="{{asset('images/icon/check_icon.svg')}}" alt="">
                         <span>Geração de dados e indicadores para gestão da prática profissional (i.e. aprendizagem e estágio);</span>
                     </div>
                 </div>
                 <div class="col centralize image-area-2">
-                    <img class="image-2" src="images/menina_2.png" alt="">
+                    <img class="image-2" src="{{asset('images/menina_2.png')}}" alt="">
                 </div>
             </div>
         </div>
@@ -171,7 +171,7 @@
             </div>
         </div>
     </div>
-    <div id="contato" class="page-4">
+    <div id="contatos" class="page-4">
         <div class="big-bar-background"><span class="big-bar-text">ENTRE EM CONTATO</span></div>
         <div class="form-area">
             <form class="contato-form w-50">
@@ -192,7 +192,7 @@
                 <button type="submit" class="btn btn-light">Enviar mensagem</button>
             </form>
             <div class="area-logo-white">
-                <img class="mini-logo-white" src="images/SIAAE_MINI_LOGO_WHITE.png">
+                <img class="mini-logo-white" src="{{asset('images/SIAAE_MINI_LOGO_WHITE.png')}}">
             </div>
         </div>
     </div>
