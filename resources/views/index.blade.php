@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset='utf-8'>
     <title>SIAAE - Sistema Integrado de Apoio a Aprendizagem e Estágios</title>
@@ -10,7 +10,7 @@
 <header>
     <div class="nav-bar">
         <div class="area-logo">
-            <img class="logo-img" alt="SIAAE - Sistema Integrado de Apoio a Aprendizagem e Estágios" src="images/logo-reta.png">
+            <a href="/"><img class="logo-img" alt="SIAAE - Sistema Integrado de Apoio a Aprendizagem e Estágios" src="{{asset('images/logo-reta.png')}}"></a>
         </div>
         <div class="area-menu">
             <a class="btn-no-styled" href="#sobre">Sobre</a>
@@ -23,11 +23,11 @@
 <body>
     <div class="page-1 centralize w-75">
         <div class="area-img-1">
-            <img class="img-1" src={{asset('/images/menina_1.png')}}>
+            <img class="img-1" alt="" src={{asset('/images/menina_1.png')}}>
         </div>
         <div class="area-button-logo">
             <div class="box-btn">
-                <img class="img-2" src={{asset('/images/logo-bloco.png')}}>
+                <img class="img-2" alt="" src={{asset('/images/logo-bloco.png')}}>
                 <div class="area-btn">
                     <a href="/login_aluno"><button type="button" class="btn btn-primary floatLeft color-styled" href="">Sou aluno</button></a>
                     <a href="/login_empresa"><button type="button" class="btn btn-primary floatLeft color-styled" href="">Empresa</button></a>
@@ -192,7 +192,7 @@
                 <button type="submit" class="btn btn-light">Enviar mensagem</button>
             </form>
             <div class="area-logo-white">
-                <img class="mini-logo-white" src="{{asset('images/SIAAE_MINI_LOGO_WHITE.png')}}">
+                <img class="mini-logo-white" alt="" src="{{asset('images/SIAAE_MINI_LOGO_WHITE.png')}}">
             </div>
         </div>
     </div>

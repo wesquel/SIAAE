@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use VagasAlunosEmpresa;
 
 class Vaga extends Model
 {
@@ -13,5 +14,10 @@ class Vaga extends Model
 
         return $this->belongsTo(Empresa::class);
 
+    }
+
+    public function vagasAlunosEmpresa()
+    {
+        return $this->hasMany(VagasAlunosEmpresa::class);
     }
 }
