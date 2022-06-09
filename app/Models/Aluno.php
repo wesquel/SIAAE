@@ -17,4 +17,9 @@ class Aluno extends Model
 
     }
 
+    public function vagasAlunosEmpresa()
+    {
+        return $this->hasMany(VagasAlunosEmpresa::class);
+    }
+
 }
