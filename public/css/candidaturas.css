@@ -1,0 +1,64 @@
+h4 {
+    margin: 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.title-page-content {
+    margin-left: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+#button-voltar {
+    margin-right: 60px;
+}
+
+#button-voltar i {
+    margin-right: 10px;
+    max-width: 100%;
+}
+
+.page-content {
+    padding: 50px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#div-page-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+#div-titulo {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+}
+
+#div-dados-empresa {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+}
+
+
+@media (max-width: 425px) {
+    h4 {
+        margin: 0px;
+    }
+
+    #button-voltar {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin-right: 10px;
+    }
+
+    #div-page-content {
+        padding: 20px;
+    }
+}
+

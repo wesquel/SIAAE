@@ -1,0 +1,18 @@
+.div-form-login {
+    background-color: var(--cor-verde);
+}
+
+.div-form-login input {
+    color: var(--cor-verde);
+}
+
+#div-button {
+    display: flex;
+    justify-content: center;
+}
+
+#div-button button {
+    padding: 10px 20px;
+    width: fit-content;
+    margin: 5px;
+}
