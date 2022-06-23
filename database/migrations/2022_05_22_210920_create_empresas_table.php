@@ -14,13 +14,15 @@ class CreateEmpresasTable extends Migration
     public function up()
     {
         Schema::create('empresas', function (Blueprint $table) {
-            $table->id('id');
-            $table->string('password');
-            $table->string('email')->unique();
+            $table->id('id');//alterar
             $table->string('nome_empresa')->unique();
-            $table->date('DATE_FIRST_ACCESS');
-            $table->string('image')->nullable();
-            $table->boolean('termos');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->date('DATE_FIRST_ACCESS')->nullable();//alterar
+            $table->string('image')->nullable();//alterar
+            $table->boolean('termos')->nullable();//alterar
+            $table->rememberToken();
+            $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();
         });
     }

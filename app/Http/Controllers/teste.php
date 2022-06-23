@@ -12,7 +12,7 @@ class teste extends Controller
 {
     //
     public function index(){
-
+        print "Hello world!";
         return view('index');
     }
 }

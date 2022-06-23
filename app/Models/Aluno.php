@@ -3,13 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Aluno extends Model
+class Aluno extends Authenticatable
 {
 
     use HasFactory;
-
 
     public function outros_contatos(){
 
