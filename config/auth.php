@@ -14,8 +14,8 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
-        'passwords' => 'users',
+        'guard' => 'empresa',
+        'passwords' => 'empresas',
     ],
 
     /*
@@ -36,14 +36,14 @@ return [
     */
 
     'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'users',
-        ],
-
         'empresa' => [
             'driver' => 'session',
             'provider' => 'empresas',
+        ],
+
+        'aluno' => [
+            'driver' => 'session',
+            'provider' => 'alunos',
         ],
     ],
 
@@ -65,14 +65,14 @@ return [
     */
 
     'providers' => [
-        'users' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\Empresa::class,
-        ],
-
         'empresas' => [
             'driver' => 'eloquent',
-            'model' => App\Models\Empresa::class,
+            'model' => \App\Models\Empresa::class,
+        ],
+
+        'alunos' => [
+            'driver' => 'eloquent',
+            'model' => \App\Models\Aluno::class,
         ],
 
         // 'users' => [
@@ -97,16 +97,9 @@ return [
     */
 
     'passwords' => [
-        'users' => [
-            'provider' => 'users',
-            'table' => 'password_resets',
-            'expire' => 60,
-            'throttle' => 60,
-        ],
-
         'empresas' => [
             'provider' => 'empresas',
-            'table' => 'password_resets',
+            'table' => 'password',
             'expire' => 60,
             'throttle' => 60,
         ],

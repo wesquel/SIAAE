@@ -20,22 +20,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/login-empresa', [loginEmpresaController::class, 'create']);
 Route::post('/login-empresa', [loginEmpresaController::class, 'store'])->name('login.empresa');
-
+Route::get('logout-empresa', [loginEmpresaController::class, 'destroy'])
+    ->name('logout');
 
 Route::get('/registro-empresa',[registroEmpresaController::class,'create']);
 Route::post('/registro-empresa',[registroEmpresaController::class,'store'])->name('registro.empresa');
-
-
-
-
-
 Route::get('/login_aluno', [ControllerAluno::class, 'login_aluno']);
 Route::post('/login_aluno', [AuthenticatedSessionController::class, 'store']);
 Route::get('/termos_uso', [ControllerAluno::class, 'termos_uso']);
 Route::get('/', function () {return view('index');})->name('index');
 
 
-Route::group(['middleware' => 'auth'], function(){
+Route::group(['middleware' => 'auth:empresa'], function(){
     Route::get('/home_aluno', [ControllerAluno::class, 'home_aluno'])->name('home-aluno');
     Route::get('/home_empresa', [ControllerEmpresa::class, 'home_empresa'])->name('home_empresa');
     Route::get('/configuracoes', [ControllerAluno::class, 'configuracoes'])->name('configuracoes');

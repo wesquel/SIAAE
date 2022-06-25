@@ -33,20 +33,10 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
-
-        echo '<script>console.log("Your stuff here")</script>';
-
         $request->validate([
-            'nome_empresa' => ['bail','required', 'string', 'max:255', 'unique:users'],
-            'nome_responsavel' => ['required', 'string', 'max:255'],
-            'cpf_cnpj' => ['required', 'string', 'max:255', 'unique:users'],
-            'telefone' => ['required', 'string', 'phone','max:255'],
+            'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
-            'cep' => ['required', 'string', 'max:255'],
-            'cidade' => ['required', 'string', 'max:255'],
-            'bairro' => ['required', 'string', 'max:255'],
-            'numero' => ['required', 'number', 'max:255'],
         ]);
 
         $user = User::create([

@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 
 class loginEmpresaController extends Controller
 {
+
     public function create()
     {
         return view('empresa.login');
@@ -18,17 +19,22 @@ class loginEmpresaController extends Controller
 
     public function store(LoginRequest $request)
     {
-        $request->authenticate();
+        $this->validate($request, [
+            'CPF_CNPJ'   => 'required|min:10',
+            'password' => 'required|min:6'
+        ]);
 
-        $request->session()->regenerate();
+        if (Auth::guard('empresa')->attempt(['CPF_CNPJ' => $request->CPF_CNPJ, 'password' => $request->password], $request->get('remember'))) {
 
-        return redirect()->intended('/home_empresa');
+            return redirect()->intended('/home_empresa');
+        }
+        return back()->withInput($request->only('CPF_CNPJ', 'remember'));
     }
 
 
     public function destroy(Request $request)
     {
-        Auth::guard('web')->logout();
+        Auth::guard('empresa')->logout();
 
         $request->session()->invalidate();
 

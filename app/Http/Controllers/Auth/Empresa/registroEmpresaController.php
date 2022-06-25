@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Auth\Empresa;
 use App\Http\Controllers\Controller;
 use App\Models\Empresa;
 use App\Models\Endereco;
-use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
@@ -22,6 +21,7 @@ class registroEmpresaController extends Controller
     public function store(Request $request)
     {
         $request->validate([
+            'CPF_CNPJ' => ['bail','required', 'string', 'max:255', 'unique:empresas'],
             'nome_empresa' => ['bail','required', 'string', 'max:255', 'unique:empresas'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:empresas'],
             'password' => ['required', 'confirmed', 'min:8'],
@@ -33,6 +33,7 @@ class registroEmpresaController extends Controller
         ]);
 
         $empresa = Empresa::create([
+            'CPF_CNPJ' => $request->CPF_CNPJ,
             'nome_empresa' => $request->nome_empresa,
             'email' => $request->email,
             'password' => Hash::make($request->password),

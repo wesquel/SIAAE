@@ -9,7 +9,10 @@ class Empresa extends Authenticatable
 {
     use HasFactory;
 
+    protected $guard = 'empresa';
+
     protected $fillable = [
+        'CPF_CNPJ',
         'nome_empresa',
         'email',
         'password',

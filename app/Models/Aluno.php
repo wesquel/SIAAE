@@ -10,6 +10,8 @@ class Aluno extends Authenticatable
 
     use HasFactory;
 
+    protected $guard = 'aluno';
+
     public function outros_contatos(){
 
         return $this->hasMany(Outros_contatos::class);
