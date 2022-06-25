@@ -14,7 +14,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
+        'guard' => 'empresa',
         'passwords' => 'empresas',
     ],
 
@@ -97,9 +97,9 @@ return [
     */
 
     'passwords' => [
-        'users' => [
-            'provider' => 'users',
-            'table' => 'password_resets',
+        'empresas' => [
+            'provider' => 'empresas',
+            'table' => 'password',
             'expire' => 60,
             'throttle' => 60,
         ],

@@ -22,15 +22,15 @@ class loginEmpresaController extends Controller
     {
 
         $this->validate($request, [
-            'email'   => 'required|email',
+            'CPF_CNPJ'   => 'required|min:10',
             'password' => 'required|min:6'
         ]);
 
-        if (Auth::guard('empresa')->attempt(['email' => $request->CPF_CNPJ, 'password' => $request->password], $request->get('remember'))) {
+        if (Auth::guard('empresa')->attempt(['CPF_CNPJ' => $request->CPF_CNPJ, 'password' => $request->password], $request->get('remember'))) {
 
             return redirect()->intended('/home_empresa');
         }
-        return back()->withInput($request->only('email', 'remember'));
+        return back()->withInput($request->only('CPF_CNPJ', 'remember'));
     }
 
 

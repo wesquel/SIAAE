@@ -12,6 +12,7 @@ class Empresa extends Authenticatable
     protected $guard = 'empresa';
 
     protected $fillable = [
+        'CPF_CNPJ',
         'nome_empresa',
         'email',
         'password',
