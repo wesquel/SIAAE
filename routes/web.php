@@ -25,9 +25,6 @@ Route::get('logout-empresa', [loginEmpresaController::class, 'destroy'])
 
 Route::get('/registro-empresa',[registroEmpresaController::class,'create']);
 Route::post('/registro-empresa',[registroEmpresaController::class,'store'])->name('registro.empresa');
-
-
-
 Route::get('/login_aluno', [ControllerAluno::class, 'login_aluno']);
 Route::post('/login_aluno', [AuthenticatedSessionController::class, 'store']);
 Route::get('/termos_uso', [ControllerAluno::class, 'termos_uso']);

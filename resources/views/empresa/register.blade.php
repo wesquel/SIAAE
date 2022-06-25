@@ -24,7 +24,6 @@
 
                 <x-input id="CPF_CNPJ" class="block mt-1 w-full" type="text" name="CPF_CNPJ" required />
             </div>
-
             <div>
                 <x-label for="cep" :value="__('cep')" />
 

@@ -14,6 +14,7 @@ class CreateEmpresasTable extends Migration
     public function up()
     {
         Schema::create('empresas', function (Blueprint $table) {
+          
             $table->id();//alterar
             $table->string('CPF_CNPJ')->unique();
             $table->string('nome_empresa')->unique();

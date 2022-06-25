@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Auth;
 class loginEmpresaController extends Controller
 {
 
-
     public function create()
     {
         return view('empresa.login');
@@ -20,7 +19,6 @@ class loginEmpresaController extends Controller
 
     public function store(LoginRequest $request)
     {
-
         $this->validate($request, [
             'CPF_CNPJ'   => 'required|min:10',
             'password' => 'required|min:6'
