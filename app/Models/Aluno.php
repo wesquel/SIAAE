@@ -10,6 +10,7 @@ class Aluno extends Model
 
     use HasFactory;
 
+    protected $guard = 'aluno';
 
     public function outros_contatos(){
 

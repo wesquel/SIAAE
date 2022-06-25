@@ -15,7 +15,7 @@ return [
 
     'defaults' => [
         'guard' => 'web',
-        'passwords' => 'users',
+        'passwords' => 'empresas',
     ],
 
     /*
@@ -36,9 +36,14 @@ return [
     */
 
     'guards' => [
-        'web' => [
+        'empresa' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'empresas',
+        ],
+
+        'aluno' => [
+            'driver' => 'session',
+            'provider' => 'alunos',
         ],
     ],
 
@@ -60,9 +65,14 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        'empresas' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => \App\Models\Empresa::class,
+        ],
+
+        'alunos' => [
+            'driver' => 'eloquent',
+            'model' => \App\Models\Aluno::class,
         ],
 
         // 'users' => [
