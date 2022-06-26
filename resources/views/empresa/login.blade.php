@@ -17,8 +17,7 @@
 
             <div id="div-button">
                 <button type="submit" class="system-button system-button-verde-escuro">Entrar</button>
-                <a href="/registro-empresa"><button type="submit" class="system-button system-button-branco">Registrar-se</button></a>
-
+                <a href="/empresa/registro" class="system-button-branco">Registrar-se</a>
             </div>
         </form>
     </div>
