@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Session;
 class loginEmpresaController extends Controller
 {
 
-
     public function create()
     {
         if (Auth::user() != null){
@@ -24,7 +23,6 @@ class loginEmpresaController extends Controller
 
     public function store(LoginRequest $request)
     {
-
         $this->validate($request, [
             'CPF_CNPJ'   => 'required|min:10',
             'password' => 'required|min:6'
