@@ -31,7 +31,6 @@ class loginEmpresaController extends Controller
         ]);
 
         if (Auth::guard('empresa')->attempt(['matricula' => $request->matricula, 'password' => $request->password], $request->get('remember'))) {
-
             return redirect()->intended('/aluno/home');
         }
         return back()->withInput($request->only('matricula', 'remember'));

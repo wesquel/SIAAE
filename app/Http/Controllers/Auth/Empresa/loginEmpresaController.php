@@ -29,7 +29,6 @@ class loginEmpresaController extends Controller
         ]);
 
         if (Auth::guard('empresa')->attempt(['CPF_CNPJ' => $request->CPF_CNPJ, 'password' => $request->password], $request->get('remember'))) {
-
             return redirect()->intended('/empresa/home');
         }
         return back()->withInput($request->only('CPF_CNPJ', 'remember'));
@@ -40,7 +39,7 @@ class loginEmpresaController extends Controller
     {
 
         if (Auth::user() == null){
-            return redirect('/empresa/login');
+            return view('empresa.login');
         }
 
         Auth::guard('empresa')->logout();
@@ -51,4 +50,5 @@ class loginEmpresaController extends Controller
 
         return redirect('/');
     }
+
 }

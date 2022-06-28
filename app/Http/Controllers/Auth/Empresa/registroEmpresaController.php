@@ -57,6 +57,7 @@ class registroEmpresaController extends Controller
 
         Auth::login($empresa);
 
-        return redirect('/registro-empresa')->with('success', "Registrado com Sucesso");
+        return redirect('/registro-empresa')->with('success', "Registrado com Sucesso!");
     }
+
 }

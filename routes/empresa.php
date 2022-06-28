@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/empresa/login', [loginEmpresaController::class, 'create']);
 Route::post('/empresa/login', [loginEmpresaController::class, 'store'])->name('login.empresa');
-
 Route::get('/empresa/registro',[registroEmpresaController::class,'create']);
 Route::post('/empresa/registro',[registroEmpresaController::class,'store'])->name('registro.empresa');
 
