@@ -11,15 +11,14 @@
 
         <form method="POST" action="{{ route('login.empresa') }}" class="flex-column">
             @csrf
-            <input id="CPF_CNPJ" name="CPF_CNPJ" type="text" class="form-control" placeholder="CPF_CNPJ">
+            <input id="CPF_CNPJ" name="CPF_CNPJ" type="text" class="form-control" placeholder="CPF/CNPJ">
 
             <input id="password" name="password" type="password" class="form-control" aria-describedby="emailHelp" placeholder="Senha">
 
             <div id="div-button">
                 <button type="submit" class="system-button system-button-verde-escuro">Entrar</button>
-                <a href="/registro-empresa"><button type="submit" class="system-button system-button-branco">Registrar-se</button></a>
-
             </div>
         </form>
+        <a href="/empresa/registro" class="system-button system-button-branco">Registrar-se</a>
     </div>
 @endsection

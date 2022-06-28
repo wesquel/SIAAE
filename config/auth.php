@@ -74,11 +74,6 @@ return [
             'driver' => 'eloquent',
             'model' => \App\Models\Aluno::class,
         ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
     ],
 
     /*
@@ -99,6 +94,13 @@ return [
     'passwords' => [
         'empresas' => [
             'provider' => 'empresas',
+            'table' => 'password',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+
+        'alunos' => [
+            'provider' => 'alunos',
             'table' => 'password',
             'expire' => 60,
             'throttle' => 60,

@@ -12,26 +12,28 @@ use Illuminate\Support\Facades\Session;
 class loginEmpresaController extends Controller
 {
 
+
     public function create()
     {
         if (Auth::user() != null){
-            return redirect('/empresa/home');
+            return redirect('/aluno/home');
         }
-        return view('empresa.login');
+        return view('aluno.login');
     }
 
 
     public function store(LoginRequest $request)
     {
+
         $this->validate($request, [
-            'CPF_CNPJ'   => 'required|min:10',
+            'matricula'   => 'required|min:10',
             'password' => 'required|min:6'
         ]);
 
-        if (Auth::guard('empresa')->attempt(['CPF_CNPJ' => $request->CPF_CNPJ, 'password' => $request->password], $request->get('remember'))) {
-            return redirect()->intended('/empresa/home');
+        if (Auth::guard('empresa')->attempt(['matricula' => $request->matricula, 'password' => $request->password], $request->get('remember'))) {
+            return redirect()->intended('/aluno/home');
         }
-        return back()->withInput($request->only('CPF_CNPJ', 'remember'));
+        return back()->withInput($request->only('matricula', 'remember'));
     }
 
 
@@ -39,10 +41,10 @@ class loginEmpresaController extends Controller
     {
 
         if (Auth::user() == null){
-            return view('empresa.login');
+            return redirect('/aluno/login');
         }
 
-        Auth::guard('empresa')->logout();
+        Auth::guard('aluno')->logout();
 
         $request->session()->invalidate();
 
@@ -50,5 +52,4 @@ class loginEmpresaController extends Controller
 
         return redirect('/');
     }
-
 }
