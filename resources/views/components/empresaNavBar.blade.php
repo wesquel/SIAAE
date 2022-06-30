@@ -74,7 +74,7 @@
         <span style="align-self: center">Bem vindo, {{ Auth::user()->nome_empresa ?? 'Fulaninho' }}!</span>
         <a class="nav-link active" href="{{ route('candidaturas') }}"><i class="icon icon-plus"></i>Criar nova vagas</a>
         <a class="nav-link" href="{{ route('lista-vagas') }}"><i class="icon icon-list"></i>LISTA DE VAGAS</a>
-        <a class="nav-link" href="{{ route('configuracoes') }}"><i class="icon icon-cog"></i>CONFIGURAÇÔES</a>
+        <a class="nav-link" href="{{ route('lista-vagas') }}"><i class="icon icon-cog"></i>CONFIGURAÇÔES</a>
     </div>
 </nav>
 

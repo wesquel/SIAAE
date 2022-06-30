@@ -13,9 +13,9 @@
     </div>
     <div class="row">
         <div id="dados_perfil" class="col-md-5">
-            <form>
+            <form method="post" action="{{ route('config.form.aluno') }}">
                 <div>
-                    <label>Status do Perfil: </label>
+                    <label>Status do Perfil: {{Auth::user()->id ?? 'sem id'}}</label>
                     <label class="switch">
                         <input id="input-status-perfil" class="system-input-toggle" type="checkbox" checked>
                         <span class="slider round"></span>
@@ -36,33 +36,35 @@
 
                 <div class="form-group">
                     <label>Telefone: </label>
-                    <input type="text" placeholder="Telefone" class="system-input mb-4">
+                    <input id="telefone" name="telefone"  type="text" placeholder="Telefone" class="system-input mb-4">
                 </div>
 
                 <div class="form-group">
                     <label>Email: </label>
-                    <input type="email" placeholder="Email" class="system-input mb-4">
+                    <input id="email" name="email"  type="email" placeholder="Email" class="system-input mb-4">
                 </div>
 
                 <div class="form-group">
                     <label>Linkedin: </label>
-                    <input type="text" placeholder="Linkedin" class="system-input mb-4">
+                    <input id="linkedin" name="linkedin" type="text" placeholder="Linkedin" class="system-input mb-4">
                 </div>
 
                 <div class="form-group">
                     <label>Lattes: </label>
-                    <input type="text" placeholder="Lattes" class="system-input mb-4">
+                    <input id="lattes" name="lattes" type="text" placeholder="Lattes" class="system-input mb-4">
                 </div>
 
                 <div class="form-group">
                     <label>Github: </label>
-                    <input type="text" placeholder="Github" class="system-input mb-4">
+                    <input id="github" name="github" type="text" placeholder="Github" class="system-input mb-4">
                 </div>
 
                 <div class="form-group">
                     <label>Descrição: </label>
-                    <textarea id="div-descricao" placeholder="Descrição" class="system-input mb-4"></textarea>
+                    <textarea id="desc" name="desc" id="div-descricao" placeholder="Descrição" class="system-input mb-4"></textarea>
                 </div>
+
+                <button id="button-atualizar" type="submit" class="system-button system-button-verde">Atualizar</button>
 
             </form>
         </div>
