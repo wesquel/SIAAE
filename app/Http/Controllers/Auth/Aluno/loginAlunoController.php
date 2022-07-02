@@ -1,16 +1,20 @@
 <?php
 
-namespace App\Http\Controllers\Auth\Empresa;
+namespace App\Http\Controllers\Auth\Aluno;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LoginRequest;
-use App\Providers\RouteServiceProvider;
+use App\Http\Requests\Auth\LoginRequestAluno;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Session;
 
-class loginEmpresaController extends Controller
+class loginAlunoController extends Controller
 {
+
+    public function __construct()
+    {
+        auth()->setDefaultDriver('aluno');
+    }
 
 
     public function create()
@@ -22,17 +26,17 @@ class loginEmpresaController extends Controller
     }
 
 
-    public function store(LoginRequest $request)
+    public function store(LoginRequestAluno $request)
     {
-
         $this->validate($request, [
             'matricula'   => 'required|min:10',
             'password' => 'required|min:6'
         ]);
 
-        if (Auth::guard('empresa')->attempt(['matricula' => $request->matricula, 'password' => $request->password], $request->get('remember'))) {
-            return redirect()->intended('/aluno/home');
+        if (Auth::guard('aluno')->attempt(['matricula' => $request->matricula, 'password' => $request->password], $request->get('remember'))) {
+            return redirect()->intended('/aluno/configuracoes');
         }
+
         return back()->withInput($request->only('matricula', 'remember'));
     }
 

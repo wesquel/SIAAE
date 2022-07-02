@@ -7,16 +7,19 @@
 @section('content')
     <div class="div-form-login">
         <img src="{{asset('images/logo_siaae_cinza.png')}}">
-        @csrf
-        <form class="flex-column" method="POST" action="{{ route('login') }}">
 
-            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Matrícula">
+        <x-auth-session-status class="mb-4" :status="session('status')" />
 
-            <input type="password" class="form-control" aria-describedby="emailHelp" placeholder="Senha">
+        <!-- Validation Errors -->
+        <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
-            <a href="/termos_uso">
-                <button type="submit" class="system-button system-button-vermelho">Entrar</button>
-            </a>
+        <form class="flex-column" method="POST" action="{{ route('login.aluno') }}">
+            @csrf
+            <input id="matricula" name="matricula" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Matrícula">
+
+            <input id="password" name="password" type="password" class="form-control" aria-describedby="emailHelp" placeholder="Senha">
+
+            <button type="submit" class="system-button system-button-vermelho">Entrar</button>
         </form>
     </div>
 @endsection

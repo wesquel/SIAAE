@@ -29,7 +29,7 @@
             <div class="box-btn">
                 <img class="img-2" alt="" src={{asset('/images/logo-bloco.png')}}>
                 <div class="area-btn">
-                    <a href="/login-aluno"><button type="button" class="btn btn-primary floatLeft color-styled" href="">Sou aluno</button></a>
+                    <a href="/aluno/login"><button type="button" class="btn btn-primary floatLeft color-styled" href="">Sou aluno</button></a>
                     <a href="/empresa/login"><button type="button" class="btn btn-primary floatLeft color-styled" href="">Empresa</button></a>
                 </div>
             </div>
