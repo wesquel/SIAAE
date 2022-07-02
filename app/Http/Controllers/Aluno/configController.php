@@ -11,9 +11,10 @@ use Illuminate\Support\Facades\Auth;
 
 class configController extends Controller
 {
-    public function create(){
 
-        return view('aluno.configuracoes');
+
+    public function create(){
+        return view('aluno.configuracoes', ['contatos' => $this->getContatos()]);
     }
 
     public function update(Request $request)
@@ -59,5 +60,10 @@ class configController extends Controller
         return redirect('/aluno/configuracoes')->with('success', "Registrado com Sucesso");
 
     }
+
+    public function getContatos(){
+        return Outros_contatos::where('aluno_id', '=', Auth::user()->id)->get();
+    }
+
 
 }

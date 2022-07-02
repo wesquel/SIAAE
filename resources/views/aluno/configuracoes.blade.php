@@ -60,13 +60,13 @@
             <div>
                 <h6>Outros contatos</h6>
                 <div id="contatos" class="mb-4">
-                    @for($i = 0; $i < 3; $i++)
+                    @foreach($contatos as $contato)
                         <div class="div-contato">
-                            <label class="col-md-3 col-sm-12" >Facebook</label>
-                            <label class="col-md-8 col-sm-12" >http://linkface.com</label>
+                            <label class="col-md-3 col-sm-12" >{{$contato->titulo}}</label>
+                            <input value="{{$contato->link}}" class="col-md-8 col-sm-12" readonly/>
                         </div>
                         <hr class="d-sm-flex d-md-none d-lg-none"/>
-                    @endfor
+                    @endforeach
                     <div id="div-acoes-contato" class="mt-2">
                         <button class="system-button system-button-vermelho">Remover</button>
                         <button id="button-adicionar" class="system-button"><i class="icon icon-plus"></i></button>
