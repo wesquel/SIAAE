@@ -17,6 +17,7 @@ class loginAlunoController extends Controller
         if (Auth::user() != null){
             return redirect('/aluno/home');
         }
+
         return view('aluno.login');
     }
 
@@ -29,7 +30,7 @@ class loginAlunoController extends Controller
         ]);
 
         if (Auth::guard('aluno')->attempt(['matricula' => $request->matricula, 'password' => $request->password], $request->get('remember'))) {
-            return redirect()->intended('/configuracoes');
+            return redirect()->intended('/aluno/configuracoes');
         }
 
         return back()->withInput($request->only('matricula', 'remember'));

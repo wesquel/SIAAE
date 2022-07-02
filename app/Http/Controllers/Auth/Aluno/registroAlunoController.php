@@ -36,6 +36,6 @@ class registroAlunoController extends Controller
 
         Auth::login($aluno);
 
-        return redirect('/registro-empresa')->with('success', "Registrado com Sucesso");
+        return redirect('/aluno/login')->with('success', "Registrado com Sucesso");
     }
 }

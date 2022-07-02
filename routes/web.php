@@ -19,11 +19,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/termos_uso', [ControllerAluno::class, 'termos_uso']);
-Route::get('/', function () {return view('index');})->name('index');
+Route::get('/', function () {return view('index'); });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+
 
 require __DIR__.'/auth.php';
 require __DIR__.'/empresa.php';
