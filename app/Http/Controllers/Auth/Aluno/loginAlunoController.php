@@ -11,13 +11,17 @@ use Illuminate\Support\Facades\Auth;
 class loginAlunoController extends Controller
 {
 
+    public function __construct()
+    {
+        auth()->setDefaultDriver('aluno');
+    }
+
 
     public function create()
     {
         if (Auth::user() != null){
             return redirect('/aluno/home');
         }
-
         return view('aluno.login');
     }
 
