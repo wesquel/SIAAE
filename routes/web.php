@@ -21,10 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/termos_uso', [ControllerAluno::class, 'termos_uso']);
 Route::get('/', function () {return view('index'); });
 
-
 Route::get('/error', function () {return view('errors.404'); });
-
-
 
 require __DIR__.'/auth.php';
 require __DIR__.'/empresa.php';
