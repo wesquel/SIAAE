@@ -16,7 +16,6 @@ class loginAlunoController extends Controller
         auth()->setDefaultDriver('aluno');
     }
 
-
     public function create()
     {
         if (Auth::user() != null){

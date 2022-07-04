@@ -68,13 +68,15 @@
                         <hr class="d-sm-flex d-md-none d-lg-none"/>
                     @endforeach
                     <div id="div-acoes-contato" class="mt-2">
+                        @if($contatos->count() >= 1)
                         <button class="system-button system-button-vermelho">Remover</button>
-                        <button id="button-adicionar" class="system-button"><i class="icon icon-plus"></i></button>
+                        @endif
+                        <button id="button-adicionar" class="system-button"><i id="icon-add" class="icon icon-plus"></i></button>
                     </div>
 
                 </div>
-                <hr/>
-                <div>
+                <div id="show-contatos" style="display:none">
+                    <hr/>
                     <form method="POST" class="row" action="{{ route('config.form.aluno.contato') }}">
                         @csrf
                         <div class="div-input col-md-4 col-sm-12">
@@ -85,15 +87,12 @@
                                 <option value="email">Email</option>
                             </select>
                         </div>
-
                         <div class="div-input col-md-8 com-sm-12">
                             <input name="titulo" class="system-input" type="text" placeholder="TÍTULO CONTATO">
                         </div>
-
                         <diV class="div-input col-md-12 mt-4">
                             <input name="link" class="col-md-12 system-input" type="text" placeholder="Contato" />
                         </diV>
-
                         <button type="submit" class="system-button system-button-verde mt-4">Adicionar</button>
                     </form>
                 </div>
@@ -106,9 +105,24 @@
     <script>
         var fileInput = document.getElementById('input-curriculo');
         var fileNameLabel = document.getElementById('file-name');
-
+        const targetDiv = document.getElementById('show-contatos');
+        const btnAdicionar = document.getElementById('button-adicionar');
+        const iconeBtn = document.getElementById('icon-add');
         var inputStatusPerfil = document.getElementById('input-status-perfil');
         var textStatusPerfil = document.getElementById('text-status-perfil');
+
+
+        btnAdicionar.onclick = function () {
+            if (targetDiv.style.display !== "none") {
+                targetDiv.style.display = "none";
+                iconeBtn.classList.remove("icon-plus");
+                iconeBtn.setAttribute("class", "icon icon-plus")
+            } else {
+                targetDiv.style.display = "block";
+                iconeBtn.classList.remove("icon-plus");
+                iconeBtn.setAttribute("class", "icon icon-cross")
+            }
+        };
 
         fileInput.addEventListener('input', (event) => {
             console.log(event.target);

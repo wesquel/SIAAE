@@ -12,9 +12,23 @@ use Illuminate\Support\Facades\Auth;
 class configController extends Controller
 {
 
+    private $statusBarraNovoContato;
+
+    public function getStatusBarraNovoContato(){
+        return $this->statusBarraNovoContato;
+    }
+
+    public function setStatusBarraNovoContato(){
+        if ($this->statusBarraNovoContato){
+            $this->statusBarraNovoContato = false;
+        }else{
+            $this->statusBarraNovoContato = true;
+        }
+    }
 
     public function create(){
-        return view('aluno.configuracoes', ['contatos' => $this->getContatos()]);
+        return view('aluno.configuracoes', ['contatos' => $this->getContatos(),
+            'statusBarraNovoContato' => $this->getStatusBarraNovoContato()]);
     }
 
     public function update(Request $request)
@@ -58,7 +72,6 @@ class configController extends Controller
         event(new Registered($contato));
 
         return redirect('/aluno/configuracoes')->with('success', "Registrado com Sucesso");
-
     }
 
     public function getContatos(){
