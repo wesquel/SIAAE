@@ -1,0 +1,99 @@
+.title-left{
+    margin-left: 1.55em;
+}
+
+.subtitle{
+    margin-left: 2.10em;
+    color: grey;
+}
+
+.ladoesq{
+    padding-right: 3em;
+    padding-left: 3em;
+    border-right: 2px solid #ccc;
+}
+
+.ladodir{
+    padding-left: 3em;
+}
+
+.dataini-input, .datalim-input, .turno-input{
+    width: 100%;
+    margin-right: 1em;
+}
+.desc-input{
+    width: 90%;
+}
+
+.div-data, .div-turno{
+    display:flex;
+    justify-content: space-between;
+}
+
+.divisao-superior{
+    margin-top: 2.5em;
+}
+
+.divisao-inputs{
+    display: flex;
+    margin-top: 2em;
+}
+
+.espacamento-inputs{
+    margin-top: 1em;
+    background-color: #ccc;
+
+}
+
+.container, .container1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+
+.container input, .container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+
+.checkmark, .checkmark1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+
+.container:hover input ~ .checkmark, .container1:hover input ~ .checkmark1 {
+    background-color: #ccc;
+  }
+
+
+.container input:checked ~ .checkmark, .container1 input:checked ~ .checkmark1 {
+    background-color: grey;
+  }
+
+.container input:checked ~ .checkmark:after, .container1 input:checked ~ .checkmark1:after {
+    display: block;
+  }
+
+.container .checkmark:after, .container1 .checkmark1:after {
+      border-radius: 50%;
+  }
+
+.botao-cadastrar-vaga{
+    margin-top: 40%;
+    margin-left:45%;
+  }
