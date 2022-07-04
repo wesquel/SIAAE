@@ -69,6 +69,7 @@ trait InstallsInertiaStacks
         $this->replaceInFile('Home', 'Dashboard', resource_path('js/Pages/Welcome.vue'));
         $this->replaceInFile('/home', '/dashboard', app_path('Providers/RouteServiceProvider.php'));
 
+
         // Tailwind / Vite...
         copy(__DIR__.'/../../stubs/default/resources/css/app.css', resource_path('css/app.css'));
         copy(__DIR__.'/../../stubs/default/postcss.config.js', base_path('postcss.config.js'));

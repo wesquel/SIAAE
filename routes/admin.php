@@ -6,6 +6,9 @@ use App\Http\Controllers\siaae\ControllerEmpresa;
 use App\Http\Controllers\ControllerVagaEmpresa;
 use Illuminate\Support\Facades\Route;
 
+/*
+COPIADO DO EMPRESA.PHP
+
 Route::get('/empresa/login', [loginEmpresaController::class, 'create']);
 Route::post('/empresa/login', [loginEmpresaController::class, 'store'])->name('login.empresa');
 
@@ -17,8 +20,9 @@ Route::middleware('auth:empresa')->group(function () {
     Route::get('/empresa/logout', [loginEmpresaController::class, 'destroy'])
         ->name('empresa.logout');
 });
+*/
 
-Route::get('/empresa/home', [ControllerEmpresa::class, 'home_empresa'])->name('home_empresa');
-Route::get('/empresa/cadastrar/vaga', [ControllerVagaEmpresa::class, 'cadastrarvaga'])->name('cadastrar.vaga.empresa');
-Route::get('/empresa/cadastrar/vaga/estagio', [ControllerVagaEmpresa::class, 'cadastrarestagio'])->name('cadastrar.vaga.empresa');
-Route::get('/empresa/cadastrar/vaga/aprendizagem', [ControllerVagaEmpresa::class, 'cadastraraprendizagem'])->name('cadastrar.vaga.empresa');
+Route::get('/admin/home', [ControllerEmpresa::class, 'home_empresa'])->name('home_empresa');
+Route::get('/admin/cadastrar/vaga', [ControllerVagaEmpresa::class, 'cadastrarvaga'])->name('cadastrar.vaga.empresa');
+Route::get('/admin/cadastrar/vaga/estagio', [ControllerVagaEmpresa::class, 'cadastrarestagio'])->name('cadastrar.vaga.empresa');
+Route::get('/admin/cadastrar/vaga/aprendizagem', [ControllerVagaEmpresa::class, 'cadastraraprendizagem'])->name('cadastrar.vaga.empresa');
