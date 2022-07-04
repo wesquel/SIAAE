@@ -22,6 +22,7 @@ Route::get('/termos_uso', [ControllerAluno::class, 'termos_uso']);
 Route::get('/', function () {return view('index');})->name('index');
 
 
+//ALUNO
 //Route::group(['middleware' => 'auth'], function(){
     Route::get('/home_aluno', [ControllerAluno::class, 'home_aluno'])->name('home-aluno');
     Route::get('/configuracoes', [ControllerAluno::class, 'configuracoes'])->name('configuracoes');
@@ -31,6 +32,11 @@ Route::get('/', function () {return view('index');})->name('index');
     Route::get('/vaga_aprendizagem', [ControllerAluno::class, 'vaga_aprendizagem']);
     Route::get('/confirma_candidatura_estagio', [ControllerAluno::class, 'confirma_candidatura_estagio']);
     Route::get('/confirma_candidatura_aprendizagem', [ControllerAluno::class, 'confirma_candidatura_aprendizagem']);
+//});
+
+//EMPRESA
+//Route::group(['middleware' => 'auth'], function(){
+    Route::get('/home_empresa', [ControllerAluno::class, 'home_empresa'])->name('home-empresa');
 //});
 
 Route::get('/dashboard', function () {
