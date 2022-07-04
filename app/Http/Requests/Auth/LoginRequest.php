@@ -44,10 +44,10 @@ class LoginRequest extends FormRequest
     public function authenticate()
     {
         $this->ensureIsNotRateLimited();
-        if (!Auth::attempt($this->only('CPF_CNPJ', 'password'), $this->boolean('remember'))) {
+        if (!Auth::attempt($this->only('matricula', 'password'), $this->boolean('remember'))) {
             RateLimiter::hit($this->throttleKey());
             throw ValidationException::withMessages([
-                'CPF_CNPJ' => trans('auth.failed'),
+                'matricula' => trans('auth.failed'),
             ]);
         }
 
@@ -72,7 +72,7 @@ class LoginRequest extends FormRequest
         $seconds = RateLimiter::availableIn($this->throttleKey());
 
         throw ValidationException::withMessages([
-            'CPF_CNPJ' => trans('auth.throttle', [
+            'matricula' => trans('auth.throttle', [
                 'seconds' => $seconds,
                 'minutes' => ceil($seconds / 60),
             ]),
@@ -86,6 +86,6 @@ class LoginRequest extends FormRequest
      */
     public function throttleKey()
     {
-        return Str::lower($this->input('CPF_CNPJ')).'|'.$this->ip();
+        return Str::lower($this->input('matricula')).'|'.$this->ip();
     }
 }

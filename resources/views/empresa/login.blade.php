@@ -9,6 +9,11 @@
 
         <img src="{{asset('images/logo_siaae_cinza.png')}}">
 
+        <x-auth-session-status class="mb-4" :status="session('status')" />
+
+        <!-- Validation Errors -->
+        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+
         <form method="POST" action="{{ route('login.empresa') }}" class="flex-column">
             @csrf
             <input id="CPF_CNPJ" name="CPF_CNPJ" type="text" class="form-control" placeholder="CPF/CNPJ">

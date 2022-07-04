@@ -1,62 +1,42 @@
 <?php
 
-namespace App\Http\Controllers\Auth\Empresa;
+namespace App\Http\Controllers\Auth\Aluno;
 
 use App\Http\Controllers\Controller;
-use App\Models\Empresa;
-use App\Models\Endereco;
-use App\Providers\RouteServiceProvider;
+use App\Models\Aluno;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
-class registroEmpresaController extends Controller
+class registroAlunoController extends Controller
 {
+
     public function create()
     {
         if (Auth::user() != null){
-            return redirect()->intended('/empresa/home');
+            return redirect()->intended('/aluno/home');
         }
-        return view('empresa.register');
+        return view('aluno.register');
     }
 
     public function store(Request $request)
     {
         $request->validate([
-            'CPF_CNPJ' => ['bail','required', 'string', 'max:255', 'unique:empresas'],
-            'nome_empresa' => ['bail','required', 'string', 'max:255', 'unique:empresas'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:empresas'],
+            'matricula' => ['bail','required', 'string', 'max:255', 'unique:alunos'],
             'password' => ['required', 'confirmed', 'min:8'],
-            'cep' => ['required', 'string', 'max:255'],
-            'estado' => ['required', 'string', 'max:255'],
-            'cidade' => ['required', 'string', 'max:255'],
-            'bairro' => ['required', 'string', 'max:255'],
-            'numero' => ['required', 'string', 'max:255'],
         ]);
 
-        $empresa = Empresa::create([
-            'CPF_CNPJ' => $request->CPF_CNPJ,
-            'nome_empresa' => $request->nome_empresa,
-            'email' => $request->email,
+        $aluno = Aluno::create([
+            'matricula' => $request->matricula,
             'password' => Hash::make($request->password),
+            'ADMIN' => '0',
         ]);
 
-        $endereco = Endereco::create([
-            'empresa_id' => $empresa->id,
-            'cep' => $request->cep,
-            'estado' => $request->estado,
-            'cidade' => $request->cidade,
-            'bairro' => $request->bairro,
-            'numero' => $request->numero,
-        ]);
+        event(new Registered($aluno));
 
+        Auth::login($aluno);
 
-        event(new Registered($empresa));
-        event(new Registered($endereco));
-
-        Auth::login($empresa);
-
-        return redirect('/registro-empresa')->with('success', "Registrado com Sucesso");
+        return redirect('/aluno/login')->with('success', "Registrado com Sucesso");
     }
 }
