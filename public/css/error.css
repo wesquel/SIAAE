@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img-error{
+    max-width: 45em;
+}
+
+.div-img {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-error{
+    margin-top: 2em;
+    font-size: 1em;
+    font-family: Futura Bk BT;
+}
