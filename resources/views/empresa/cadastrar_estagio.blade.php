@@ -3,7 +3,6 @@
 @push('custom-styles')
     <link rel="stylesheet" href="{{ asset('css/empresa/cadastrarestagio.css') }}">
 @endpush
-
 @section('content')
     <div class="divisao-superior" id="div-page-content">
         <h2 class="title-left">Cadastrar Vaga</h2>

@@ -3,7 +3,6 @@
 @push('custom-styles')
     <link rel="stylesheet" href="{{ asset('css/configuracoes_aluno.css') }}"
 @endpush
-
 @section('content')
 
     <div id="div-button-voltar" class="row mb-4 mt-4">
@@ -105,11 +104,12 @@
     <script>
         var fileInput = document.getElementById('input-curriculo');
         var fileNameLabel = document.getElementById('file-name');
+        var inputStatusPerfil = document.getElementById('input-status-perfil');
+        var textStatusPerfil = document.getElementById('text-status-perfil');
+
         const targetDiv = document.getElementById('show-contatos');
         const btnAdicionar = document.getElementById('button-adicionar');
         const iconeBtn = document.getElementById('icon-add');
-        var inputStatusPerfil = document.getElementById('input-status-perfil');
-        var textStatusPerfil = document.getElementById('text-status-perfil');
 
 
         btnAdicionar.onclick = function () {

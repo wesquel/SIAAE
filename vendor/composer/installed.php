@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '6f208f1af77ca4a373a557e16b07679868055039',
+        'reference' => '6604943b601570a13b8cb5da8093000670dc782a',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -409,7 +409,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '6f208f1af77ca4a373a557e16b07679868055039',
+            'reference' => '6604943b601570a13b8cb5da8093000670dc782a',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -804,12 +804,12 @@
             ),
         ),
         'psy/psysh' => array(
-            'pretty_version' => 'v0.11.5',
-            'version' => '0.11.5.0',
+            'pretty_version' => 'v0.11.6',
+            'version' => '0.11.6.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../psy/psysh',
             'aliases' => array(),
-            'reference' => 'c23686f9c48ca202710dbb967df8385a952a2daf',
+            'reference' => '3f5b5f8aaa979fbd0d1783173f4c82ad529fe621',
             'dev_requirement' => false,
         ),
         'ralouphie/getallheaders' => array(
