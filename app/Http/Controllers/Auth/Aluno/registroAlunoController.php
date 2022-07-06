@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Auth\Empresa;
+namespace App\Http\Controllers\Auth\Aluno;
 
 use App\Http\Controllers\Controller;
 use App\Models\Empresa;
@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
-class registroEmpresaController extends Controller
+class registroAlunoController extends Controller
 {
     public function create()
     {

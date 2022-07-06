@@ -15,4 +15,5 @@ Route::middleware('auth:empresa')->group(function () {
     Route::get('/empresa/home', [ControllerEmpresa::class, 'home_empresa'])->name('home_empresa');
     Route::get('/empresa/logout', [loginEmpresaController::class, 'destroy'])
         ->name('empresa.logout');
+    Route::get('/empresa/lista_vagas', [ControllerEmpresa::class, 'lista_vagas'])->name('empresa.lista_vagas');
 });

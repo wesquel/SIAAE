@@ -123,8 +123,6 @@
         var textStatusPerfil = document.getElementById('text-status-perfil');
 
         fileInput.addEventListener('input', (event) => {
-            console.log(event.target);
-            console.log(event.target.value);
             let filename = "Arquivo adicionado";
             let regexFileName = /\\([^\\]*\..*)/.exec(event.target.value);
             if (regexFileName.length >= 1) {

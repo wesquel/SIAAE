@@ -1,0 +1,54 @@
+#div-content {
+    padding: 20px 10px;
+}
+
+#div-subtitulo {
+    font-size: 2rem;
+}
+
+.div-card {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card-vaga {
+    border: 1px solid var(--cor-grafite);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+#div-acoes {
+    color: var(--cor-verde);
+}
+
+#div-lista-vagas table {
+    padding: 40px;
+}
+
+thead {
+    font-weight: bolder;
+    border-bottom: 1px solid var(--cor-grafite);
+    color: #444444;
+}
+
+td {
+    border-bottom: 1px solid var(--cor-grafite);
+    color: #444444;
+}
+
+tbody {
+    color: var(--cor-grafite);
+}
+
+.system-icon-circle.aceito {
+    background-color: var(--cor-verde);
+}
+
+.system-icon-circle.recusado {
+    background-color: var(--cor-vermelho);
+}
+
+.system-icon-circle.em-analise {
+    background-color: #D0B93C;
+}
+
