@@ -15,6 +15,7 @@ class Empresa extends Authenticatable
         'CPF_CNPJ',
         'nome_empresa',
         'email',
+        'telefone',
         'password',
         'image'
     ];
