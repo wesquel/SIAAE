@@ -10,7 +10,6 @@
         <div class="divisao-inputs">
             <div class="col ladoesq" id="conteudoesq">
                 <div id="linha-vertical">
-                    <input class="espacamento-inputs input-style form-control" name="titulovaga" type="cadastro" placeholder="Título da Vaga">
                     <label class="espacamento-inputs input-style form-control">Bolsa
                         <input type="checkbox">
                     </label>
@@ -64,5 +63,14 @@
             </div>
         </div>
     </div>
+    <script>
+        let input_element = document.querySelector("input");
+
+        input_element.addEventListener("keyup", () => {
+            input_element.setAttribute("value", input_element.value);
+        })
+    </script>
 @endsection
+
+
 

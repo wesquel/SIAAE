@@ -10,18 +10,68 @@
         <div class="divisao-inputs">
             <div class="col ladoesq" id="conteudoesq">
                 <div id="linha-vertical">
-                    <input class="input-style form-control" name="cadastro" type="text" placeholder="{{Auth::user()->nome_empresa}}" disabled>
-                    <input class="espacamento-inputs input-style form-control" id="CPF_CNPJ" name="cadastro" type="text" placeholder="{{Auth::user()->CPF_CNPJ}}" disabled>
-                    <input class="espacamento-inputs input-style form-control" id="telefone" name="cadastro" type="text" placeholder="Telefone - 83 3333 3333" disabled>
-                    <input class="espacamento-inputs input-style form-control" id="email" name="cadastro" type="text" placeholder="{{Auth::user()->email}}" disabled>
-                    <input class="espacamento-inputs input-style form-control" id="CEP" name="cadastro" type="text" placeholder="CEP - 00000 - 000" disabled>
-                    <input class="espacamento-inputs input-style form-control" id="Estado" name="cadastro" type="text" placeholder="Estado - PB" disabled>
-                    <input class="espacamento-inputs input-style form-control" id="Cidade" name="cadastro" type="text" placeholder="Cidade - Campina Grande" disabled>
-                    <div class="div-bairro-num">
-                        <input class="espacamento-inputs input-style form-control bairro-input" id="Bairro" name="bairro" type="text" placeholder="Bairro" disabled>
-                        <input class="espacamento-inputs input-style form-control numero-input" id="Numero" name="numero" type="text" placeholder="Nº - 233" disabled>
+                    <div class="input-contain">
+                        <input class="input-new" name="cadastro" type="text" value="{{Auth::user()->nome_empresa}}" disabled>
+                        <label class="placeholder-text" for="cadastro">
+                            <div class="text">Nome empresa:</div>
+                        </label>
                     </div>
-                    <input class="espacamento-inputs input-style form-control" id="Logradouro" name="cadastro" type="text" placeholder="Logradouro" disabled>
+                    <div class="input-contain linha-vertical">
+                        <input class="input-new" name="cadastro" type="text" value="{{Auth::user()->CPF_CNPJ}}" disabled>
+                        <label class="placeholder-text" for="cadastro">
+                            <div class="text">CPF/CNPJ:</div>
+                        </label>
+                    </div>
+                    <div class="input-contain linha-vertical">
+                        <input class="input-new" name="cadastro" type="text" value="Telefone - 83 3333 3333" disabled>
+                        <label class="placeholder-text" for="cadastro">
+                            <div class="text">Telefone:</div>
+                        </label>
+                    </div>
+                    <div class="input-contain linha-vertical">
+                        <input class="input-new" name="cadastro" type="text" value="{{Auth::user()->email}}" disabled>
+                        <label class="placeholder-text" for="cadastro">
+                            <div class="text">Email:</div>
+                        </label>
+                    </div>
+                    <div class="input-contain linha-vertical">
+                        <input class="input-new" name="cadastro" type="text" value="{{$endereco[0]->cep}}" disabled>
+                        <label class="placeholder-text" for="cadastro">
+                            <div class="text">CEP:</div>
+                        </label>
+                    </div>
+                    <div class="input-contain linha-vertical">
+                        <input class="input-new" name="cadastro" type="text" value="{{$endereco[0]->estado}}" disabled>
+                        <label class="placeholder-text" for="cadastro">
+                            <div class="text">Estado:</div>
+                        </label>
+                    </div>
+                    <div class="input-contain linha-vertical">
+                        <input class="input-new" name="cadastro" type="text" value="{{$endereco[0]->cidade}}" disabled>
+                        <label class="placeholder-text" for="cadastro">
+                            <div class="text">Cidade:</div>
+                        </label>
+                    </div>
+                    <div class="div-bairro-num">
+                        <div class="input-contain bairro-input">
+                            <input class="input-new" name="cadastro" type="text" value="{{$endereco[0]->bairro}}" disabled>
+                            <label class="placeholder-text" for="cadastro">
+                                <div class="text">Bairro:</div>
+                            </label>
+                        </div>
+                        <div class="input-contain linha-vertical numero-input">
+                            <input class="input-new" name="cadastro" type="text" value="{{$endereco[0]->numero}}" disabled>
+                            <label class="placeholder-text" for="cadastro">
+                                <div class="text">Número:</div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="input-contain linha-vertical">
+                        <input class="input-new" name="cadastro" type="text" value="{{"Vazio"}}" disabled>
+                        <label class="placeholder-text" for="cadastro">
+                            <div class="text">Logradouro:</div>
+                        </label>
+                    </div>
                 </div>
             </div>
             <div class="col ladodir" id="conteudodir">
@@ -29,11 +79,11 @@
                     @csrf
                     <h4>A vaga é de inclusão?</h4>
                     <label class="container">Sim
-                        <input id="inclusãoTtrue" value="sim" type="radio" name="radio_inclusao" checked>
+                        <input id="inclusãoTtrue" value="sim" type="radio" name="radio_inclusao">
                         <span class="checkmark"></span>
                     </label>
                     <label class="container">Não
-                        <input id="inclusãoFalse" value="nao" type="radio" name="radio_inclusao">
+                        <input id="inclusãoFalse" value="nao" type="radio" name="radio_inclusao" checked>
                         <span class="checkmark"></span>
                     </label>
 
