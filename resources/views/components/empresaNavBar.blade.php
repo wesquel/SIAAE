@@ -73,8 +73,8 @@
     <div id="div-nav-itens" class="collapse navbar-collapse flex-column">
         <span style="align-self: center">Bem vindo, {{ Auth::user()->nome_empresa ?? 'Fulaninho' }}!</span>
         <a class="nav-link active" href="{{ route('cadastrar.vaga.empresa') }}"><i class="icon icon-plus"></i>CRIAR NOVA VAGA</a>
-        <a class="nav-link" href="{{ route('lista-vagas') }}"><i class="icon icon-list"></i>LISTA DE VAGAS</a>
-        <a class="nav-link" href="{{ route('lista-vagas') }}"><i class="icon icon-cog"></i>CONFIGURAÇÔES</a>
+        <a class="nav-link" href="{{ route('empresa.lista_vagas') }}"><i class="icon icon-list"></i>LISTA DE VAGAS</a>
+        <a class="nav-link" href="{{ route('configuracoes') }}"><i class="icon icon-cog"></i>CONFIGURAÇÔES</a>
     </div>
 </nav>
 

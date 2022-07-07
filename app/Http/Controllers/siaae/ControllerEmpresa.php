@@ -14,4 +14,8 @@ class ControllerEmpresa extends Controller
     public function home_empresa(){
         return view('empresa.home', ['userType' => 'empresa']);
     }
+
+    public function lista_vagas() {
+        return view('empresa.lista_vagas', ['userType' => 'empresa']);
+    }
 }

@@ -16,9 +16,7 @@ Route::post('/empresa/registro',[registroEmpresaController::class,'store'])->nam
 Route::middleware('auth:empresa')->group(function () {
     Route::get('/empresa/logout', [loginEmpresaController::class, 'destroy'])
         ->name('empresa.logout');
-
     Route::get('/empresa/home', [ControllerEmpresa::class, 'home_empresa'])->name('home_empresa');
     Route::get('/empresa/cadastrar/vaga', [ControllerVagaEmpresa::class, 'create'])->name('cadastrar.vaga.empresa');
     Route::post('/empresa/cadastrar/vaga', [ControllerVagaEmpresa::class, 'store'])->name('cadastrar.vaga.empresa.post');
-
 });

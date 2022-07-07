@@ -1,1 +1,124 @@
-#div-page-content{height:100%;overflow-y:auto}.system-button{margin-right:20px}.vl{align-self:center;background-color:var(--cor--cinza-escuro);height:80%;justify-content:center;margin-bottom:auto;margin-top:100%;width:5px}#div-page-content{padding:20px}#div-page-content .row{margin:20px auto;width:100%}#dados_perfil label{font-size:1.2rem;margin-right:30px}input[type=file]{display:none}.input-wrapper label{background-color:var(--cor--cinza-escuro);border-radius:5px;color:var(--cor-grafite);margin:10px;padding:6px 20px}#file-name{color:var(--cor-vermelho);display:block}#div-descricao{height:100px}#dados_contatos .row{width:100%}#dados_contatos h6{font-size:1.2rem}#dados_contatos label{background-color:var(--cor--cinza-escuro);border:1px solid var(--cor--cinza-escuro);border-radius:5px;color:var(--cor-grafite);height:50px;margin:5px}#div-acoes-contato{display:flex;flex-direction:row;justify-content:flex-end}#div-acoes-contato button{border-radius:5px;margin:5px;padding:10px;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}#div-acoes-contato #button-adicionar{height:50px;line-height:30px;width:50px}@media (max-width:768px){#div-button-voltar{margin-bottom:0!important}#button-voltar{margin:0 auto;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}#button-atualizar{margin:0 auto}.input-wrapper label{font-size:1rem;margin:0;padding:0}.system-d-sm-none{display:none}#dados_contatos .div-input,.div-contato,.div-contato label{margin-bottom:10px;width:100%!important}}
+#div-page-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.system-button {
+    margin-right: 20px;
+}
+
+/* Vertical Line*/
+.vl {
+    width: 5px;
+    height: 80%;
+    align-self: center;
+    justify-content: center;
+    background-color: var(--cor--cinza-escuro);
+    margin-top: 100%;
+    margin-bottom: auto;
+}
+
+#div-page-content {
+    padding: 20px;
+}
+
+#div-page-content .row{
+    width: 100%;
+    margin: 20px auto;
+}
+
+#dados_perfil label {
+    font-size: 1.2rem;
+    margin-right: 30px;
+}
+
+input[type='file'] {
+    display: none
+}
+
+.input-wrapper label {
+    background-color: var(--cor--cinza-escuro);
+    border-radius: 5px;
+    color: var(--cor-grafite);
+    margin: 10px;
+    padding: 6px 20px
+}
+
+#file-name {
+    display: block;
+    color: var(--cor-vermelho);
+}
+
+#div-descricao {
+    height: 100px;
+}
+
+#dados_contatos .row{
+    width: 100%;
+}
+
+#dados_contatos h6 {
+    font-size: 1.2rem;
+}
+
+#dados_contatos label {
+    background-color: var(--cor--cinza-escuro);
+    color: var(--cor-grafite);
+    height: 50px;
+    margin: 5px 5px;
+    border: 1px solid var(--cor--cinza-escuro);
+    border-radius: 5px;
+}
+
+#div-acoes-contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#div-acoes-contato button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#div-acoes-contato #button-adicionar {
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+}
+
+#button-atualizar {
+
+}
+
+@media (max-width: 768px) {
+    #div-button-voltar {
+        margin-bottom: 0px !important;
+    }
+    #button-voltar {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 0px auto;
+    }
+    #button-atualizar {
+        margin: 0px auto;
+    }
+    .input-wrapper label {
+        font-size: 1rem;
+        margin: 0px;
+        padding: 0px;
+    }
+    .system-d-sm-none {
+        display: none;
+    }
+    #dados_contatos .div-input, .div-contato, .div-contato label {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+}
+

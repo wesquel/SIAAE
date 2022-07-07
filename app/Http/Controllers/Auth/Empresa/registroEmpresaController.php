@@ -51,7 +51,6 @@ class registroEmpresaController extends Controller
             'numero' => $request->numero,
         ]);
 
-
         event(new Registered($empresa));
         event(new Registered($endereco));
 
