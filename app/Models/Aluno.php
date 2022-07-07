@@ -10,6 +10,24 @@ class Aluno extends Authenticatable
 
     use HasFactory;
 
+    protected $fillable = [
+        'matricula',
+        'password',
+        'ADMIN',
+        'curriculo',
+        'telefone',
+        'email',
+        'linkedin',
+        'lattes',
+        'github',
+        'desc'
+    ];
+
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
     protected $guard = 'aluno';
 
     public function outros_contatos(){

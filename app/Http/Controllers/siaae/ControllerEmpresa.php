@@ -12,7 +12,7 @@ class ControllerEmpresa extends Controller
     }
 
     public function home_empresa(){
-        return view('layouts.appLayout', ['userType' => 'empresa']);
+        return view('empresa.home', ['userType' => 'empresa']);
     }
 
     public function lista_vagas() {

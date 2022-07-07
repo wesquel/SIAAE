@@ -50,7 +50,7 @@
             </div>
         </a>
 
-        <a href="/configuracoes">
+        <a href="/aluno/configuracoes">
             <div class=e618_1911><span class="e618_1912">CONFIGURAÇÕES</span>
                 <div class=e618_1913>
                     <div class="e618_1914"></div>

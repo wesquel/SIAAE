@@ -1,0 +1,165 @@
+.title-left{
+    margin-left: 1.55em;
+}
+
+.subtitle{
+    margin-left: 2.10em;
+    color: grey;
+}
+
+.ladoesq{
+    padding-right: 3em;
+    padding-left: 3em;
+    border-right: 2px solid #ccc;
+}
+
+.ladodir{
+    padding-left: 3em;
+}
+
+.dataini-input, .datalim-input, .turno-input{
+    width: 100%;
+    margin-right: 1em;
+}
+.desc-input{
+    width: 90%;
+}
+
+.div-data, .div-turno{
+    display:flex;
+    justify-content: space-between;
+}
+
+.divisao-superior{
+    margin-top: 2.5em;
+}
+
+.divisao-inputs{
+    display: flex;
+    margin-top: 2em;
+}
+
+.espacamento-inputs{
+    margin-top: 1em;
+    background-color: #ccc;
+
+}
+
+.container, .container1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+
+.container input, .container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+
+.checkmark, .checkmark1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+/*.container:hover input ~ .checkmark, .container1:hover input ~ .checkmark1 {
+    background-color: #ccc;
+  }
+
+
+.container input:checked ~ .checkmark, .container1 input:checked ~ .checkmark1 {
+    background-color: grey;
+  }
+
+.container input:checked ~ .checkmark:after, .container1 input:checked ~ .checkmark1:after {
+    display: block;
+  }
+
+.container .checkmark:after, .container1 .checkmark1:after {
+      border-radius: 50%;
+  }*/
+
+.botao-cadastrar-vaga{
+    margin-top: 40%;
+    margin-left:45%;
+  }
+
+.input-contain{
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.input-new{
+    padding: 0.375rem 0.75rem;
+    width: 100%;
+    border: 1px solid #000000;
+    background-color: #e9ecef;
+    border-radius: 7px;
+}
+
+.input-new:focus{
+    outline: none;
+    border-color: blueviolet;
+}
+
+.input-new:focus + .placeholder-text .text, :not(.input-new[value=""]) + .placeholder-text .text{
+    background-color: transparent; /*Background do texto com focu ou value*/
+    font-size: 1rem;
+    margin: -5px;
+    color: #3b3b3b;
+    transform: translate(0, -2em);
+}
+
+.input-new:focus + .placeholder-text .text{
+    position: relative;
+    margin: -0.5em;
+    border-color: blueviolet;
+    color: blueviolet;
+}
+
+.placeholder-text{
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 3px solid transparent;
+    background-color: transparent;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    font-size: 1rem;
+    padding: 0 0.3em;
+    background-color: transparent;
+    transform: translate(0);
+    color: black;
+    transition-duration: 0.5s;
+    transition: transform 0.30s ease-out, font-size 0.15s ease-out, background-color 0.2s ease-out, color 0.15s ease-out;
+}
+
+.input-new, .placeholder-text{
+    font-size: 1rem;
+}
+
+@media (max-width: 40rem) {
+    .input-new{
+        width: 70vw;
+    }
+}

@@ -14,8 +14,9 @@ class CreateAlunosTable extends Migration
     public function up()
     {
         Schema::create('alunos', function (Blueprint $table) {
-            $table->id('id'); // matricula
-            $table->boolean('ADMIN');
+            $table->id();
+            $table->string('matricula')->unique();
+            $table->string('password'); // remove
             $table->string('curriculo')->nullable();
             $table->integer('telefone')->nullable();
             $table->string('email')->nullable();
@@ -23,6 +24,7 @@ class CreateAlunosTable extends Migration
             $table->string('lattes')->nullable();
             $table->string('github')->nullable();
             $table->text('desc')->nullable();
+            $table->boolean('ADMIN');
             $table->timestamps();
         });
     }
