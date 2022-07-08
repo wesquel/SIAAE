@@ -1,4 +1,4 @@
-@extends('layouts.appLayout')
+@extends('layouts.appLayout', ['userType' => 'empresa'])
 
 @push('custom-styles')
     <link rel="stylesheet" href="{{ asset('css/empresa/cadastraraprendizagem.css') }}">
@@ -22,7 +22,7 @@
                             <option value="2">Auxílio Alimentação</option>
                         </select>
                     </div>
-                    
+
                     <div class="div-turno">
                         <input class="espacamento-inputs input-style form-control turno-input" name="CHSemanal" type="number" min="0" placeholder="Carga Horária Semanal">
                         <select class="espacamento-inputs form-control " type="cadastro">
@@ -61,7 +61,6 @@
                 <textarea id="div-descricao" placeholder="Descrição da Vaga" class="espacamento-inputs form-control desc-input"></textarea>
 
                 <button type="submit" class="system-button system-button-verde botao-cadastrar-vaga">Confirmar</button>
-
             </div>
         </div>
     </div>

@@ -26,8 +26,9 @@ class registroEmpresaController extends Controller
         $request->validate([
             'CPF_CNPJ' => ['bail','required', 'cpf_ou_cnpj', 'max:255', 'unique:empresas'],
             'nome_empresa' => ['bail','required', 'string', 'max:255', 'unique:empresas'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:empresas'],
+            'email' => ['required', 'confirmed', 'email', 'max:255', 'unique:empresas'],
             'password' => ['required', 'confirmed', 'min:8'],
+            'telefone' => ['required', 'celular_com_ddd', 'max:255'],
             'cep' => ['required', 'formato_cep', 'max:255'],
             'estado' => ['required', 'string', 'max:255'],
             'cidade' => ['required', 'string', 'max:255'],
@@ -39,6 +40,7 @@ class registroEmpresaController extends Controller
             'CPF_CNPJ' => $request->CPF_CNPJ,
             'nome_empresa' => $request->nome_empresa,
             'email' => $request->email,
+            'telefone' => $request->telefone,
             'password' => Hash::make($request->password),
         ]);
 

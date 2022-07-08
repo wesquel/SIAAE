@@ -1,4 +1,4 @@
-@extends('layouts.appLayout')
+@extends('layouts.appLayout', ['userType' => 'empresa'])
 
 @push('custom-styles')
     <link rel="stylesheet" href="{{ asset('css/empresa/cadastrarestagio.css') }}">
@@ -9,10 +9,14 @@
         <h4 class="subtitle">Estágio</h4>
         <div class="divisao-inputs">
             <div class="col ladoesq" id="conteudoesq">
+                <input class="espacamento-inputs input-style form-control" name="titulovaga" type="cadastro" placeholder="Título da Vaga">
                 <div id="linha-vertical">
+
                     <label class="espacamento-inputs input-style form-control">Bolsa
                         <input type="checkbox">
                     </label>
+
+
                     <div class="div-turno">
                         <input class="espacamento-inputs input-style form-control turno-input" name="CHSemanal" type="number" min="0" placeholder="Carga Horária Semanal">
                         <select class="espacamento-inputs form-control " type="cadastro">

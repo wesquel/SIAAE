@@ -1,9 +1,7 @@
 <?php
 
-use App\Http\Controllers\Auth\Empresa\loginEmpresaController;
-use App\Http\Controllers\Auth\Empresa\registroEmpresaController;
+use App\Http\Controllers\Empresa\ControllerVagaEmpresa;
 use App\Http\Controllers\siaae\ControllerEmpresa;
-use App\Http\Controllers\ControllerVagaEmpresa;
 use Illuminate\Support\Facades\Route;
 
 /*

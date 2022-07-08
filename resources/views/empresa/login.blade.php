@@ -3,7 +3,7 @@
 @push('custom-styles')
 
     <link rel="stylesheet" href="{{ asset('css/empresa/login_empresa.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/icons/icomoon.css') }}">
+{{--    <link rel="stylesheet" href="{{ asset('css/icons/icomoon.css') }}">--}}
 @endpush
 
 @section('content')
@@ -71,11 +71,11 @@
                 <div class="row">
                     <div class="col-md-6">
                         <input type="email" class="system-input" name="email" placeholder="EMAIL" required>
-                        <input type="email" class="system-input" name="email_confirmed" placeholder="CONFIRMAR EMAIL" required>
+                        <input type="email" class="system-input" name="email_confirmation" placeholder="CONFIRMAR EMAIL" required>
                     </div>
                     <div class="col-md-6">
                         <input type="password" class="system-input" name="password" placeholder="SENHA" required>
-                        <input type="password" class="system-input" name="password_confirmed" placeholder="CONFIRMAR SENHA" required>
+                        <input type="password" class="system-input" name="password_confirmation" placeholder="CONFIRMAR SENHA" required>
                     </div>
                 </div>
                 <button type="submit" class="system-button system-button-verde" >Registrar</button>
