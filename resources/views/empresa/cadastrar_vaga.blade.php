@@ -66,12 +66,14 @@
                             </label>
                         </div>
                     </div>
+                    @if($endereco[0]->logradouro)
                     <div class="input-contain linha-vertical">
-                        <input class="input-new" name="cadastro" type="text" value="{{"Vazio"}}" disabled>
+                        <input class="input-new" name="cadastro" type="text" value="{{$endereco[0]->logradouro}}" disabled>
                         <label class="placeholder-text" for="cadastro">
                             <div class="text">Logradouro:</div>
                         </label>
                     </div>
+                    @endif
                 </div>
             </div>
             <div class="col ladodir" id="conteudodir">
