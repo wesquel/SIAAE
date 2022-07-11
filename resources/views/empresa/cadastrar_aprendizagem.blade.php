@@ -68,7 +68,7 @@
                     <textarea name="atv_desempenhadas" placeholder="Atividades desempenhadas" class="espacamento-inputs form-control desc-input"></textarea>
                     <textarea name="desc" placeholder="Descrição da Vaga" class="espacamento-inputs form-control desc-input"></textarea>
 
-                    <button type="submit" class="system-button system-button-verde botao-cadastrar-vaga">Confirmar</button>
+                    <button type="submit" class="system-button system-button-verde botao-cadastrar-vaga">Publicar</button>
                 </div>
             </div>
         </form>
