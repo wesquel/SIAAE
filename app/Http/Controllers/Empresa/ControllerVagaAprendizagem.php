@@ -27,7 +27,7 @@ class ControllerVagaAprendizagem extends Controller
 
         $validator = Validator::make($request->all(),[
             'titulo_vaga' => ['bail','required', 'string', 'max:255'],
-            'bolsa' => ['bail','required', 'string', 'max:255'],
+//            'bolsa' => ['bail','required', 'string', 'max:255'],
             'ch_semanal' => ['bail','required', 'string', 'max:255'],
             'turno' => ['required', 'string', 'max:255'],
             'cursos' => ['required', 'string', 'max:255'],
@@ -63,7 +63,7 @@ class ControllerVagaAprendizagem extends Controller
             'data_limite' => $request->data_limite,
             'vagas' => $request->vagas,
             'pre_requisitos' => $request->pre_requisitos,
-            'atv_ferias' => $request->atv_ferias,
+//            'atv_ferias' => 'teste',//alterar (adicionar ao lado)
             'atv_desempenhadas' => $request->atv_desempenhadas,
             'desc' => $request->desc,
             'status' => 'ativo',
