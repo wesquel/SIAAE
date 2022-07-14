@@ -26,19 +26,19 @@
 
 <body>
 
-    <div class="div-main row">
+<div class="div-main row">
 
-        @if(isset($userType) && $userType == 'empresa')
-            @include('components.empresaNavBar')
-        @else
-            @include('components.alunoNavBar')
-        @endif
+    @if(isset($userType) && $userType == 'empresa')
+        @include('components.empresaNavBar')
+    @else
+        @include('components.alunoNavBar')
+    @endif
 
 
-        <div id="div-page-content" class="col-md-9">
-            @yield('content')
-        </div>
+    <div id="div-page-content" class="col-md-9">
+        @yield('content')
     </div>
+</div>
 
 </body>
 </html>
