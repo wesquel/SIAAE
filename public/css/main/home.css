@@ -4,8 +4,14 @@
 }
 
 #div-page-content img{
-    width: 90%;
-    height: auto;
+    width: 100%;
+}
+
+
+img{
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-top: 10em;
 }
 
 
