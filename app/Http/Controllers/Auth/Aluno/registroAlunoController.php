@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Hash;
 class registroAlunoController extends Controller
 {
 
+    public function __construct()
+    {
+        auth()->setDefaultDriver('aluno');
+    }
+
     public function create()
     {
         if (Auth::user() != null){
