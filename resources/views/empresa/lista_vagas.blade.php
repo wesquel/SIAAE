@@ -11,7 +11,7 @@
                 <h4>Listagem de Vagas</h4>
             </div>
             <div id="div-button-voltar" class="col-md-6">
-                <button class="system-button system-button-verde">Voltar</button>
+                <button href="{{url()->previous()}}" class="system-button system-button-verde">Voltar</button>
             </div>
         </div>
         <div class="row">
@@ -36,7 +36,7 @@
                         </div>
 
                         <div id="div-acoes" class="row">
-                            <a href="{{$vaga->id}}" class="col-md-12"><i class="icon icon-search"></i> Candidatos</a>
+                            <a href="vagas/{{$vaga->id}}" class="col-md-12"><i class="icon icon-search"></i> Candidatos</a>
                             <a href="editar/{{$vaga->id}}" class="col-md-12"><i class="icon icon-pencil"></i> Editar</a>
                             <a href="inativar/{{$vaga->id}}" class="col-md-12"><i class="icon icon-blocked"></i> Inativar</a>
                         </div>
