@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\Empresa\loginEmpresaController;
 use App\Http\Controllers\Auth\Empresa\registroEmpresaController;
+use App\Http\Controllers\Empresa\ControllerCandidatosVaga;
 use App\Http\Controllers\Empresa\ControllerConfigEmpresa;
 use App\Http\Controllers\Empresa\ControllerHomeEmpresa;
 use App\Http\Controllers\Empresa\ControllerListaEmpresa;
@@ -38,5 +39,13 @@ Route::middleware('auth:empresa')->group(function () {
         ->name('cadastrar.vaga.estagio');
     Route::post('empresa/cadastrar/vaga/estagio', [ControllerVagaEstagio::class, 'store'])
         ->name('cadastrar.vaga.estagio');
+
+//    Route::get('empresa/cadastrar/vaga/{id}', [ControllerCandidatosVaga::class, 'create'])
+//        ->name('candidatos.vaga');
+
+    Route::get('empresa/lista/vagas/{id}', function ($id){
+        $controller = new ControllerCandidatosVaga();
+        return $controller->create($id);
+    })->whereNumber('id');
 
 });
