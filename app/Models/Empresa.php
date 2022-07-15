@@ -14,6 +14,7 @@ class Empresa extends Authenticatable
     protected $fillable = [
         'CPF_CNPJ',
         'nome_empresa',
+        'nome_responsavel',
         'email',
         'telefone',
         'password',

@@ -14,12 +14,12 @@ class CreateVagasTable extends Migration
     public function up()
     {
         Schema::create('vagas', function (Blueprint $table) {
-            $table->id('id');
-            $table->string('nome');
+            $table->id();
+            $table->string('titulo');
             $table->string('tipo');
             $table->integer('ch_semanal');
             $table->string('turno');
-            $table->date('data_publicação');
+            $table->date('data_inicio');
             $table->string('auxilios');
             $table->string('cursos');
             $table->string('status');
@@ -27,7 +27,6 @@ class CreateVagasTable extends Migration
             $table->string('inclusao');
             $table->date('data_fim');
             $table->date('data_limite');
-            $table->boolean('isBolsa');
             $table->double('valor_bolsa')->nullable();
             $table->string('atv-ferias')->nullable();
             $table->integer('ch_teorica')->nullable();

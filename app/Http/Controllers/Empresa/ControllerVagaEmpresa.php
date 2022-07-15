@@ -4,8 +4,11 @@ namespace App\Http\Controllers\Empresa;
 
 use App\Http\Controllers\Controller;
 use App\Models\Endereco;
+use App\Models\Vaga;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 use const App\Http\Controllers\redirect;
 
 class ControllerVagaEmpresa extends Controller
@@ -25,12 +28,16 @@ class ControllerVagaEmpresa extends Controller
         $inclusaoVaga = $request->radio_inclusao;
 
         if ($tipoVaga == 'aprendizagem'){
-            return view('empresa.cadastrar_aprendizagem', ['inclusao' => $inclusaoVaga]);
+            return redirect(route('cadastrar.vaga.aprendizagem', ['inclusao' => $inclusaoVaga]));
         }elseif ($tipoVaga == 'estagio'){
-            return view('empresa.cadastrar_estagio',['inclusao' => $inclusaoVaga]);
+            return redirect(route('cadastrar.vaga.estagio', ['inclusao' => $inclusaoVaga]));
         }else{
-            return redirect->back('/empresa/cadastrar/vaga');
+            return redirect('/empresa/cadastrar/vaga');
         }
+    }
+
+    public function cadastroVagaEstagio(Request $request){
+        $titulo = $request->radio_tipo;
     }
 
 

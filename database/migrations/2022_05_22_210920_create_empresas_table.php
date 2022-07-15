@@ -17,7 +17,8 @@ class CreateEmpresasTable extends Migration
 
             $table->id();//alterar
             $table->string('CPF_CNPJ')->unique();
-            $table->string('nome_empresa')->unique();
+            $table->string('nome_empresa');
+            $table->string('nome_responsavel')->unique();
             $table->string('email')->unique();
             $table->string('password');
             $table->string('telefone')->nullable(); //alterar

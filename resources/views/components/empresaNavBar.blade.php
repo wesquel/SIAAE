@@ -1,57 +1,48 @@
 <style>
-    .div-main {
-        height: 100%;
-    }
-
+     .div-main {
+         height: 100%;
+     }
     #div-nav {
         background-color: var(--cor--cinza);
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        box-shadow: 0 5px 20px 5px #888;
     }
-
     #div-nav span {
         margin-bottom: 20px;
     }
-
     #div-nav img {
         margin: 20px;
         height: 40px;
         width: auto;
     }
-
     #div-nav nav{
         margin-bottom: 10px;
         list-style: none;
         text-align: left;
     }
-
     #div-nav a {
         text-decoration: none;
         color: #000;
     }
-
     #div-nav-itens {
         align-items: flex-start;
         padding-left: 20px;
     }
-
     #div-nav-itens .icon {
         color: var(--cor-verde);
         margin-right: 5px;
     }
-
     @media (max-width: 767px) {
         #div-nav {
             height: fit-content;
             flex-direction: row;
         }
-
         #div-nav .navbar-brand {
             width: 50%;
         }
-
         #div-nav button {
             position: absolute;
             right: 40px;
