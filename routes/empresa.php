@@ -8,7 +8,9 @@ use App\Http\Controllers\Empresa\ControllerHomeEmpresa;
 use App\Http\Controllers\Empresa\ControllerListaEmpresa;
 use App\Http\Controllers\empresa\ControllerVagaAprendizagem;
 use App\Http\Controllers\Empresa\ControllerVagaEmpresa;
+use App\Http\Controllers\siaae\ControllerEmpresa;
 use App\Http\Controllers\Empresa\ControllerVagaEstagio;
+
 use Illuminate\Support\Facades\Route;
 
 Route::get('/empresa/login', [loginEmpresaController::class, 'create']);
@@ -25,11 +27,12 @@ Route::middleware('auth:empresa')->group(function () {
 
     Route::get('empresa/lista/vagas', [ControllerListaEmpresa::class, 'create'])->name('empresa.lista.vagas');
 
-    Route::get('empresa/perfil', [ControllerConfigEmpresa::class, 'create'])->name('empresa.perfil');
-
     Route::get('/empresa/cadastrar/vaga', [ControllerVagaEmpresa::class, 'create'])->name('cadastrar.vaga.empresa');
     Route::post('/empresa/cadastrar/vaga', [ControllerVagaEmpresa::class, 'store'])->name('cadastrar.vaga.empresa.post');
 
+    Route::get('/empresa/configuracoes', [ControllerConfigEmpresa::class, 'create'])->name('configuracoes.empresa');
+    Route::post('/empresa/configuracoes', [ControllerConfigEmpresa::class, 'store'])->name('configuracoes.empresa.post');
+    
     Route::get('empresa/cadastrar/vaga/aprendizagem', [ControllerVagaAprendizagem::class, 'create'])
         ->name('cadastrar.vaga.aprendizagem');
     Route::post('empresa/cadastrar/vaga/aprendizagem', [ControllerVagaAprendizagem::class, 'store'])

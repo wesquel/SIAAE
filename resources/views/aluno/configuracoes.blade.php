@@ -1,7 +1,7 @@
 @extends('layouts.appLayout')
 
 @push('custom-styles')
-    <link rel="stylesheet" href="{{ asset('css/configuracoes_aluno.css') }}"
+    <link rel="stylesheet" href="{{ asset('css/configuracoes_aluno.css') }}">
 @endpush
 @section('content')
 

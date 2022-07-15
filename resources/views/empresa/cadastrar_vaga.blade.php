@@ -23,7 +23,7 @@
                         </label>
                     </div>
                     <div class="input-contain linha-vertical">
-                        <input class="input-new" name="cadastro" type="text" value="Telefone - 83 3333 3333" disabled>
+                        <input class="input-new" name="cadastro" type="text" value="83 3333 3333" disabled>
                         <label class="placeholder-text" for="cadastro">
                             <div class="text">Telefone:</div>
                         </label>
