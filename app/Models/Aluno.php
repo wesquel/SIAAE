@@ -12,7 +12,6 @@ class Aluno extends Authenticatable
 
     protected $fillable = [
         'matricula',
-        'password',
         'ADMIN',
         'curriculo',
         'telefone',
@@ -24,7 +23,6 @@ class Aluno extends Authenticatable
     ];
 
     protected $hidden = [
-        'password',
         'remember_token',
     ];
 
