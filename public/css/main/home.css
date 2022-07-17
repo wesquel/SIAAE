@@ -7,11 +7,16 @@
     width: 100%;
 }
 
-
 img{
     margin: 0 auto;
     max-width: 1000px;
     margin-top: 10em;
+}
+
+@media only screen and (max-width: 480px) {
+    img {
+        width: 100%;
+    }
 }
 
 
