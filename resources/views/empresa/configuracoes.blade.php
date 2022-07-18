@@ -7,8 +7,10 @@
 
 @section('content')
 
+    <div class="container">
     <form method="POST" class="teste container" action="{{ route('configuracoes.empresa') }}">
                                                                     <!--Verificar rota-->
+
         @csrf
         <div class="row">
             <div id="div-input-logo">
@@ -53,6 +55,7 @@
         </div>
         <button type="submit" class="system-button system-button-verde espaco-botao">Atualizar</button>
     </form>
+    </div>
 
     <script>
 

@@ -15,4 +15,12 @@ class vagasController extends Controller
         return view('aluno.vagas');
     }
 
+    public function createEstagio(){
+        return view('aluno.vaga_aprendizagem');
+    }
+
+    public function createAprendizagem(){
+        return view('aluno.vaga_estagio');
+    }
+
 }

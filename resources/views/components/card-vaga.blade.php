@@ -34,7 +34,7 @@
             <label>{{ $contatoEmpresa }}</label>
         </div>
         <h6>{{ $cargo }}</h6>
-        <label><strong>Titulo:</strong> {{ $tipo }}</label>
+        <label><strong>Tipo:</strong> {{ $tipo }}</label>
         <label><strong>Modalidade:</strong> {{ $modalidade }}</label>
 
         <p id="p-resumo-vaga">{{ $resumo }}</p>

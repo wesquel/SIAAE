@@ -20,7 +20,7 @@
                 <tr class="row">
                     <td class="col-md-3">Nome</td>
                     <td class="col-md-3">Data de publicação</td>
-                    <td class="col-md-3">Tipo</td>
+                    <td class="col-md-3">Titulo</td>
                     <td class="col-md-3" style="text-align: right">Status</td>
                 </tr>
             </thead>
