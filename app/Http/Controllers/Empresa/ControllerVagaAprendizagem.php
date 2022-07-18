@@ -26,7 +26,7 @@ class ControllerVagaAprendizagem extends Controller
         $tipoVaga = "aprendizagem";
 
         $validator = Validator::make($request->all(),[
-            'titulo_vaga' => ['bail','required', 'string', 'max:255'],
+            'titulo_vaga' => ['bail','required', 'string', 'min:5','max:255'],
 //            'bolsa' => ['bail','required', 'string', 'max:255'],
             'ch_semanal' => ['bail','required', 'string', 'max:255'],
             'turno' => ['required', 'string', 'max:255'],

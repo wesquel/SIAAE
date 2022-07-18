@@ -4,6 +4,7 @@
      }
     #div-nav {
         background-color: var(--cor--cinza);
+        width: 15%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -35,8 +36,17 @@
         color: var(--cor-verde);
         margin-right: 5px;
     }
+
+
+     @media (max-width: 1230px) {
+         #div-nav {
+             width: 20%;
+         }
+     }
+
     @media (max-width: 767px) {
         #div-nav {
+            width: 100%;
             height: fit-content;
             flex-direction: row;
         }
@@ -53,7 +63,6 @@
 </style>
 
 <nav id="div-nav" class="nav navbar-expand-md col-md-3 col-sm-12">
-
     <a class="navbar-brand" href="#">
         <img src="{{ asset('images/logo_siaae.png') }}" width="30" height="30" alt="">
     </a>

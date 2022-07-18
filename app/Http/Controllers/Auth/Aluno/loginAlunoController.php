@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Auth\Aluno;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Requests\Auth\LoginRequestAluno;
+use App\Models\Aluno;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Http;
 
 class loginAlunoController extends Controller
 {
@@ -27,16 +29,29 @@ class loginAlunoController extends Controller
 
     public function store(LoginRequestAluno $request)
     {
-        $this->validate($request, [
-            'matricula'   => 'required|min:10',
-            'password' => 'required|min:6'
-        ]);
 
-        if (Auth::guard('aluno')->attempt(['matricula' => $request->matricula, 'password' => $request->password], $request->get('remember'))) {
-            return redirect()->intended('/aluno/configuracoes');
+        $url = "https://suap.ifpb.edu.br/api/";
+
+        $response = Http::withBasicAuth($request->matricula, $request->password)->get($url);
+
+        //caso o login esteja incorreto.
+        if ($response->status() == 403){
+            return back()->withInput($request->only('matricula'));
         }
 
-        return back()->withInput($request->only('matricula', 'remember'));
+        //verificação se já está cadastrado e aceitou os termos.
+
+        $aluno = Aluno::where('matricula', '=', $request->matricula)->get();
+
+        if (count($aluno) == 0){
+            $aluno = $this->createAluno($request->matricula);
+        }else{
+            $aluno = $aluno[0];
+        }
+
+        Auth::login($aluno);
+
+        return redirect()->intended('/aluno/configuraçoes');
     }
 
 
@@ -55,4 +70,15 @@ class loginAlunoController extends Controller
 
         return redirect('/');
     }
+
+
+    public function createAluno($matricula){
+        $aluno = Aluno::create([
+            'matricula' => $matricula,
+            'ADMIN' => '0',
+        ]);
+        event(new Registered($aluno));
+        return $aluno;
+    }
+
 }

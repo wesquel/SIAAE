@@ -3,7 +3,7 @@
 @push('custom-styles')
 
     <link rel="stylesheet" href="{{ asset('css/empresa/login_empresa.css') }}">
-{{--    <link rel="stylesheet" href="{{ asset('css/icons/icomoon.css') }}">--}}
+    {{--    <link rel="stylesheet" href="{{ asset('css/icons/icomoon.css') }}">--}}
 @endpush
 
 @section('content')
@@ -50,28 +50,28 @@
                     </div>
                     <div class="col-md-6">
                         <label>Dados</label>
-                        <input type="text" class="system-input" name="nome_responsavel" placeholder="NOME DO RESPONSÁVEL" required>
-                        <input type="text" class="system-input" name="nome_empresa" placeholder="NOME EMPRESA" required>
-                        <input type="text" class="system-input" name="CPF_CNPJ" placeholder="CPF ou CNPJ" required>
-                        <input type="tel" class="system-input" name="telefone" placeholder="TELEFONE" required>
+                        <input type="text" class="system-input" name="nome_responsavel" placeholder="NOME DO RESPONSÁVEL" value="{{old('nome_responsavel')}}" required>
+                        <input type="text" class="system-input" name="nome_empresa" placeholder="NOME EMPRESA" value="{{old('nome_empresa')}}" required>
+                        <input type="text" class="system-input" name="CPF_CNPJ" placeholder="CPF ou CNPJ" value="{{old('CPF_CNPJ')}}" required>
+                        <input type="tel" class="system-input" name="telefone" placeholder="TELEFONE" value="{{old('telefone')}}" required>
                     </div>
                     <div class="col-md-6">
                         <label>Endereço</label>
-                        <input type="text" class="system-input" name="cep" placeholder="CEP" required>
-                        <input type="text" class="system-input" name="estado" placeholder="ESTADO" required>
-                        <input type="text" class="system-input" name="cidade" placeholder="CIDADE" required>
+                        <input type="text" class="system-input" name="cep" placeholder="CEP" value="{{old('cep')}}" required>
+                        <input type="text" class="system-input" name="estado" placeholder="ESTADO" value="{{old('estado')}}" required>
+                        <input type="text" class="system-input" name="cidade" placeholder="CIDADE" value="{{old('cidade')}}" required>
                         <div class="row" style="margin-left: 0px; width: 100%">
-                            <input id="bairro-input" type="text" class="system-input col-md-8" name="bairro" placeholder="BAIRRO" required>
-                            <input id="numero-input" type="text" class="system-input col-md-4" name="numero" placeholder="NÚMERO" required>
+                            <input id="bairro-input" type="text" class="system-input col-md-8" name="bairro" placeholder="BAIRRO" value="{{old('bairro')}}" required>
+                            <input id="numero-input" type="text" class="system-input col-md-4" name="numero" placeholder="NÚMERO" value="{{old('numero')}}" required>
                         </div>
-                        <input type="text" class="system-input" name="logradouro" placeholder="LOGRADOURO" required>
+                        <input type="text" class="system-input" name="logradouro" placeholder="LOGRADOURO" value="{{old('logradouro')}}" required>
                     </div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col-md-6">
-                        <input type="email" class="system-input" name="email" placeholder="EMAIL" required>
-                        <input type="email" class="system-input" name="email_confirmation" placeholder="CONFIRMAR EMAIL" required>
+                        <input type="email" class="system-input" name="email" placeholder="EMAIL" value="{{old('email')}}" required>
+                        <input type="email" class="system-input" name="email_confirmation" placeholder="CONFIRMAR EMAIL" value="{{old('email_confirmation')}}" required>
                     </div>
                     <div class="col-md-6">
                         <input type="password" class="system-input" name="password" placeholder="SENHA" required>
