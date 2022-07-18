@@ -35,12 +35,13 @@ class ControllerVagaAprendizagem extends Controller
             'ch_teorica' => ['required', 'string', 'max:255'],
             'data_inicio' => ['required', 'date', 'max:255'],
             'data_fim' => ['required','date', 'max:255'],
-            'data_limite' => ['required','date', 'max:255'],
+            'data_limite' => ['required','date','date_format:d.m.Y', 'max:255'],
             'vagas' => ['required','string', 'max:255'],
             'pre_requisitos' => ['required','string', 'max:255'],
             'atv_desempenhadas' => ['required','string', 'max:255'],
             'desc' => ['required','string', 'max:255'],
         ]);
+
 
         if ($validator->fails()) {
             return redirect()->refresh()

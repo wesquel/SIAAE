@@ -35,7 +35,7 @@ class loginAlunoController extends Controller
         $response = Http::withBasicAuth($request->matricula, $request->password)->get($url);
 
         //caso o login esteja incorreto.
-        if ($response->status() == 403){
+        if ($response->status() != 200){
             return back()->withInput($request->only('matricula'));
         }
 
