@@ -51,7 +51,7 @@ class loginAlunoController extends Controller
 
         Auth::login($aluno);
 
-        return redirect()->intended('/aluno/configuraçoes');
+        return redirect()->intended('/aluno/home');
     }
 
 

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Aluno\candidaturasController;
+use App\Http\Controllers\Aluno\vagasController;
 use App\Http\Controllers\Auth\Aluno\loginAlunoController;
 use App\Http\Controllers\Auth\Aluno\registroAlunoController;
 use App\Http\Controllers\siaae\ControllerAluno;
@@ -21,10 +23,10 @@ Route::group(['middleware' => 'auth:aluno'], function(){
     Route::put('/aluno/configuracoes', [configController::class, 'update'])->name('config.form.aluno');
     Route::post('/aluno/configuracoes', [configController::class, 'createContatos'])->name('config.form.aluno.contato');
 
-    Route::get('/candidaturas', [ControllerAluno::class, 'candidaturas'])->name('candidaturas');
-    Route::get('/vagas', [ControllerAluno::class, 'vagas'])->name('lista-vagas');
-    Route::get('/vaga_estagio', [ControllerAluno::class, 'vaga_estagio']);
-    Route::get('/vaga_aprendizagem', [ControllerAluno::class, 'vaga_aprendizagem']);
+    Route::get('/aluno/candidaturas', [candidaturasController::class, 'create'])->name('candidaturas');
+    Route::get('/aluno/vagas', [vagasController::class, 'create'])->name('lista-vagas');
+    Route::get('/aluno/vaga_estagio', [vagasController::class, 'createEstagio']);
+    Route::get('/aluno/vaga_aprendizagem', [vagasController::class, 'createAprendizagem']);
     Route::get('/confirma_candidatura_estagio', [ControllerAluno::class, 'confirma_candidatura_estagio']);
     Route::get('/confirma_candidatura_aprendizagem', [ControllerAluno::class, 'confirma_candidatura_aprendizagem']);
 });
