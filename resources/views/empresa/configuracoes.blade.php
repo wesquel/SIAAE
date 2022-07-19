@@ -7,6 +7,7 @@
 
 @section('content')
 
+
     <div class="container">
     <form method="POST" class="teste container" action="{{ route('configuracoes.empresa') }}">
                                                                     <!--Verificar rota-->
