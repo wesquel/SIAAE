@@ -25,8 +25,10 @@
 
                         <div class="div-bolsa next-input-siaae">
                             <div class="group meio-input-esq">
-                                <span id="checkBoxBolsa" class="checkBox-input"><input type="checkbox"/></span>
-                                <input id="bolsa" name="bolsa" maxlength="10" class="input-siaae @error('bolsa') input-error-siaae @enderror" value="{{ old('bolsa') }}" disabled>
+                                <span class="checkBox-input">
+                                    <input id="checkBoxBolsa"  name="checkBoxBolsa" @if(old('checkBoxBolsa') != "") checked @endif type="checkbox"/>
+                                </span>
+                                <input id="bolsa" name="bolsa" maxlength="10" class="input-siaae @error('bolsa') input-error-siaae @enderror" value="{{ old('bolsa') }}" @if(old('checkBoxBolsa') == "") disabled @endif>
                                 <label class="label-siaae">Bolsa:</label>
                             </div>
                             <div class="group meio-input-dir">
@@ -111,20 +113,31 @@
     </div>
 
     <script>
+        // variaveis
         let checkBoxBolsa = document.getElementById('checkBoxBolsa')
         let inputBolsa = document.getElementById('bolsa')
-        var valueBolsa = ''
+        let valueBolsa = ''
+        elementList = document.getElementsByClassName('input-siaae');
 
+
+        // label remove.
+        for (let i = 0; i < elementList.length; i++){
+            if (elementList[i].value !== ""){
+                elementList[i].focus()
+                elementList[i].blur()
+            }
+        }
+
+        // habilita e desabilita input de bolsa ao click na checkBox
         checkBoxBolsa.addEventListener('change', e => {
                 if(e.target.checked === true) {
                     inputBolsa.removeAttribute('disabled')
                     inputBolsa.value = valueBolsa
-                    console.log("Checkbox is checked - boolean value: ", e.target.checked)
                 }
                 if(e.target.checked === false) {
                     inputBolsa.setAttribute('disabled', true)
+                    valueBolsa = inputBolsa.value
                     inputBolsa.value = ''
-                    console.log("Checkbox is not checked - boolean value: ", e.target.checked)
                 }
             }
         )
@@ -135,7 +148,6 @@
 
         function mascaraMoeda(e) {
             const input = e.target;
-
             // elimina tudo que não é dígito
             input.value = input.value.replace(/\D+/g, '');
             if (input.value.length === 0) // se não tem nada preenchido, não tem o que fazer
@@ -150,7 +162,6 @@
             input.value = formatter.format(parseInt(input.value) / 100);
         }
         document.getElementById('bolsa').addEventListener('input', mascaraMoeda);
-
     </script>
 
 @endsection
