@@ -6,7 +6,16 @@
 
 @section('content')
     <div class="divisao-superior" id="div-page-content">
-        <h2 class="title-left">Cadastrar Vaga</h2>
+        <div class="div-title">
+            <p class="col">Cadastra Vaga</p>
+            <div class="div-button-previous">
+                <a style="margin-right: 0;" class="col" href="{{ url()->previous() }}">
+                    <button id="button-voltar" type="button" class="system-button-previous system-button-verde">
+                        <i class="icon icon-arrow-left2"></i>Voltar
+                    </button>
+                </a>
+            </div>
+        </div>
         <h4 class="subtitle">Aprendizagem</h4>
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
         <form method="POST" action="{{route('cadastrar.vaga.aprendizagem')}}">
