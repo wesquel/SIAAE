@@ -8,10 +8,20 @@
 @section('content')
 
 
+    <div class="div-title">
+        <p class="col">Informações da empresa</p>
+        <div class="div-button-previous">
+            <a style="margin-right: 0;" class="col" href="{{ url()->previous() }}">
+                <button id="button-voltar" type="button" class="system-button-previous system-button-verde">
+                    <i class="icon icon-arrow-left2"></i>Voltar
+                </button>
+            </a>
+        </div>
+    </div>
+
     <div class="container">
     <form method="POST" class="teste container" action="{{ route('configuracoes.empresa') }}">
                                                                     <!--Verificar rota-->
-
         @csrf
         <div class="row">
             <div id="div-input-logo">

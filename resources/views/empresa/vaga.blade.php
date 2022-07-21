@@ -6,16 +6,17 @@
 
 @section('content')
     <div id="div-content">
-        <div class="row mb-4">
-            <div id="div-subtitulo" class="col-md-6">
-                <h4>Listagem de Vagas</h4>
-            </div>
-            <div id="div-button-voltar" class="col-md-6">
-                <button href="{{url()->previous()}}" class="system-button system-button-verde">Voltar</button>
+        <div class="div-title">
+            <p class="col">Lista de Candidatos</p>
+            <div class="div-button-previous">
+                <a style="margin-right: 0;" class="col" href="{{ url()->previous() }}">
+                    <button id="button-voltar" type="button" class="system-button-previous system-button-verde">
+                        <i class="icon icon-arrow-left2"></i>Voltar
+                    </button>
+                </a>
             </div>
         </div>
         <div id="div-lista-vagas">
-            <h4 class="title-page-content col-md-9 col-sm-9">Lista Vagas</h4>
             <table class="row">
                 <thead>
                 <tr class="row">
