@@ -50,6 +50,7 @@ class loginAlunoController extends Controller
         }
 
         Auth::login($aluno);
+        $aluno->acessAlldates();
 
         return redirect()->intended('/aluno/home');
     }

@@ -15,9 +15,9 @@
 
         <form class="flex-column" method="POST" action="{{ route('login.aluno') }}">
             @csrf
-            <input id="matricula" name="matricula" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Matrícula">
+            <input id="matricula" name="matricula" type="text" class="form-control" value="{{old('matricula')}}" placeholder="Matrícula">
 
-            <input id="password" name="password" type="password" class="form-control" aria-describedby="emailHelp" placeholder="Senha">
+            <input id="password" name="password" type="password" class="form-control" value="{{old('password')}}" placeholder="Senha">
 
             <button type="submit" class="system-button system-button-vermelho">Entrar</button>
         </form>
