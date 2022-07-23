@@ -63,7 +63,7 @@
 </style>
 
 <nav id="div-nav" class="nav navbar-expand-md col-md-3 col-sm-12">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="{{route('home_empresa')}}">
         <img src="{{ asset('images/logo_siaae.png') }}" width="30" height="30" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#div-nav-itens" aria-controls="div-nav-itens" aria-expanded="false" aria-label="Alterna navegação">

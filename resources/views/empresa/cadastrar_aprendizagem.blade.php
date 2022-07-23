@@ -17,7 +17,9 @@
             </div>
         </div>
         <h4 class="subtitle">Aprendizagem</h4>
+
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
+
         <form method="POST" action="{{route('cadastrar.vaga.aprendizagem')}}">
             @csrf
             <div class="divisao-inputs">
