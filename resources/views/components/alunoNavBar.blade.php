@@ -61,7 +61,7 @@
 
 </style>
 
-<nav id="div-nav" class="nav navbar-expand-md col-md-3 col-sm-12">
+<nav id="div-nav" class="nav navbar-expand-md col-md-3 ">
 
     <a class="navbar-brand" href="#">
         <img src="{{ asset('images/logo_siaae.png') }}" width="30" height="30" alt="">

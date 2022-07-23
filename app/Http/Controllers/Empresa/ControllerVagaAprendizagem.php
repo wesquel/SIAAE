@@ -26,22 +26,25 @@ class ControllerVagaAprendizagem extends Controller
         $tipoVaga = "aprendizagem";
 
         $validator = Validator::make($request->all(),[
-            'titulo_vaga' => ['bail','required', 'string', 'min:5','max:255'],
-//            'bolsa' => ['bail','required', 'string', 'max:255'],
-            'ch_semanal' => ['bail','required', 'string', 'max:255'],
+            'titulo_vaga' => ['bail','required', 'string', 'min:5','max:100'],
+            'bolsa' => ['bail', 'string', 'regex:/^\$?([0-9]{1,3}.([0-9]{3},)*[0-9]{2}|[0-9]+)(,[0-9][0-9])?$/', 'max:10'],
             'turno' => ['required', 'string', 'max:255'],
             'cursos' => ['required', 'string', 'max:255'],
-            'ch_pratica' => ['required', 'string', 'max:255'],
-            'ch_teorica' => ['required', 'string', 'max:255'],
-            'data_inicio' => ['required', 'date', 'max:255'],
-            'data_fim' => ['required','date', 'max:255'],
-            'data_limite' => ['required','date','date_format:d.m.Y', 'max:255'],
-            'vagas' => ['required','string', 'max:255'],
+            'auxilios' => ['string', 'max:255'],
+            'ch_semanal' => ['required', 'string', 'regex:/^(((0[0-9])|(1[0-9])|(2[0-3])):[0-5][0-9])$/', 'max:99'],
+            'ch_pratica' => ['required', 'string', 'regex:/^(((0[0-9])|(1[0-9])|(2[0-3])):[0-5][0-9])$/', 'max:99'],
+            'ch_teorica' => ['required', 'string', 'regex:/^(((0[0-9])|(1[0-9])|(2[0-3])):[0-5][0-9])$/', 'max:99'],
+            'data_inicio' => ['required', 'date', 'after_or_equal:' .  Date('Y-m-d')],
+            'data_fim' => ['required', 'date', 'after_or_equal:' .  Date('Y-m-d')],
+            'data_limite' => ['required','date','after_or_equal:' .  Date('Y-m-d')],
+            'vagas' => ['required','integer', 'max:99'],
             'pre_requisitos' => ['required','string', 'max:255'],
             'atv_desempenhadas' => ['required','string', 'max:255'],
             'desc' => ['required','string', 'max:255'],
         ]);
 
+
+        // /^(((0[0-9])|(1[0-9])|(2[0-3])):[0-5][0-9])$/ /regex de hora/tempo
 
         if ($validator->fails()) {
             return redirect()->refresh()
@@ -51,7 +54,7 @@ class ControllerVagaAprendizagem extends Controller
 
         $vaga = Vaga::create([
             'titulo' => $request->titulo_vaga,
-            //      'bolsa' => $request->bolsa,
+            'bolsa' => $request->bolsa,
             'tipo' => $tipoVaga,
             'auxilios' => $request->auxilios,
             'ch_semanal'=> $request->ch_semanal,

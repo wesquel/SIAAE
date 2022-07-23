@@ -5,8 +5,18 @@
 @endpush
 
 @section('content')
+    <div id="div-content">
+    <div class="div-title">
+        <p class="col">Cadastra Vaga</p>
+        <div class="div-button-previous">
+            <a style="margin-right: 0;" class="col" href="{{ url()->previous() }}">
+                <button id="button-voltar" type="button" class="system-button-previous system-button-verde">
+                    <i class="icon icon-arrow-left2"></i>Voltar
+                </button>
+            </a>
+        </div>
+    </div>
     <div class="divisao-superior" id="div-page-content">
-        <h2 class="title-left">Cadastrar vaga</h2>
         <div class="divisao-inputs">
             <div class="col ladoesq" id="conteudoesq">
                 <div id="linha-vertical">
@@ -23,7 +33,7 @@
                         </label>
                     </div>
                     <div class="input-contain linha-vertical">
-                        <input class="input-new" name="cadastro" type="text" value="83 3333 3333" disabled>
+                        <input class="input-new" name="cadastro" type="text" value="{{Auth::user()->telefone}}" disabled>
                         <label class="placeholder-text" for="cadastro">
                             <div class="text">Telefone:</div>
                         </label>

@@ -8,10 +8,20 @@
 @section('content')
 
 
-    <div class="container">
-    <form method="POST" class="teste container" action="{{ route('configuracoes.empresa') }}">
-                                                                    <!--Verificar rota-->
+    <div class="div-title">
+        <p class="col">Informações da empresa</p>
+        <div class="div-button-previous">
+            <a style="margin-right: 0;" class="col" href="{{ url()->previous() }}">
+                <button id="button-voltar" type="button" class="system-button-previous system-button-verde">
+                    <i class="icon icon-arrow-left2"></i>Voltar
+                </button>
+            </a>
+        </div>
+    </div>
 
+    <div class="container">
+    <form method="POST" class="container" action="{{ route('configuracoes.empresa') }}">
+                                                                    <!--Verificar rota-->
         @csrf
         <div class="row">
             <div id="div-input-logo">
@@ -26,23 +36,23 @@
             </div>
             <div class="col-md-6">
                 <label>Dados</label>
-                <input type="text" class="system-input" name="nome_empresa" placeholder="NOME EMPRESA" required>
-                <input type="text" class="system-input" name="nome_responsavel" placeholder="NOME DO RESPONSÁVEL" required>
-                <input type="tel" class="system-input" name="telefone" placeholder="TELEFONE" required>
-                <input type="text" class="system-input" name="email" placeholder="EMAIL" required>
+                <input type="text" class="system-input" value="{{Auth::user()->nome_empresa}}" name="nome_empresa" placeholder="NOME EMPRESA" required>
+                <input type="text" class="system-input" value="{{Auth::user()->nome_responsavel}}"  name="nome_responsavel" placeholder="NOME DO RESPONSÁVEL" required>
+                <input type="tel" class="system-input" name="telefone" value="{{Auth::user()->telefone}}"  placeholder="TELEFONE" required>
+                <input type="text" class="system-input" name="email" value="{{Auth::user()->email}}" placeholder="EMAIL" required>
             </div>
             <div class="col-md-6">
                 <label>Endereço</label>
-                <input type="text" class="system-input" name="cep" placeholder="CEP" required>
+                <input type="text" class="system-input" name="cep" value="{{Auth::user()->endereco->cep}}" placeholder="CEP" required>
                 <div class="row" style="margin-left: 0px; width: 100%">
-                    <input id="cidade-input" type="text" class="system-input col-md-8" name="cidade" placeholder="CIDADE" required>
-                    <input id="estado-input" type="text" class="system-input col-md-4" name="estado" placeholder="ESTADO" required>
+                    <input id="cidade-input" type="text" class="system-input col-md-8" name="cidade" value="{{Auth::user()->endereco->cidade}}" placeholder="CIDADE" required>
+                    <input id="estado-input" type="text" class="system-input col-md-4" name="estado" value="{{Auth::user()->endereco->estado}}" placeholder="ESTADO" required>
                 </div>
                 <div class="row" style="margin-left: 0px; width: 100%">
-                    <input id="bairro-input" type="text" class="system-input col-md-8" name="bairro" placeholder="BAIRRO" required>
-                    <input id="numero-input" type="text" class="system-input col-md-4" name="numero" placeholder="NÚMERO" required>
+                    <input id="bairro-input" type="text" class="system-input col-md-8" name="bairro" value="{{Auth::user()->endereco->bairro}}" placeholder="BAIRRO" required>
+                    <input id="numero-input" type="text" class="system-input col-md-4" name="numero" value="{{Auth::user()->endereco->numero}}" placeholder="NÚMERO" required>
                 </div>
-                <input type="text" class="system-input" name="logradouro" placeholder="LOGRADOURO" required>
+                <input type="text" class="system-input" name="logradouro" value="{{Auth::user()->endereco->logradouro}}" placeholder="LOGRADOURO" required>
             </div>
         </div>
 
