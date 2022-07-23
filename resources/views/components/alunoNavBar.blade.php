@@ -63,7 +63,7 @@
 
 <nav id="div-nav" class="nav navbar-expand-md col-md-3 ">
 
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="{{route('home_empresa')}}">
         <img src="{{ asset('images/logo_siaae.png') }}" width="30" height="30" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#div-nav-itens" aria-controls="div-nav-itens" aria-expanded="false" aria-label="Alterna navegação">
@@ -71,7 +71,7 @@
     </button>
 
     <div id="div-nav-itens" class="collapse navbar-collapse flex-column">
-        <span style="align-self: center">Bem vindo, {{ Auth::user()->matricula ?? 'Fulaninho' }}!</span>
+        <span style="align-self: center">Bem vindo, {{ Auth::user()->getNome() ?? 'Fulaninho' }}!</span>
         <a class="nav-link active" href="{{ route('candidaturas') }}"><i class="icon icon-plus"></i>CADASTRAR-SE À VAGAS</a>
         <a class="nav-link" href="{{ route('lista-vagas') }}"><i class="icon icon-list"></i>LISTA DE VAGAS</a>
         <a class="nav-link" href="{{ route('config.aluno') }}"><i class="icon icon-cog"></i>CONFIGURAÇÔES</a>

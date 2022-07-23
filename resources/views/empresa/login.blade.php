@@ -18,7 +18,7 @@
 
         <form method="POST" action="{{ route('login.empresa') }}" class="flex-column">
             @csrf
-            <input id="CPF_CNPJ" name="CPF_CNPJ" type="text" class="form-control" placeholder="CPF/CNPJ">
+            <input id="CPF_CNPJ" name="CPF_CNPJ" value="{{old('CPF_CNPJ')}}" type="text" class="form-control" placeholder="CPF/CNPJ">
 
             <input id="password" name="password" type="password" class="form-control" aria-describedby="emailHelp" placeholder="Senha">
 

@@ -1,7 +1,7 @@
 <style>
     .div-header {
         position: absolute;
-        top: 0px;
+        top: 0;
         background-color: #EAE8E8;
         width: 100%;
     }
@@ -12,6 +12,7 @@
     }
 </style>
 
-<div class="div-header">
-    <img src="{{asset('images/logo_siaae_horizontal.png')}}"/>
+<div class="div-header" style="display: flex">
+    <a href="{{route('index')}}"><img src="{{asset('images/logo_siaae_horizontal.png')}}"/></a>
+    <div></div>
 </div>
