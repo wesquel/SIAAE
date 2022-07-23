@@ -44,7 +44,7 @@
                                 @enderror
                             </div>
                             <div class="group meio-input-dir">
-                                <select name="auxilios" class="espacamento-inputs tes">
+                                <select name="auxilios" class="espacamento-inputs select-siaae">
                                     <option class="text-select-itens-siaae" value="null">Auxílios</option>
                                     <option value="Auxílio Transporte">Auxílio Transporte</option>
                                     <option value="Auxílio Alimentação">Auxílio Alimentação</option>
@@ -64,7 +64,7 @@
                                 @enderror
                             </div>
                             <div class="group meio-input-dir">
-                                <select class="espacamento-inputs tes" name="turno" type="cadastro">
+                                <select class="espacamento-inputs select-siaae" name="turno" type="cadastro">
                                     <option value="0">Turno</option>
                                     <option value="1">Manhã</option>
                                     <option value="2">Tarde</option>
@@ -76,7 +76,7 @@
                             </div>
                         </div>
                         <div class="next-input-siaae">
-                            <select name="cursos" class="tes" type="cadastro">
+                            <select name="cursos" class="select-siaae" type="cadastro">
                                 <option value="0">Cursos</option>
                                 <option value="1">Superior em Engenharia de Computação</option>
                                 <option value="2">Superior em Telemática</option>
@@ -121,7 +121,7 @@
                         </div>
                         <div class="div-data next-input-siaae">
                             <div class="group meio-input-esq">
-                                <input name="data_limite" class="input-siaae @error('data_limite') input-error-siaae @enderror" value="{{ old('data_fim')}}" onfocus="(this.type='date')" required>
+                                <input name="data_limite" class="input-siaae @error('data_limite') input-error-siaae @enderror" value="{{ old('data_limite')}}" onfocus="(this.type='date')" required>
                                 <label class="label-siaae">Data Limite:</label>
                                 @error('data_limite')
                                 <div class="error-text">{{ 'Data inválida.' }}</div>
