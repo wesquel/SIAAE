@@ -39,6 +39,9 @@
                                 </span>
                                 <input id="bolsa" name="bolsa" maxlength="10" class="input-siaae @error('bolsa') input-error-siaae @enderror" value="{{ old('bolsa') }}" @if(old('checkBoxBolsa') == "") disabled @endif>
                                 <label class="label-siaae">Bolsa:</label>
+                                @error('bolsa')
+                                <div class="error-text">{{ 'Formato Inválido.' }}</div>
+                                @enderror
                             </div>
                             <div class="group meio-input-dir">
                                 <select name="auxilios" class="espacamento-inputs tes">
@@ -46,6 +49,9 @@
                                     <option value="Auxílio Transporte">Auxílio Transporte</option>
                                     <option value="Auxílio Alimentação">Auxílio Alimentação</option>
                                 </select>
+                                @error('auxilios')
+                                <div class="error-text">{{ 'Erro Deseconhecido.' }}</div>
+                                @enderror
                             </div>
                         </div>
 
@@ -53,6 +59,9 @@
                             <div class="group meio-input-esq">
                                 <input name="ch_semanal" class="input-siaae @error('ch_semanal') input-error-siaae @enderror" value="{{ old('ch_semanal') }}" required>
                                 <label class="label-siaae">Carga Horaria Semanal:</label>
+                                @error('ch_semanal')
+                                <div class="error-text">{{ 'Horário inválido.' }}</div>
+                                @enderror
                             </div>
                             <div class="group meio-input-dir">
                                 <select class="espacamento-inputs tes" name="turno" type="cadastro">
@@ -61,6 +70,9 @@
                                     <option value="2">Tarde</option>
                                     <option value="3">Noite</option>
                                 </select>
+                                @error('turno')
+                                <div class="error-text">{{ 'Esse campo é obrigatorio.' }}</div>
+                                @enderror
                             </div>
                         </div>
                         <div class="next-input-siaae">
@@ -70,37 +82,58 @@
                                 <option value="2">Superior em Telemática</option>
                                 <option value="3">Ensino Médio em Informática</option>
                             </select>
+                            @error('cursos')
+                            <div class="error-text">{{ 'Selecione ao menos 1 curso.' }}</div>
+                            @enderror
                         </div>
 
                         <div class="div-ch next-input-siaae">
                             <div class="group meio-input-esq">
                                 <input name="ch_pratica" class="input-siaae @error('ch_pratica') input-error-siaae @enderror" value="{{ old('ch_pratica') }}" required>
                                 <label class="label-siaae">Carga Horaria Pratica:</label>
+                                @error('ch_pratica')
+                                    <div class="error-text">{{ 'Horário inválido.' }}</div>
+                                @enderror
                             </div>
                             <div class="group meio-input-dir">
                                 <input name="ch_teorica" class="input-siaae @error('ch_teorica') input-error-siaae @enderror" value="{{ old('ch_teorica') }}" required>
                                 <label class="label-siaae">Carga Horaria Teorica:</label>
+                                @error('ch_teorica')
+                                    <div class="error-text">{{ 'Horário inválido.' }}</div>
+                                @enderror
                             </div>
                         </div>
                         <div class="div-data next-input-siaae">
                             <div class="group meio-input-esq">
                                 <input name="data_inicio" class="input-siaae @error('data_inicio') input-error-siaae @enderror" value="{{ old('data_inicio') }}" onfocus="(this.type='date')"  required>
                                 <label class="label-siaae">Data Início:</label>
+                                @error('data_inicio')
+                                <div class="error-text">{{ 'Data inválida.' }}</div>
+                                @enderror
                             </div>
                             <div class="group meio-input-dir">
                                 <input name="data_fim" class="input-siaae @error('data_fim') input-error-siaae @enderror" value="{{ old('data_fim') }}" onfocus="(this.type='date')" required>
                                 <label class="label-siaae">Data Fim:</label>
+                                @error('data_fim')
+                                <div class="error-text">{{ 'Data inválida.' }}</div>
+                                @enderror
                             </div>
                         </div>
                         <div class="div-data next-input-siaae">
                             <div class="group meio-input-esq">
                                 <input name="data_limite" class="input-siaae @error('data_limite') input-error-siaae @enderror" value="{{ old('data_fim')}}" onfocus="(this.type='date')" required>
                                 <label class="label-siaae">Data Limite:</label>
+                                @error('data_limite')
+                                <div class="error-text">{{ 'Data inválida.' }}</div>
+                                @enderror
                             </div>
 
                             <div class="group meio-input-dir">
                                 <input name="vagas" maxlength="2" class="input-siaae @error('vagas') input-error-siaae @enderror" value="{{ old('vagas') }}" required>
                                 <label class="label-siaae">Quantidade de vagas:</label>
+                                @error('vagas')
+                                    <div class="error-text">{{ 'O número de vagas tem que ser maior que 0.' }}</div>
+                                @enderror
                             </div>
                         </div>
                     </div>
