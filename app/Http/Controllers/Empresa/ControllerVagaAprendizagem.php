@@ -23,7 +23,7 @@ class ControllerVagaAprendizagem extends Controller
 
 
     public function store(Request $request){
-        $tipoVaga = "aprendizagem";
+        $tipoVaga = "Aprendizagem";
 
         $validator = Validator::make($request->all(),[
             'titulo_vaga' => ['bail','required', 'string', 'min:5','max:100'],

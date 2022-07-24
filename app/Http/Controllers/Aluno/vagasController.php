@@ -13,8 +13,7 @@ use Illuminate\Support\Facades\Auth;
 class vagasController extends Controller
 {
     public function create(){
-        $vagas = $this->getVagas();
-        return view('aluno.vagas', ['vagas' => $vagas]);
+        return view('aluno.vagas', ['vagas' => $this->getVagas()]);
     }
 
     public function getVagas(){

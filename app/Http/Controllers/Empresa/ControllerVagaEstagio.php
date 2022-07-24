@@ -22,7 +22,7 @@ class ControllerVagaEstagio extends Controller
     }
 
     public function store(Request $request){
-        $tipoVaga = "estagio";
+        $tipoVaga = "Estagio";
 
 
 
