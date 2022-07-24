@@ -17,7 +17,7 @@ class CreateVagasTable extends Migration
             $table->id();
             $table->string('titulo');
             $table->string('tipo');
-            $table->integer('ch_semanal');
+            $table->string('ch_semanal');
             $table->string('turno');
             $table->date('data_inicio');
             $table->string('auxilios');
@@ -29,8 +29,8 @@ class CreateVagasTable extends Migration
             $table->date('data_limite');
             $table->double('valor_bolsa')->nullable();
             $table->string('atv-ferias')->nullable();
-            $table->integer('ch_teorica')->nullable();
-            $table->integer('ch_pratica')->nullable();
+            $table->string('ch_teorica')->nullable();
+            $table->string('ch_pratica')->nullable();
             $table->text('desc');
             $table->text('atv_desempenhadas');
             $table->text('pre_requisitos');
