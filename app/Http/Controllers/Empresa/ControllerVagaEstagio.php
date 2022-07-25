@@ -28,7 +28,7 @@ class ControllerVagaEstagio extends Controller
 
         $validator = Validator::make($request->all(),[
             'titulo_vaga' => ['bail','required', 'string', 'max:255'],
-//            'bolsa' => ['bail','required', 'string', 'max:255'],
+            'bolsa' => ['bail', 'string', 'regex:/^\$?([0-9]{1,3}.([0-9]{3},)*[0-9]{2}|[0-9]+)(,[0-9][0-9])?$/', 'max:10'],
             'ch_semanal' => ['bail','required', 'string', 'max:255'],
             'turno' => ['required', 'string', 'max:255'],
             'auxilios' => ['required', 'string', 'max:255'],
@@ -52,7 +52,7 @@ class ControllerVagaEstagio extends Controller
         $vaga = Vaga::create([
             'tipo' => $tipoVaga,
             'titulo' => $request->titulo_vaga,
-            //      'bolsa' => $request->bolsa,
+            'bolsa' => $request->bolsa,
             'ch_semanal'=> $request->ch_semanal,
             'auxilios' => $request->auxilios,
             'turno' => $request->turno,

@@ -70,8 +70,8 @@ class ControllerVagaAprendizagem extends Controller
 //            'atv_ferias' => 'teste',//alterar (adicionar ao lado)
             'atv_desempenhadas' => $request->atv_desempenhadas,
             'desc' => $request->desc,
-            'status' => 'ativo',
-            'modalidade' => 'presencial',
+            'status' => 'ativo', // ao criar a vaga ela sempre vai ter o status de Ativo.
+            'modalidade' => 'presencial', // padrão do tipo de vaga (aprendeizagem sempre presencial)
             'inclusao' => false,
             'empresa_id' => Auth::user()->id,
         ]);
