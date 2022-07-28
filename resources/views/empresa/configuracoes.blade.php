@@ -35,34 +35,130 @@
                     <span id='file-name'></span>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col">
                 <label>Dados</label>
-                <input type="text" class="system-input" value="{{Auth::user()->nome_empresa}}" name="nome_empresa" placeholder="NOME EMPRESA" required>
-                <input type="text" class="system-input" value="{{Auth::user()->nome_responsavel}}"  name="nome_responsavel" placeholder="NOME DO RESPONSÁVEL" required>
-                <input type="tel" class="system-input" name="telefone" value="{{Auth::user()->telefone}}"  placeholder="TELEFONE" required>
-                <input type="text" class="system-input" name="email" value="{{Auth::user()->email}}" placeholder="EMAIL" required>
+
+                <div class="group">
+                    <input name="nome_empresa" class="input-siaae @error('nome_empresa') input-error-siaae @enderror" value="{{Auth::user()->nome_empresa}}" required>
+                    <label class="label-siaae">Nome da empresa:</label>
+                </div>
+                @error('nome_empresa')
+                    <div class="error-text">{{ 'O título da vaga deve ter no mínimo 5 caracteres.' }}</div>
+                @enderror
+
+                <div class="group next-input-siaae">
+                    <input name="nome_responsavel" class="input-siaae @error('nome_responsavel') input-error-siaae @enderror" value="{{Auth::user()->nome_responsavel}}" required>
+                    <label class="label-siaae">Nome do Responsavel:</label>
+                </div>
+                @error('nome_responsavel')
+                    <div class="error-text">{{ 'O título da vaga deve ter no mínimo 5 caracteres.' }}</div>
+                @enderror
+
+                <div class="group next-input-siaae">
+                    <input name="telefone" class="input-siaae @error('telefone') input-error-siaae @enderror" value="{{Auth::user()->telefone}}" required>
+                    <label class="label-siaae">Telefone:</label>
+                </div>
+                @error('telefone')
+                    <div class="error-text">{{ 'O título da vaga deve ter no mínimo 5 caracteres.' }}</div>
+                @enderror
+
+                <div class="group next-input-siaae">
+                    <input name="email" type="email" class="input-siaae @error('email') input-error-siaae @enderror" value="{{Auth::user()->email}}" required>
+                    <label class="label-siaae">Email:</label>
+                </div>
+                @error('telefone')
+                    <div class="error-text">{{ 'O título da vaga deve ter no mínimo 5 caracteres.' }}</div>
+                @enderror
             </div>
-            <div class="col-md-6">
+            <div class="col">
                 <label>Endereço</label>
-                <input type="text" class="system-input" name="cep" value="{{Auth::user()->endereco->cep}}" placeholder="CEP" required>
-                <div class="row" style="margin-left: 0px; width: 100%">
-                    <input id="cidade-input" type="text" class="system-input col-md-8" name="cidade" value="{{Auth::user()->endereco->cidade}}" placeholder="CIDADE" required>
-                    <input id="estado-input" type="text" class="system-input col-md-4" name="estado" value="{{Auth::user()->endereco->estado}}" placeholder="ESTADO" required>
+
+                <div class="group">
+                    <input name="cep" class="input-siaae @error('cep') input-error-siaae @enderror" value="{{Auth::user()->endereco->cep}}" required>
+                    <label class="label-siaae">CEP:</label>
                 </div>
-                <div class="row" style="margin-left: 0px; width: 100%">
-                    <input id="bairro-input" type="text" class="system-input col-md-8" name="bairro" value="{{Auth::user()->endereco->bairro}}" placeholder="BAIRRO" required>
-                    <input id="numero-input" type="text" class="system-input col-md-4" name="numero" value="{{Auth::user()->endereco->numero}}" placeholder="NÚMERO" required>
+                @error('cep')
+                    <div class="error-text">{{ 'O título da vaga deve ter no mínimo 5 caracteres.' }}</div>
+                @enderror
+
+                <div class="row next-input-siaae" style="">
+
+                    <div class="group col">
+                        <input name="cep" class="input-siaae @error('cep') input-error-siaae @enderror" value="{{Auth::user()->endereco->cidade}}" required>
+                        <label class="label-siaae">Cidade:</label>
+                    </div>
+                    @error('cep')
+                        <div class="error-text">{{ 'O título da vaga deve ter no mínimo 5 caracteres.' }}</div>
+                    @enderror
+
+                    <div class="group col-md-4">
+                        <input name="cep" class="input-siaae @error('cep') input-error-siaae @enderror" value="{{Auth::user()->endereco->estado}}" required>
+                        <label class="label-siaae">Estado:</label>
+                    </div>
+                    @error('cep')
+                    <div class="error-text">{{ 'O título da vaga deve ter no mínimo 5 caracteres.' }}</div>
+                    @enderror
+
                 </div>
-                <input type="text" class="system-input" name="logradouro" value="{{Auth::user()->endereco->logradouro}}" placeholder="LOGRADOURO" required>
+
+
+                <div class="row next-input-siaae">
+
+                    <div class="group col">
+                        <input name="bairro" class="input-siaae @error('cep') input-error-siaae @enderror" value="{{Auth::user()->endereco->bairro}}" required>
+                        <label class="label-siaae">Bairro:</label>
+                    </div>
+                    @error('cep')
+                    <div class="error-text">{{ 'O título da vaga deve ter no mínimo 5 caracteres.' }}</div>
+                    @enderror
+
+                    <div class="group col-md-4">
+                        <input name="numero" class="input-siaae @error('cep') input-error-siaae @enderror" value="{{Auth::user()->endereco->numero}}" required>
+                        <label class="label-siaae">Número:</label>
+                    </div>
+                    @error('cep')
+                    <div class="error-text">{{ 'O título da vaga deve ter no mínimo 5 caracteres.' }}</div>
+                    @enderror
+
+                </div>
+                <div class="group next-input-siaae">
+                    <input name="logradouro" class="input-siaae @error('logradouro') input-error-siaae @enderror" value="{{Auth::user()->endereco->logradouro}}" required>
+                    <label class="label-siaae">Logradouro:</label>
+                </div>
+                @error('logradouro')
+                <div class="error-text">{{ 'O título da vaga deve ter no mínimo 5 caracteres.' }}</div>
+                @enderror
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" style="margin-top: 1em;">
             <div class="col-md-6">
                 <label>Alterar Senha</label>
-                <input type="password" class="system-input" name="password_atual" placeholder="SENHA ATUAL" required>
-                <input type="password" class="system-input" name="password" placeholder="SENHA" required>
-                <input type="password" class="system-input" name="password_confirmation" placeholder="CONFIRMAR SENHA" required>
+
+                <div class="group">
+                    <input name="password_atual" class="input-siaae @error('password_atual') input-error-siaae @enderror">
+                    <label class="label-siaae">Senha atual:</label>
+                </div>
+                @error('password_atual')
+                    <div class="error-text">{{ 'O título da vaga deve ter no mínimo 5 caracteres.' }}</div>
+                @enderror
+
+                <div class="group next-input-siaae">
+                    <input name="password" class="input-siaae @error('password') input-error-siaae @enderror">
+                    <label class="label-siaae">Senha:</label>
+                </div>
+                @error('password')
+                    <div class="error-text">{{ 'O título da vaga deve ter no mínimo 5 caracteres.' }}</div>
+                @enderror
+
+                <div class="group next-input-siaae">
+                    <input name="password_confirmation" class="input-siaae @error('password_confirmation') input-error-siaae @enderror">
+                    <label class="label-siaae">Confirmar Senha:</label>
+                </div>
+                @error('password_confirmation')
+                    <div class="error-text">{{ 'O título da vaga deve ter no mínimo 5 caracteres.' }}</div>
+                @enderror
+
             </div>
         </div>
         <button type="submit" class="system-button system-button-verde espaco-botao">Atualizar</button>

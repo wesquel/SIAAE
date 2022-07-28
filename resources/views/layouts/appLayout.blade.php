@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ $pagetitle ?? 'SIAAE - Sistema Integrado de Estagio'}}</title>
+    <title>{{ $pagetitle ?? 'SIAAE - Sistema Integrado de Apoio a Aprendizagem e Estágios'}}</title>
     <meta name="description" content="Figma htmlGenerator">
     <meta name="author" content="htmlGenerator">
     <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre ExtraBold&display=swap" rel="stylesheet">
