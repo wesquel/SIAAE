@@ -27,7 +27,7 @@ class ControllerConfigEmpresa extends Controller
             'cidade' => ['required', 'string', 'max:255'],
             'bairro' => ['required', 'string', 'max:255'],
             'numero' => ['required', 'string', 'max:255'],
-            'logradouro' => ['string', 'max:255'],
+            'logradouro' => ['string','nullable',  'max:255'],
         ]);
         $empresa = Empresa::findOrFail(Auth::user()->id);
         $empresa->nome_empresa = $request->nome_empresa;
