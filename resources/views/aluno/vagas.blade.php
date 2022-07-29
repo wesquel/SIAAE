@@ -16,7 +16,7 @@
             </a>
         </div>
     </div>
-    <div id="div-lista-vagas">
+    <div id="div-lista-vagas" class="">
         <table class="row">
             <thead>
                 <tr class="row">
