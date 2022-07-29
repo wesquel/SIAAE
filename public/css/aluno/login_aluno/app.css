@@ -14,6 +14,7 @@ body, html {
     margin: 0px;
 }
 .div-main {
+    display: flex;
     background-image:url(../../../images/fluxo_aluno/login_aluno/instructor_explaining_corporate_software_specific_to_intern_1.png);
     background-repeat:no-repeat;
     background-size:cover;

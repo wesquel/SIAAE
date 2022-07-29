@@ -16,7 +16,7 @@
             </a>
         </div>
     </div>
-    <div class="divisao-superior" id="div-page-content">
+    <div class="divisao-superior col-lg" id="div-page-content">
         <div class="divisao-inputs">
             <div class="col ladoesq" id="conteudoesq">
                 <div id="linha-vertical">

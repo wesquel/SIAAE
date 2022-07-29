@@ -1,5 +1,6 @@
 <style>
     .div-main {
+        display: flex;
         height: 100%;
     }
 

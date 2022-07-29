@@ -27,7 +27,7 @@
 
 <body>
 
-<div class="div-main row">
+<div class="div-main">
 
     @if(isset($userType) && $userType == 'empresa')
         @include('components.empresaNavBar')
@@ -36,7 +36,7 @@
     @endif
 
 
-    <div id="div-page-content" class="col-md-9">
+    <div id="div-page-content" class="col-lg">
         @yield('content')
     </div>
 </div>

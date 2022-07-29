@@ -5,7 +5,7 @@
 @endpush
 
 @section('content')
-    <div class="centralize" id="div-page-content">
+    <div class="centralize col-lg" id="div-page-content">
         <img src="{{ asset('images/ilustracao_home.png')}}">
     </div>
 @endsection
