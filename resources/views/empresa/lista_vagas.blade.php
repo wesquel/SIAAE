@@ -18,7 +18,7 @@
     </div>
 
     <div id="div-content">
-        <div class="row">
+        <div class="row" style="margin-right: 0;">
             @foreach($vagas as $vaga)
                 <div class="div-card col-md-3 mb-4">
                     <div class="card-vaga">

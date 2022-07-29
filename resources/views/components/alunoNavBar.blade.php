@@ -1,14 +1,17 @@
 <style>
     .div-main {
+        display: flex;
         height: 100%;
     }
 
     #div-nav {
         background-color: var(--cor--cinza);
+        width: 15%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        box-shadow: 0 5px 20px 5px #888;
     }
 
     #div-nav span {
@@ -40,6 +43,12 @@
     #div-nav-itens .icon {
         color: var(--cor-vermelho);
         margin-right: 5px;
+    }
+
+    @media (max-width: 1230px) {
+        #div-nav {
+            width: 20%;
+        }
     }
 
     @media (max-width: 767px) {

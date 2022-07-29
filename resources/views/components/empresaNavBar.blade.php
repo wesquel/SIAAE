@@ -1,5 +1,6 @@
 <style>
      .div-main {
+         display: flex;
          height: 100%;
      }
     #div-nav {
@@ -62,7 +63,7 @@
 
 </style>
 
-<nav id="div-nav" class="nav navbar-expand-md col-md-3 col-sm-12">
+<nav id="div-nav" class="nav navbar-expand-md col-sm-8" style="width: 20em;">
     <a class="navbar-brand" href="{{route('home_empresa')}}">
         <img src="{{ asset('images/logo_siaae.png') }}" width="30" height="30" alt="">
     </a>

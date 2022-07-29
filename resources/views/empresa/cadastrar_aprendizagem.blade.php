@@ -5,7 +5,7 @@
 @endpush
 
 @section('content')
-    <div class="divisao-superior" id="div-page-content">
+    <div class="divisao-superior col-lg" id="div-page-content">
         <div class="div-title">
             <p class="col">Cadastra Vaga</p>
             <div class="div-button-previous">

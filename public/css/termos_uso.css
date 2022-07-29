@@ -4,6 +4,7 @@ body {
 }
 
 .div-main {
+    display: flex;
     background-color: #fff;
     padding: 50px;
     margin-top: 60px;
