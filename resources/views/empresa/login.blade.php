@@ -1,7 +1,6 @@
 @extends('layouts.loginLayout')
 
 @push('custom-styles')
-
     <link rel="stylesheet" href="{{ asset('css/empresa/login_empresa.css') }}">
     {{--    <link rel="stylesheet" href="{{ asset('css/icons/icomoon.css') }}">--}}
 @endpush
@@ -18,7 +17,7 @@
 
         <form method="POST" action="{{ route('login.empresa') }}" class="flex-column">
             @csrf
-            <input id="CPF_CNPJ" name="CPF_CNPJ" value="{{old('CPF_CNPJ')}}" type="text" class="form-control" placeholder="CPF/CNPJ">
+            <input id="CPF_CNPJ" name="CPF_CNPJ" value="{{old('CPF_CNPJ')}}" type="text" class="form-control CPF_CNPJ" placeholder="CPF/CNPJ">
 
             <input id="password" name="password" type="password" class="form-control" aria-describedby="emailHelp" placeholder="Senha">
 
@@ -52,8 +51,9 @@
                         <label>Dados</label>
                         <input type="text" class="system-input" name="nome_responsavel" placeholder="NOME DO RESPONSÁVEL" value="{{old('nome_responsavel')}}" required>
                         <input type="text" class="system-input" name="nome_empresa" placeholder="NOME EMPRESA" value="{{old('nome_empresa')}}" required>
-                        <input type="text" class="system-input" name="CPF_CNPJ" placeholder="CPF ou CNPJ" value="{{old('CPF_CNPJ')}}" required>
-                        <input type="tel" class="system-input" name="telefone" placeholder="TELEFONE" value="{{old('telefone')}}" required>
+
+                        <input type="text" class="system-input CPF_CNPJ" name="CPF_CNPJ" placeholder="CPF ou CNPJ" value="{{old('CPF_CNPJ')}}" maxlength="14" required>
+                        <input type="tel" onkeydown="return mascaraTelefone(event)" class="system-input" maxlength="15" id="telefone" name="telefone" placeholder="TELEFONE" value="{{old('telefone')}}" required>
                     </div>
                     <div class="col-md-6">
                         <label>Endereço</label>
@@ -82,7 +82,7 @@
             </form>
         </div>
     </div>
-
+    <script src="{{asset('js/mask.js')}}"></script>
     <script>
 
         let modalFormRegistrar = document.getElementById('modal-form-registrar');

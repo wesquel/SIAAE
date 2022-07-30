@@ -4,6 +4,7 @@
     <meta charset='utf-8'>
     <title>SIAAE - Sistema Integrado de Apoio a Aprendizagem e Estágios</title>
     <!-- CSS only -->
+    <script src="{{asset('js/jquery-3.6.0.js')}}"></script>
     <link rel="stylesheet" type='text/css' media='screen' href="{{asset('css/bootstrap/bootstrap.min.css')}}">
     <link rel="stylesheet" type='text/css' media='screen' href="{{asset('css/main.css')}}">
     <link rel="icon" type="image/x-icon" href="{{asset('/images/favicon-siaae.ico')}}">
