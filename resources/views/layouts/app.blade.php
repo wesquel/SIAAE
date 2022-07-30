@@ -15,6 +15,8 @@
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{asset('js/jquery-3.6.0.js')}}"></script>
+        <script src="{{asset('js/jquery.mask.js')}}"></script>
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">

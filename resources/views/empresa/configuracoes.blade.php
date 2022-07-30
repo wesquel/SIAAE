@@ -47,7 +47,7 @@
                 @enderror
 
                 <div class="group next-input-siaae">
-                    <input name="nome_responsavel" class="input-siaae @error('nome_responsavel') input-error-siaae @enderror" value="{{Auth::user()->nome_responsavel}}" required>
+                    <input name="nome_responsavel" class="input-siaae @error('nome_responsavel') input-error-siaae @enderror" value="{{Auth::user()->nome_responsavel}}" maxlength="15" required>
                     <label class="label-siaae">Nome do Responsavel:</label>
                 </div>
                 @error('nome_responsavel')
@@ -55,7 +55,7 @@
                 @enderror
 
                 <div class="group next-input-siaae">
-                    <input name="telefone" class="input-siaae @error('telefone') input-error-siaae @enderror" value="{{Auth::user()->telefone}}" required>
+                    <input id="telefone" name="telefone" class="input-siaae @error('telefone') input-error-siaae @enderror" value="{{Auth::user()->telefone}}" required>
                     <label class="label-siaae">Telefone:</label>
                 </div>
                 @error('telefone')
@@ -166,6 +166,8 @@
     </form>
     </div>
 
+
+    <script src="{{asset('js/mask.js')}}"></script>
     <script>
 
         var fileInput = document.getElementById('input-curriculo');
@@ -178,6 +180,7 @@
             }
             fileNameLabel.textContent = filename;
         });
+
 
     </script>
 
