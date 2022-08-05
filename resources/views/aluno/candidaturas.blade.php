@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row candidaturas-div">
             @for($i = 0; $i < 8; $i++)
             <div class="col-md-4 col-sm-6 mb-4">
 

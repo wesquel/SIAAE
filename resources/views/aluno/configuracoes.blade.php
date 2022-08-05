@@ -37,7 +37,7 @@
                 <hr>
                 <div class="form-group">
                     <label>Telefone: </label>
-                    <input id="telefone" name="telefone"  value="{{Auth::user()->telefone}}" type="text" placeholder="Telefone" class="system-input mb-4">
+                    <input id="telefone" name="telefone" onkeydown="return mascaraTelefone(event)" maxlength="15"  value="{{Auth::user()->telefone}}" type="text" placeholder="Telefone" class="system-input mb-4">
                     <label>Email: </label>
                     <input id="email" name="email"  type="email" value="{{Auth::user()->email}}" placeholder="Email" class="system-input mb-4">
                     <label>Linkedin: </label>
