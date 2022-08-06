@@ -25,7 +25,7 @@
         list-style: none;
         text-align: left;
     }
-    #div-nav a {
+    .menu-text {
         text-decoration: none;
         color: #000;
     }
@@ -38,12 +38,18 @@
         margin-right: 5px;
     }
 
-
      @media (max-width: 1230px) {
          #div-nav {
              width: 20%;
          }
      }
+
+
+    .logout-icon{
+        margin-right: 7px;
+        width: 1em;
+        content:url({{asset('images/icon/logout-icon.svg')}});
+    }
 
     @media (max-width: 767px) {
         #div-nav {
@@ -61,6 +67,20 @@
         }
     }
 
+    .logout-text{
+        text-decoration: none;
+        color: #9A0000;
+    }
+
+    .navbar-collapse{
+        flex-direction: column-reverse;
+    }
+     .logout-div{
+         right: 2.9em;
+         position: relative;
+         margin-bottom: 1em;
+     }
+
 </style>
 
 <nav id="div-nav" class="nav navbar-expand-md col-sm-8" style="width: 20em;">
@@ -73,9 +93,13 @@
 
     <div id="div-nav-itens" class="collapse navbar-collapse flex-column">
         <span style="align-self: center">Bem vindo, {{ Auth::user()->nome_empresa ?? 'Fulaninho' }}!</span>
-        <a class="nav-link active" href="{{ route('cadastrar.vaga.empresa') }}"><i class="icon icon-plus"></i>CRIAR NOVA VAGA</a>
-        <a class="nav-link" href="{{ route('empresa.lista.vagas') }}"><i class="icon icon-list"></i>LISTA DE VAGAS</a>
-        <a class="nav-link" href="{{ route('configuracoes.empresa') }}"><i class="icon icon-cog"></i>CONFIGURAÇÕES</a>
+        <a class="nav-link menu-text active" href="{{ route('cadastrar.vaga.empresa') }}"><i class="icon icon-plus"></i>CRIAR NOVA VAGA</a>
+        <a class="nav-link menu-text" href="{{ route('empresa.lista.vagas') }}"><i class="icon icon-list"></i>LISTA DE VAGAS</a>
+        <a class="nav-link menu-text" href="{{ route('configuracoes.empresa') }}"><i class="icon icon-cog"></i>CONFIGURAÇÕES</a>
     </div>
+    <div class="navbar-collapse logout-div">
+        <a id="nav-link" class="logout-text" href="{{ route('empresa.logout') }}"><i class="icon logout-icon"></i>SAIR</a>
+    </div>
+
 </nav>
 
