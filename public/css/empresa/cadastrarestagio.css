@@ -13,6 +13,11 @@
     border-right: 2px solid #ccc;
 }
 
+.botao-cadastrar-vaga{
+    position: relative;
+    margin-top: 3em;
+}
+
 .ladodir{
     padding-left: 3em;
 }

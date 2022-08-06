@@ -5,6 +5,7 @@
 @endpush
 
 @section('content')
+
     <div id="div-content">
         <div class="div-title">
             <p class="col">Lista de Candidatos</p>
@@ -20,26 +21,26 @@
             <table class="row">
                 <thead>
                 <tr class="row">
-                    <td class="col-md-2">Nome</td>
-                    <td class="col-md-2">Definir Status</td>
-                    <td class="col-md-1">Idade</td>
-                    <td class="col-md-2" style="text-align: right">Curso</td>
-                    <td class="col-md-1">Período</td>
-                    <td class="col-md-2">Disponibilidade</td>
-                    <td class="col-md-1"></td>
-                    <td class="col-md-1"></td>
+                    <td class="col-md-2 text-col">Nome</td>
+                    <td class="col-md-2 text-col">Definir Status</td>
+                    <td class="col-md-1 text-col">Idade</td>
+                    <td class="col-md-2 text-col">Curso</td>
+                    <td class="col-md-1 text-col">Período</td>
+                    <td class="col-md-2 text-col">Disponibilidade</td>
+                    <td class="col-md-1 text-col">Dados</td>
+                    <td class="col-md-1 text-col">Selecionar</td>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($candidatos as $aluno)
                     <tr class="row">
-                        <td class="col-md-2" style="text-align: right;">
+                        <td class="col-md-2">
                             <label class="system-icon-circle" >
                                 {{$aluno[0]['matricula']}}
                             </label>
                         </td>
                         <td class="col-md-2">
-                            <select>
+                            <select class="status-select">
                                 <option selected value="em_analise">Em análise</option>
                                 <option>Aceito</option>
                                 <option>Recusado</option>
@@ -49,8 +50,8 @@
                         <td class="col-md-2">Engenharia</td>
                         <td class="col-md-1">05</td>
                         <td class="col-md-2">Disponível</td>
-                        <td class="col-md-1"><i class="icon icon-eye"></i></td>
-                        <td class="col-md-1"><input type="checkbox"></td>
+                        <td class="col-md-1 teste"><i class="icon icon-eye"></i></td>
+                        <td class="col-md-1"><input type="checkbox" class="check-box-select"></td>
                     </tr>
                 @endforeach
                 </tbody>

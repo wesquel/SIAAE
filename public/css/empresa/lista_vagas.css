@@ -27,7 +27,6 @@
 
 thead {
     font-weight: bolder;
-    border-bottom: 1px solid var(--cor-grafite);
     color: #444444;
 }
 
@@ -52,3 +51,38 @@ tbody {
     background-color: #D0B93C;
 }
 
+.row>*{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.status-select{
+    position: relative;
+    margin: 0 auto;
+    align-self: center;
+    bottom: 10px;
+}
+
+.check-box-select{
+    position: relative;
+    bottom: 0.25em;
+}
+
+.text-col{
+    padding-bottom: 10px;
+}
+
+.icon-eye{
+    position: relative;
+
+}
+
+.card-vaga{
+}
