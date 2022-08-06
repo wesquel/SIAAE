@@ -55,7 +55,7 @@
                 @enderror
 
                 <div class="group next-input-siaae">
-                    <input id="telefone" name="telefone" class="input-siaae @error('telefone') input-error-siaae @enderror" value="{{Auth::user()->telefone}}" required>
+                    <input id="telefone" name="telefone" onkeydown="return mascaraTelefone(event)" maxlength="15" class="input-siaae @error('telefone') input-error-siaae @enderror" value="{{Auth::user()->telefone}}" required>
                     <label class="label-siaae">Telefone:</label>
                 </div>
                 @error('telefone')

@@ -53,7 +53,7 @@
                         <input type="text" class="system-input" name="nome_empresa" placeholder="NOME EMPRESA" value="{{old('nome_empresa')}}" required>
 
                         <input type="text" class="system-input CPF_CNPJ" name="CPF_CNPJ" placeholder="CPF ou CNPJ" value="{{old('CPF_CNPJ')}}" maxlength="14" required>
-                        <input type="tel" onkeydown="return mascaraTelefone(event)" class="system-input" maxlength="15" id="telefone" name="telefone" placeholder="TELEFONE" value="{{old('telefone')}}" required>
+                        <input type="tel" onkeydown="return mascaraTelefone(event)" maxlength="15"  class="system-input" id="telefone" name="telefone" placeholder="TELEFONE" value="{{old('telefone')}}" required>
                     </div>
                     <div class="col-md-6">
                         <label>Endereço</label>
