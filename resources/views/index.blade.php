@@ -176,10 +176,11 @@
         <div class="big-bar-background"><span class="big-bar-text">ENTRE EM CONTATO</span></div>
         <div class="form-area">
             <form class="contato-form w-50">
-                <div class="form-row">
+                <div class="div-meio">
                     <div class="form-group col-md-6">
                         <input type="name" class="form-control" id="inputName" placeholder="Nome Completo">
                     </div>
+                    <div class="entre-inputs"></div>
                     <div class="form-group col-md-6">
                         <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                     </div>

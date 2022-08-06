@@ -301,7 +301,7 @@
 
   .faq-title{
     color: #444444;
-    font-weight: 9px;
+    font-weight: 9;
     font-size: 35px;
   }
 
@@ -390,7 +390,7 @@
   }
 
   .form-area{
-    margin-top: 3em;
+    margin-top: 1em;
   }
 
   .contato-form{
@@ -432,5 +432,14 @@
     background-color:#409041;
     text-align: center;
     color: #F2F1F1;
+  }
+
+
+  .div-meio{
+      display: flex;
+  }
+
+  .form-group{
+      margin-bottom: 1em;
   }
 
