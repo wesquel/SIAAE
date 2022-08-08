@@ -1,5 +1,6 @@
 #div-content {
     padding: 20px 10px;
+    margin-left: 1em;
 }
 
 #div-subtitulo {
@@ -7,6 +8,8 @@
 }
 
 .div-card {
+    margin-right: 1em;
+    max-width: 16em;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -82,7 +85,4 @@ tbody {
 .icon-eye{
     position: relative;
 
-}
-
-.card-vaga{
 }
