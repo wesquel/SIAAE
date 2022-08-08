@@ -93,8 +93,10 @@
                     </div>
 
                     <div class="group col-md-4">
-                        <input name="estado" class="input-siaae @error('estado') input-error-siaae @enderror" value="{{Auth::user()->endereco->estado}}" required>
-                        <label class="label-siaae">Estado:</label>
+                        <div class="group col">
+                            <input name="estado" class="input-siaae @error('estado') input-error-siaae @enderror" value="{{Auth::user()->endereco->estado}}" required>
+                            <label class="label-siaae">Estado:</label>
+                        </div>
                         @error('estado')
                             <div class="error-text">{{ 'Error estado.' }}</div>
                         @enderror
@@ -105,17 +107,21 @@
 
                 <div class="row next-input-siaae">
 
-                    <div class="group col">
-                        <input name="bairro" class="input-siaae @error('bairro') input-error-siaae @enderror" value="{{Auth::user()->endereco->bairro}}" required>
-                        <label class="label-siaae">Bairro:</label>
+                    <div class="col">
+                        <div class="group col">
+                            <input name="bairro" class="input-siaae @error('bairro') input-error-siaae @enderror" value="{{Auth::user()->endereco->bairro}}" required>
+                            <label class="label-siaae">Bairro:</label>
+                        </div>
                         @error('bairro')
                             <div class="error-text">{{ 'Bairro incorreto.' }}</div>
                         @enderror
                     </div>
 
                     <div class="group col-md-4">
-                        <input name="numero" class="input-siaae @error('numero') input-error-siaae @enderror" value="{{Auth::user()->endereco->numero}}" required>
-                        <label class="label-siaae">Número:</label>
+                        <div class="group col">
+                            <input name="numero" class="input-siaae @error('numero') input-error-siaae @enderror" value="{{Auth::user()->endereco->numero}}" required>
+                            <label class="label-siaae">Número:</label>
+                        </div>
                         @error('numero')
                             <div class="error-text">{{ 'Número incorreto.' }}</div>
                         @enderror
