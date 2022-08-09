@@ -18,7 +18,7 @@
     </div>
 
     <div id="div-content">
-        <div class="row" style="margin-right: 0;">
+        <div class="row">
             @foreach($vagas as $vaga)
                 <div class="div-card col-md-3 mb-4">
                     <div class="card-vaga">
@@ -40,8 +40,8 @@
                         </div>
 
                         <div id="div-acoes" class="row">
-                            <a href="vagas/{{$vaga->id}}" class="col-md-12"><i class="icon icon-search"></i> Candidatos</a>
-                            <a href="editar/{{$vaga->id}}" class="col-md-12"><i class="icon icon-pencil"></i> Editar</a>
+                            <a href="vagas/{{$vaga->id}}" class="col-md-12"><i class="icon icon-search"> </i> Candidatos</a>
+                            <a href="editar/{{$vaga->id}}" class="col-md-12"><i class="icon icon-pencil" ></i> Editar</a>
                             <a href="inativar/{{$vaga->id}}" class="col-md-12"><i class="icon icon-blocked"></i> Inativar</a>
                         </div>
                     </div>
