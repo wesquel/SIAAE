@@ -58,7 +58,7 @@ class ControllerVagaAprendizagem extends Controller
         // /^(((0[0-9])|(1[0-9])|(2[0-3])):[0-5][0-9])$/ /regex de hora/tempo
 
         if ($validator->fails()) {
-            return redirect()->refresh()
+            return redirect(route('cadastrar.vaga.aprendizagem', ["inclusao" => $request->inclusao]))
                 ->withErrors($validator)
                 ->withInput($request->input());
         }

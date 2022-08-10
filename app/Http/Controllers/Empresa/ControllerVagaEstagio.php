@@ -25,6 +25,7 @@ class ControllerVagaEstagio extends Controller
         if ( !($inclusao == "nao" || $inclusao == "sim") ){
             return redirect(route('cadastrar.vaga.empresa'));
         }
+
         return view('empresa.cadastrar_estagio', ["inclusao" => $inclusao]);
     }
 
@@ -50,12 +51,11 @@ class ControllerVagaEstagio extends Controller
 
 
         if ($validator->fails()) {
-            return redirect()->refresh()
+            return redirect(route('cadastrar.vaga.estagio', ["inclusao" => $request->inclusao]))
                 ->withErrors($validator)
                 ->withInput($request->input());
         }
 
-        dd("teste");
 
         $vaga = Vaga::create([
             'tipo' => $tipoVaga,
