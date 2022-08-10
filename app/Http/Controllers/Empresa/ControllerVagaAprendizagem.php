@@ -23,15 +23,13 @@ class ControllerVagaAprendizagem extends Controller
     public function create(Request $request){
         $this->inclusao = $request->query("inclusao");
 
-        if ($this->inclusao == "nao"){
-            $this->inclusao = false;
-        }elseif ($this->inclusao == "sim"){
-            $this->inclusao = true;
-        }else{
+        $inclusao = $request->query("inclusao");
+
+        if ( !($inclusao == "nao" || $inclusao == "sim") ){
             return redirect(route('cadastrar.vaga.empresa'));
         }
 
-        return view('empresa.cadastrar_aprendizagem');
+        return view('empresa.cadastrar_aprendizagem', ["inclusao" => $inclusao]);
     }
 
 
@@ -85,7 +83,7 @@ class ControllerVagaAprendizagem extends Controller
             'desc' => $request->desc,
             'status' => 'ativo', // ao criar a vaga ela sempre vai ter o status de Ativo.
             'modalidade' => 'presencial', // padrão do tipo de vaga (aprendeizagem sempre presencial)
-            'inclusao' => $this->inclusao,
+            'inclusao' => $request->inclusao,
             'empresa_id' => Auth::user()->id,
         ]);
 

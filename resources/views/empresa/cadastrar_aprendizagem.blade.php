@@ -20,7 +20,7 @@
 
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
-        <form method="POST" action="{{route('cadastrar.vaga.aprendizagem')}}">
+        <form method="POST" action="{{route('cadastrar.vaga.aprendizagem', ["inclusao" => $inclusao])}}">
             @csrf
             <div class="divisao-inputs">
                 <div class="col ladoesq" id="conteudoesq">

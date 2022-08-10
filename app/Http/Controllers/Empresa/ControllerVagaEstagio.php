@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Validator;
 class ControllerVagaEstagio extends Controller
 {
 
-    private $inclusao;
 
     public function __construct()
     {
@@ -20,22 +19,18 @@ class ControllerVagaEstagio extends Controller
     }
 
     public function create(Request $request){
-        $this->inclusao = $request->query("inclusao");
 
-        if ($this->inclusao == "nao"){
-            $this->inclusao = false;
-        }elseif ($this->inclusao == "sim"){
-            $this->inclusao = true;
-        }else{
+        $inclusao = $request->query("inclusao");
+
+        if ( !($inclusao == "nao" || $inclusao == "sim") ){
             return redirect(route('cadastrar.vaga.empresa'));
         }
-
-        return view('empresa.cadastrar_estagio');
+        return view('empresa.cadastrar_estagio', ["inclusao" => $inclusao]);
     }
 
     public function store(Request $request){
+
         $tipoVaga = "Estagio";
-        $inclusao = $request->route()->getPrefix();
         $validator = Validator::make($request->all(),[
             'titulo_vaga' => ['bail','required', 'string', 'max:255'],
             'bolsa' => ['bail', 'string', 'regex:/^\$?([0-9]{1,3}.([0-9]{3},)*[0-9]{2}|[0-9]+)(,[0-9][0-9])?$/', 'max:10'],
@@ -53,11 +48,14 @@ class ControllerVagaEstagio extends Controller
             'desc' => ['required','string', 'max:255'],
         ]);
 
+
         if ($validator->fails()) {
             return redirect()->refresh()
                 ->withErrors($validator)
                 ->withInput($request->input());
         }
+
+        dd("teste");
 
         $vaga = Vaga::create([
             'tipo' => $tipoVaga,
@@ -77,10 +75,9 @@ class ControllerVagaEstagio extends Controller
             'desc' => $request->desc,
             'status' => 'ativo', //preciso inserir
             'modalidade' => 'presencial', //preciso inserir
-            'inclusao' => $this->inclusao,
+            'inclusao' => $request->inclusao,
             'empresa_id' => Auth::user()->id,
         ]);
-
         event(new Registered($vaga));
 
         return redirect()->refresh();
