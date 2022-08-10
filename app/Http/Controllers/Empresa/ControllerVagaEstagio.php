@@ -12,20 +12,26 @@ use Illuminate\Support\Facades\Validator;
 class ControllerVagaEstagio extends Controller
 {
 
+
     public function __construct()
     {
         auth()->setDefaultDriver('empresa');
     }
 
-    public function create(){
-        return view('empresa.cadastrar_estagio');
+    public function create(Request $request){
+
+        $inclusao = $request->query("inclusao");
+
+        if ( !($inclusao == "nao" || $inclusao == "sim") ){
+            return redirect(route('cadastrar.vaga.empresa'));
+        }
+
+        return view('empresa.cadastrar_estagio', ["inclusao" => $inclusao]);
     }
 
     public function store(Request $request){
+
         $tipoVaga = "Estagio";
-
-
-
         $validator = Validator::make($request->all(),[
             'titulo_vaga' => ['bail','required', 'string', 'max:255'],
             'bolsa' => ['bail', 'string', 'regex:/^\$?([0-9]{1,3}.([0-9]{3},)*[0-9]{2}|[0-9]+)(,[0-9][0-9])?$/', 'max:10'],
@@ -43,11 +49,13 @@ class ControllerVagaEstagio extends Controller
             'desc' => ['required','string', 'max:255'],
         ]);
 
+
         if ($validator->fails()) {
-            return redirect()->refresh()
+            return redirect(route('cadastrar.vaga.estagio', ["inclusao" => $request->inclusao]))
                 ->withErrors($validator)
                 ->withInput($request->input());
         }
+
 
         $vaga = Vaga::create([
             'tipo' => $tipoVaga,
@@ -67,10 +75,9 @@ class ControllerVagaEstagio extends Controller
             'desc' => $request->desc,
             'status' => 'ativo', //preciso inserir
             'modalidade' => 'presencial', //preciso inserir
-            'inclusao' => false, //preciso inserir
+            'inclusao' => $request->inclusao,
             'empresa_id' => Auth::user()->id,
         ]);
-
         event(new Registered($vaga));
 
         return redirect()->refresh();

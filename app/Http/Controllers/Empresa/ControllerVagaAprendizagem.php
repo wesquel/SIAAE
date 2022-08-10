@@ -12,13 +12,24 @@ use Illuminate\Support\Facades\Validator;
 class ControllerVagaAprendizagem extends Controller
 {
 
+
+    private $inclusao;
+
     public function __construct()
     {
         auth()->setDefaultDriver('empresa');
     }
 
-    public function create(){
-        return view('empresa.cadastrar_aprendizagem');
+    public function create(Request $request){
+        $this->inclusao = $request->query("inclusao");
+
+        $inclusao = $request->query("inclusao");
+
+        if ( !($inclusao == "nao" || $inclusao == "sim") ){
+            return redirect(route('cadastrar.vaga.empresa'));
+        }
+
+        return view('empresa.cadastrar_aprendizagem', ["inclusao" => $inclusao]);
     }
 
 
@@ -47,7 +58,7 @@ class ControllerVagaAprendizagem extends Controller
         // /^(((0[0-9])|(1[0-9])|(2[0-3])):[0-5][0-9])$/ /regex de hora/tempo
 
         if ($validator->fails()) {
-            return redirect()->refresh()
+            return redirect(route('cadastrar.vaga.aprendizagem', ["inclusao" => $request->inclusao]))
                 ->withErrors($validator)
                 ->withInput($request->input());
         }
@@ -72,7 +83,7 @@ class ControllerVagaAprendizagem extends Controller
             'desc' => $request->desc,
             'status' => 'ativo', // ao criar a vaga ela sempre vai ter o status de Ativo.
             'modalidade' => 'presencial', // padrão do tipo de vaga (aprendeizagem sempre presencial)
-            'inclusao' => false,
+            'inclusao' => $request->inclusao,
             'empresa_id' => Auth::user()->id,
         ]);
 

@@ -15,9 +15,11 @@
                 </a>
             </div>
         </div>
+
         <h4 class="subtitle">Estágio</h4>
+
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
-        <form method="POST" action="{{route('cadastrar.vaga.estagio')}}">
+        <form method="POST" action="{{route('cadastrar.vaga.estagio', ["inclusao" => $inclusao])}}">
             @csrf
             <div class="divisao-inputs">
                 <div class="col ladoesq" id="conteudoesq">

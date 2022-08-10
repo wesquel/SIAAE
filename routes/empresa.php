@@ -32,7 +32,6 @@ Route::middleware('auth:empresa')->group(function () {
 
     Route::get('/empresa/configuracoes', [ControllerConfigEmpresa::class, 'create'])->name('configuracoes.empresa');
     Route::put('/empresa/configuracoes', [ControllerConfigEmpresa::class, 'update'])->name('configuracoes.empresa.put');
-//    Route::post('/empresa/configuracoes', [ControllerConfigEmpresa::class, 'store'])->name('configuracoes.empresa.post');
 
     Route::get('empresa/cadastrar/vaga/aprendizagem', [ControllerVagaAprendizagem::class, 'create'])
         ->name('cadastrar.vaga.aprendizagem');
@@ -43,9 +42,6 @@ Route::middleware('auth:empresa')->group(function () {
         ->name('cadastrar.vaga.estagio');
     Route::post('empresa/cadastrar/vaga/estagio', [ControllerVagaEstagio::class, 'store'])
         ->name('cadastrar.vaga.estagio');
-
-//    Route::get('empresa/cadastrar/vaga/{id}', [ControllerCandidatosVaga::class, 'create'])
-//        ->name('candidatos.vaga');
 
     Route::get('empresa/lista/vagas/{id}', function ($id){
         $controller = new ControllerCandidatosVaga();
