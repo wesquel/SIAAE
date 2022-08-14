@@ -1,7 +1,7 @@
 @extends('layouts.appLayout', ['userType' => 'empresa'])
 
 @push('custom-styles')
-    <link rel="stylesheet" href="{{ asset('css/empresa/cadastraraprendizagem.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/empresa/cadastroDeVagas.css') }}">
 @endpush
 
 @section('content')

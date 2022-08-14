@@ -1,7 +1,7 @@
 @extends('layouts.appLayout', ['userType' => 'empresa'])
 
 @push('custom-styles')
-    <link rel="stylesheet" href="{{ asset('css/empresa/cadastrarestagio.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/empresa/cadastroDeVagas.css') }}">
 @endpush
 @section('content')
     <div class="divisao-superior col-lg" id="div-page-content">
@@ -33,15 +33,27 @@
                             <div class="error-text">{{ 'O título da vaga deve ter no mínimo 5 caracteres.' }}</div>
                         @enderror
 
-                        <div class="group next-input-siaae">
+                        <div class="div-bolsa next-input-siaae">
+                            <div class="group meio-input-esq">
                                 <span class="checkBox-input">
                                     <input id="checkBoxBolsa"  name="checkBoxBolsa" @if(old('checkBoxBolsa') != "") checked @endif type="checkbox"/>
                                 </span>
-                            <input id="bolsa" name="bolsa" maxlength="10" class="input-siaae @error('bolsa') input-error-siaae @enderror" value="{{ old('bolsa') }}" @if(old('checkBoxBolsa') == "") disabled @endif>
-                            <label class="label-siaae">Bolsa:</label>
-                            @error('bolsa')
-                            <div class="error-text">{{ 'Formato Inválido.' }}</div>
-                            @enderror
+                                <input id="bolsa" name="bolsa" maxlength="10" class="input-siaae @error('bolsa') input-error-siaae @enderror" value="{{ old('bolsa') }}" @if(old('checkBoxBolsa') == "") disabled @endif>
+                                <label class="label-siaae">Bolsa:</label>
+                                @error('bolsa')
+                                <div class="error-text">{{ 'Formato Inválido.' }}</div>
+                                @enderror
+                            </div>
+                            <div class="group meio-input-dir">
+                                <select name="auxilios" class="espacamento-inputs select-siaae">
+                                    <option class="text-select-itens-siaae" value="null">Auxílios</option>
+                                    <option value="Auxílio Transporte">Auxílio Transporte</option>
+                                    <option value="Auxílio Alimentação">Auxílio Alimentação</option>
+                                </select>
+                                @error('auxilios')
+                                <div class="error-text">{{ 'Erro Deseconhecido.' }}</div>
+                                @enderror
+                            </div>
                         </div>
 
                         <div class="div-turno next-input-siaae">
