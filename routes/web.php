@@ -1,10 +1,8 @@
 <?php
 
-use App\Http\Controllers\Auth\AuthenticatedSessionController;
-use App\Http\Controllers\Auth\Empresa\loginEmpresaController;
-use App\Http\Controllers\Auth\Empresa\registroEmpresaController;
+use App\Http\Controllers\registroDeDadosDefault\registroDeCampi;
+use App\Http\Controllers\registroDeDadosDefault\registroDeCursos;
 use App\Http\Controllers\siaae\ControllerAluno;
-use App\Http\Controllers\siaae\ControllerEmpresa;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +20,10 @@ Route::get('/termos_uso', [ControllerAluno::class, 'termos_uso']);
 Route::get('/', function () {return view('index'); })->name('index');
 Route::get('/aluno/teste', [ControllerAluno::class, 'termos_uso']);
 Route::get('/error', function () {return view('errors.404'); });
+
+// teste
+Route::get('/registrarCampi', [registroDeCampi::class, 'create']);
+Route::post('/registrarCursos', [registroDeCursos::class, 'create']);
 
 require __DIR__.'/auth.php';
 require __DIR__.'/empresa.php';
