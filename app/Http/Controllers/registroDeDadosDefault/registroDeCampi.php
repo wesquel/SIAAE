@@ -26,6 +26,7 @@ class registroDeCampi extends Controller
         }
 
         $jsonData = $response->json();
+        $contador = 0;
         try{
             foreach ($jsonData['results'] as $item){
 
@@ -33,6 +34,7 @@ class registroDeCampi extends Controller
                     'nome' => str_replace("CAMPUS ", "",$item['nome']),
                     'sigla' => str_replace("CAMPUS-", "",$item['sigla']),
                 ]);
+                $contador += 1;
             }
             event(new Registered($campus));
         }
@@ -41,6 +43,6 @@ class registroDeCampi extends Controller
                 return response("Erros encontrados!");
             }
         }
-        return response('Concluido!');
+        return response('Concluido! (' . $contador . ') informações inseridas!');
     }
 }
