@@ -30,8 +30,8 @@ class registroDeCampi extends Controller
             foreach ($jsonData['results'] as $item){
 
                 $campus = Campus::create([
-                    'nome' => $item['nome'],
-                    'sigla' => $item['sigla'],
+                    'nome' => str_replace("CAMPUS ", "",$item['nome']),
+                    'sigla' => str_replace("CAMPUS-", "",$item['sigla']),
                 ]);
             }
             event(new Registered($campus));
@@ -41,7 +41,6 @@ class registroDeCampi extends Controller
                 return response("Erros encontrados!");
             }
         }
-
         return response('Concluido!');
     }
 }
