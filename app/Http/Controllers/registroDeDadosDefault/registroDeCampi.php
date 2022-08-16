@@ -5,6 +5,7 @@ namespace App\Http\Controllers\registroDeDadosDefault;
 use App\Http\Controllers\Controller;
 use App\Models\Campus;
 use App\Models\Empresa;
+use App\Providers\ApiConnection;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
@@ -16,17 +17,17 @@ class registroDeCampi extends Controller
 {
     public function create(Request $request){
 
-        $url = "https://suap.ifpb.edu.br/api/recursos-humanos/campus/v1/";
+        $apiConnection = new ApiConnection();
 
-        $response = Http::withBasicAuth(getenv('API_URSERNAME'),
-            getenv('API_PASSWORD'))->get($url);
+        $jsonData = $apiConnection->json('https://suap.ifpb.edu.br/api/recursos-humanos/campus/v1/'
+            ,getenv('API_URSERNAME'), getenv('API_PASSWORD'));
 
-        if ($response->status() != 200){
-            return response('Não concluido!');
+        if ($jsonData == null){
+            return response("NULL");
         }
 
-        $jsonData = $response->json();
         $contador = 0;
+
         try{
             foreach ($jsonData['results'] as $item){
 
