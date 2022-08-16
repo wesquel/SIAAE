@@ -23,7 +23,7 @@ Route::get('/error', function () {return view('errors.404'); });
 
 // teste
 Route::get('/registrarCampi', [registroDeCampi::class, 'create']);
-Route::post('/registrarCursos', [registroDeCursos::class, 'create']);
+Route::get('/registrarCursos', [registroDeCursos::class, 'create']);
 
 require __DIR__.'/auth.php';
 require __DIR__.'/empresa.php';
