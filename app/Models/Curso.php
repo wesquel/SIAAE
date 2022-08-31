@@ -14,6 +14,7 @@ class Curso extends Model
         'modalidade',
         'diretoria',
         'campi_id',
+        'codigo',
     ];
 
     public function empresa(){
