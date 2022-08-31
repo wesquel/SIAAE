@@ -19,7 +19,8 @@ class CreateCursosTable extends Migration
             $table->string('nome', 255);
             $table->string('modalidade');
             $table->string('diretoria');
-            $table->unique(['nome','diretoria','modalidade']);
+            $table->integer('codigo')->unique();
+//            $table->unique(['nome','diretoria','modalidade']);
             $table->foreignId('campi_id')->constrained('campi')->references('id')->onDelete('cascade');
             $table->timestamps();
         });

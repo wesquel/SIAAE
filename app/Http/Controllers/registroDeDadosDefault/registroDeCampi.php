@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Http;
 
 class registroDeCampi extends Controller
 {
-    public function create(Request $request){
+    public function create(){
 
         $apiConnection = new ApiConnection();
 
