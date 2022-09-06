@@ -2,6 +2,7 @@
 
 @push('custom-styles')
     <link rel="stylesheet" href="{{ asset('css/empresa/cadastroDeVagas.css') }}">
+    <link rel="stylesheet" type='text/css' media='screen' href="{{asset('css/styleMulti.css')}}">
 @endpush
 @section('content')
     <div class="divisao-superior col-lg" id="div-page-content">
@@ -18,7 +19,6 @@
 
         <h4 class="subtitle">Estágio</h4>
 
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
         <form method="POST" action="{{route('cadastrar.vaga.estagio', ["inclusao" => $inclusao])}}">
             @csrf
             <div class="divisao-inputs">
@@ -77,9 +77,8 @@
                             </div>
                         </div>
 
-                        <div class="next-input-siaae">
-                            <select name="cursos" class="select-siaae" type="cadastro">
-                                <option value="0">Cursos</option>
+                        <div name="Cursos" class="next-input-siaae group">
+                            <select name="cursos" class="multiDrop select-siaae input-siaae" type="cadastro">
                                 <option value="1">Superior em Engenharia de Computação</option>
                                 <option value="2">Superior em Telemática</option>
                                 <option value="3">Ensino Médio em Informática</option>
@@ -149,6 +148,13 @@
             </div>
         </form>
     </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('select').selectpicker();
+        });
+    </script>
+    <script src="{{asset('js/indexMulti.js')}}"></script>
     <script>
         // variaveis
         let checkBoxBolsa = document.getElementById('checkBoxBolsa')
@@ -201,6 +207,3 @@
         document.getElementById('bolsa').addEventListener('input', mascaraMoeda);
     </script>
 @endsection
-
-
-
