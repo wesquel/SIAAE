@@ -89,6 +89,7 @@ var drop = function(info){var o = {
         this.clearStates()
         var index = Number(element.dataset.index);
         this.selected.forEach(function(select){
+            console.log(index)
             if(select.index === index && !select.removed){
                 select.removed = true
                 select.state = 'remove'
@@ -124,6 +125,7 @@ var drop = function(info){var o = {
     render: function(){
         this.renderDrop()
         this.renderOptions()
+
         loadDoc();
     },
     renderDrop: function(){
@@ -133,7 +135,7 @@ var drop = function(info){var o = {
             var option = that.options[select.index];
             var childHTML = $.template('<span class="item '+ select.state +'">'+ option.html +'</span>')
             var childCloseHTML = $.template(
-            '<i class="material-icons btnclose" data-index="'+select.index+'">&#xe5c9;</i></span>')
+            '<i class="material-icons btnclose icon-alarm" data-index="'+select.index+'">&#xe5c9;</i></span>')
             childCloseHTML.on('click', function(e){ that.removeOption(e, this) })
             childHTML.appendChild(childCloseHTML)
             parentHTML.appendChild(childHTML)
@@ -186,5 +188,4 @@ var myDrop = new drop({
 });
 myDrop.toggle();
 myDrop.toggle();
-
 
