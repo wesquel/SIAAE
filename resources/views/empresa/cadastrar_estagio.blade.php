@@ -3,6 +3,10 @@
 @push('custom-styles')
     <link rel="stylesheet" href="{{ asset('css/empresa/cadastroDeVagas.css') }}">
     <link rel="stylesheet" type='text/css' media='screen' href="{{asset('css/styleMulti.css')}}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/css/bootstrap-multiselect.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/js/bootstrap-multiselect.js" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/css/bootstrap-multiselect.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/js/bootstrap-multiselect.min.js"></script>
 @endpush
 @section('content')
     <div class="divisao-superior col-lg" id="div-page-content">
@@ -77,11 +81,22 @@
                             </div>
                         </div>
 
+{{--                        <div name="Cursos" class="next-input-siaae group">--}}
+{{--                            <select name="cursos" class="multiDrop select-siaae input-siaae" type="cadastro">--}}
+{{--                                <option value="1">Superior em Engenharia de Computação</option>--}}
+{{--                                <option value="2">Superior em Telemática</option>--}}
+{{--                                <option value="3">Ensino Médio em Informática</option>--}}
+{{--                            </select>--}}
+{{--                            @error('cursos')--}}
+{{--                            <div class="error-text">{{ 'Selecione ao menos 1 curso.' }}</div>--}}
+{{--                            @enderror--}}
+{{--                        </div>--}}
+
                         <div name="Cursos" class="next-input-siaae group">
-                            <select name="cursos" class="multiDrop select-siaae input-siaae" type="cadastro">
-                                <option value="1">Superior em Engenharia de Computação</option>
-                                <option value="2">Superior em Telemática</option>
-                                <option value="3">Ensino Médio em Informática</option>
+                            <select multiple id="cursos" name="cursos[]" class="select-siaae input-siaae" type="cadastro">
+                                <option value="Superior em Engenharia de Computação">Superior em Engenharia de Computação</option>
+                                <option value="Superior em Telemática">Superior em Telemática</option>
+                                <option value="Ensino Médio em Informática">Ensino Médio em Informática</option>
                             </select>
                             @error('cursos')
                             <div class="error-text">{{ 'Selecione ao menos 1 curso.' }}</div>
@@ -150,33 +165,6 @@
     </div>
 
     <body>
-
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Bootstrap -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
-    <!-- MultiSelect CSS & JS library -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.min.js"></script>
-    <select name="langOpt[]" multiple id="langOpt">
-        <option value="C++">C++</option>
-        <option value="C#">C#</option>
-        <option value="Java">Java</option>
-        <option value="Objective-C">Objective-C</option>
-        <option value="JavaScript">JavaScript</option>
-        <option value="Perl">Perl</option>
-        <option value="PHP">PHP</option>
-        <option value="Ruby on Rails">Ruby on Rails</option>
-        <option value="Android">Android</option>
-        <option value="iOS">iOS</option>
-        <option value="HTML">HTML</option>
-        <option value="XML">XML</option>
-    </select>
-
 
     <script type="text/javascript">
         $('select[multiple]').multiselect();
