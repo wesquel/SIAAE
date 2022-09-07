@@ -21,7 +21,7 @@ class CreateVagasTable extends Migration
             $table->string('turno');
             $table->date('data_inicio');
             $table->string('auxilios');
-            $table->string('cursos');
+            $table->json('cursos');
             $table->string('status');
             $table->string('modalidade');
             $table->string('inclusao');

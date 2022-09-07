@@ -28,3 +28,4 @@ Route::get('/registrarCursos', [registroDeCursos::class, 'create']);
 require __DIR__.'/auth.php';
 require __DIR__.'/empresa.php';
 require __DIR__.'/aluno.php';
+require __DIR__.'/admin.php';

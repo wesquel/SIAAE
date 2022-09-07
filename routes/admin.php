@@ -1,8 +1,6 @@
 <?php
 
 use App\Http\Controllers\Empresa\ControllerVagaAprendizagem;
-use App\Http\Controllers\Json\jsonController;
-use App\Http\Controllers\siaae\ControllerEmpresa;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,8 +18,8 @@ Route::middleware('auth:empresa')->group(function () {
         ->name('empresa.logout');
 });
 */
-Route::get('/admin/generateJsonFull', [jsonController::class, 'generateJsonFull'])->name('genarate.Json');
-Route::get('/admin/home', [ControllerEmpresa::class, 'home_empresa'])->name('home_empresa');
-Route::get('/admin/cadastrar/vaga', [ControllerVagaAprendizagem::class, 'cadastrarvaga'])->name('cadastrar.vaga.empresa');
-Route::get('/admin/cadastrar/vaga/estagio', [ControllerVagaAprendizagem::class, 'cadastrarestagio'])->name('cadastrar.vaga.empresa');
-Route::get('/admin/cadastrar/vaga/aprendizagem', [ControllerVagaAprendizagem::class, 'cadastraraprendizagem'])->name('cadastrar.vaga.empresa');
+//Route::get('/admin/generateJsonFull', [jsonController::class, 'generateJsonFull'])->name('genarate.Json');
+//Route::get('/admin/home', [ControllerEmpresa::class, 'home_empresa'])->name('home_empresa');
+Route::get('/admin/cadastrar/vaga', [\App\Http\Controllers\ControllerTeste::class, 'create'])->name('teste');
+//Route::get('/admin/cadastrar/vaga/estagio', [ControllerVagaAprendizagem::class, 'cadastrarestagio'])->name('cadastrar.vaga.empresa');
+//Route::get('/admin/cadastrar/vaga/aprendizagem', [ControllerVagaAprendizagem::class, 'cadastraraprendizagem'])->name('cadastrar.vaga.empresa');

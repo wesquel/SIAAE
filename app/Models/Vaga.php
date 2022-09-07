@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use VagasAlunosEmpresa;
+use App\Models\VagasAlunosEmpresa;
 
 class Vaga extends Model
 {
@@ -32,6 +32,10 @@ class Vaga extends Model
         'vagas',
         'empresa_id',
         'desc',
+    ];
+
+    protected $casts = [
+        'cursos' => 'array'
     ];
 
     public function empresa(){

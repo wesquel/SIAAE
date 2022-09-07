@@ -2,6 +2,11 @@
 
 @push('custom-styles')
     <link rel="stylesheet" href="{{ asset('css/empresa/cadastroDeVagas.css') }}">
+    <link rel="stylesheet" type='text/css' media='screen' href="{{asset('css/styleMulti.css')}}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/css/bootstrap-multiselect.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/js/bootstrap-multiselect.js" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/css/bootstrap-multiselect.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/js/bootstrap-multiselect.min.js"></script>
 @endpush
 @section('content')
     <div class="divisao-superior col-lg" id="div-page-content">
@@ -18,7 +23,6 @@
 
         <h4 class="subtitle">Estágio</h4>
 
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
         <form method="POST" action="{{route('cadastrar.vaga.estagio', ["inclusao" => $inclusao])}}">
             @csrf
             <div class="divisao-inputs">
@@ -77,12 +81,22 @@
                             </div>
                         </div>
 
-                        <div class="next-input-siaae">
-                            <select name="cursos" class="select-siaae" type="cadastro">
-                                <option value="0">Cursos</option>
-                                <option value="1">Superior em Engenharia de Computação</option>
-                                <option value="2">Superior em Telemática</option>
-                                <option value="3">Ensino Médio em Informática</option>
+{{--                        <div name="Cursos" class="next-input-siaae group">--}}
+{{--                            <select name="cursos" class="multiDrop select-siaae input-siaae" type="cadastro">--}}
+{{--                                <option value="1">Superior em Engenharia de Computação</option>--}}
+{{--                                <option value="2">Superior em Telemática</option>--}}
+{{--                                <option value="3">Ensino Médio em Informática</option>--}}
+{{--                            </select>--}}
+{{--                            @error('cursos')--}}
+{{--                            <div class="error-text">{{ 'Selecione ao menos 1 curso.' }}</div>--}}
+{{--                            @enderror--}}
+{{--                        </div>--}}
+
+                        <div name="Cursos" class="next-input-siaae group">
+                            <select multiple id="cursos" name="cursos[]" class="select-siaae input-siaae" type="cadastro">
+                                <option value="Superior em Engenharia de Computação">Superior em Engenharia de Computação</option>
+                                <option value="Superior em Telemática">Superior em Telemática</option>
+                                <option value="Ensino Médio em Informática">Ensino Médio em Informática</option>
                             </select>
                             @error('cursos')
                             <div class="error-text">{{ 'Selecione ao menos 1 curso.' }}</div>
@@ -149,6 +163,17 @@
             </div>
         </form>
     </div>
+
+    <body>
+
+    <script type="text/javascript">
+        $('select[multiple]').multiselect();
+    </script>
+
+
+    </body>
+    </html>
+    <script src="{{asset('js/indexMulti.js')}}"></script>
     <script>
         // variaveis
         let checkBoxBolsa = document.getElementById('checkBoxBolsa')
@@ -201,6 +226,3 @@
         document.getElementById('bolsa').addEventListener('input', mascaraMoeda);
     </script>
 @endsection
-
-
-
