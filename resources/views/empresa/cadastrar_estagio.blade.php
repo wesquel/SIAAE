@@ -1,12 +1,10 @@
 @extends('layouts.appLayout', ['userType' => 'empresa'])
 
 @push('custom-styles')
+    <link href="{{asset('css/multiSelect/bootstrap-multiselect.css')}}" rel="stylesheet" />
+    <script src="{{asset('css/multiSelect/bootstrap-multiselect.min.js')}}"></script>
     <link rel="stylesheet" href="{{ asset('css/empresa/cadastroDeVagas.css') }}">
     <link rel="stylesheet" type='text/css' media='screen' href="{{asset('css/styleMulti.css')}}">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/css/bootstrap-multiselect.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/js/bootstrap-multiselect.js" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/css/bootstrap-multiselect.min.css"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/js/bootstrap-multiselect.min.js"></script>
 @endpush
 @section('content')
     <div class="divisao-superior col-lg" id="div-page-content">
@@ -92,10 +90,12 @@
 {{--                            @enderror--}}
 {{--                        </div>--}}
 
-                        <div name="Cursos" class="next-input-siaae group">
-                            <select multiple id="cursos" name="cursos[]" class="select-siaae input-siaae" type="cadastro">
+                        <div class="next-input-siaae group">
+                            <select multiple id="cursos" name="cursos[]" class="multiSelect-siaae" type="cadastro">
                                 <option value="Superior em Engenharia de Computação">Superior em Engenharia de Computação</option>
                                 <option value="Superior em Telemática">Superior em Telemática</option>
+                                <option value="Ensino Médio em Informática">Ensino Médio em Informática</option>
+                                <option value="Ensino Médio em Informática">Ensino Médio em Informática</option>
                                 <option value="Ensino Médio em Informática">Ensino Médio em Informática</option>
                             </select>
                             @error('cursos')
@@ -226,3 +226,11 @@
         document.getElementById('bolsa').addEventListener('input', mascaraMoeda);
     </script>
 @endsection
+
+
+<!-- Initialize the plugin: -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('select').selectpicker();
+    });
+</script>
