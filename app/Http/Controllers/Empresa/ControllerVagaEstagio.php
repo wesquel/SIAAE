@@ -32,8 +32,6 @@ class ControllerVagaEstagio extends Controller
     public function store(Request $request){
         $tipoVaga = "Estagio";
 
-        dd($request->cursos);
-
         $validator = Validator::make($request->all(),[
             'titulo_vaga' => ['bail','required', 'string', 'max:255'],
             'bolsa' => ['bail', 'string', 'regex:/^\$?([0-9]{1,3}.([0-9]{3},)*[0-9]{2}|[0-9]+)(,[0-9][0-9])?$/', 'max:10'],

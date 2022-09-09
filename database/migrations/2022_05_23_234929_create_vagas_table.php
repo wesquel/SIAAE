@@ -20,7 +20,7 @@ class CreateVagasTable extends Migration
             $table->string('ch_semanal');
             $table->string('turno');
             $table->date('data_inicio');
-            $table->string('auxilios');
+            $table->json('auxilios');
             $table->json('cursos');
             $table->string('status');
             $table->string('modalidade');
