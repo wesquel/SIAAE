@@ -47,8 +47,7 @@
                                 @enderror
                             </div>
                             <div class="group meio-input-dir">
-                                <select name="auxilios" class="espacamento-inputs select-siaae">
-                                    <option class="text-select-itens-siaae" value="null">Auxílios</option>
+                                <select multiple id="Auxilios" name="auxilios[]" class="espacamento-inputs select-siaae">
                                     <option value="Auxílio Transporte">Auxílio Transporte</option>
                                     <option value="Auxílio Alimentação">Auxílio Alimentação</option>
                                 </select>
@@ -91,7 +90,7 @@
 {{--                        </div>--}}
 
                         <div class="next-input-siaae group">
-                            <select multiple id="cursos" name="cursos[]" class="multiSelect-siaae" type="cadastro">
+                            <select multiple id="Cursos" name="cursos[]" class="multiSelect-siaae" type="cadastro">
                                 <option value="Superior em Engenharia de Computação">Superior em Engenharia de Computação</option>
                                 <option value="Superior em Telemática">Superior em Telemática</option>
                                 <option value="Ensino Médio em Informática">Ensino Médio em Informática</option>
