@@ -7,6 +7,10 @@
     color: grey;
 }
 
+.checkBoxBolsa{
+    top: 10px;
+}
+
 .ladoesq{
     padding-right: 3em;
     padding-left: 3em;
@@ -172,7 +176,7 @@
 
 .checkBox-input{
     position: absolute;
-    top: 0.8em;
+    top: 1.1em;
     right: 1em;
 }
 
