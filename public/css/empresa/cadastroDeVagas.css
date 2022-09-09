@@ -206,16 +206,24 @@
     border-color: transparent;
 }
 .dropdown-toggle{
-    height: 40px;
-    width: 400px !important;
+    width: 100%;
+    height: 50px;
+    /*width: 400px !important;*/
     background-color: #eaeaea;
     border-radius: 2px;
 }
 
+.btn-group{
+    width: 100%;
+}
+
 .dropdown-menu .dropdown-item{
-    height: 40px;
-    width: 400px !important;
+    /*height: 40px;*/
+    width: 100% !important;
     background-color: white;
 }
 
+.multiselect-container{
+    width: 100%;
+}
 
