@@ -37,7 +37,7 @@ class ControllerVagaEstagio extends Controller
             'bolsa' => ['bail', 'string', 'regex:/^\$?([0-9]{1,3}.([0-9]{3},)*[0-9]{2}|[0-9]+)(,[0-9][0-9])?$/', 'max:10'],
             'ch_semanal' => ['required', 'string', 'regex:/^(((0[0-9])|(1[0-9])|(2[0-3])):[0-5][0-9])$/', 'max:99'],
             'turno' => ['required', 'string', 'max:255'],
-            'auxilios' => ['required', 'string', 'max:255'],
+            'auxilios' => ['required', 'array', 'max:255'],
             'cursos' => ['required', 'array', 'max:255'],
             'modalidade' => ['required', 'string', 'max:255'],
             'data_inicio' => ['required', 'date', 'after_or_equal:' .  Date('Y-m-d')],
