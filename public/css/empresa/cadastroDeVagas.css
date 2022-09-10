@@ -231,3 +231,20 @@
     width: 100%;
 }
 
+.select-siaae:focus{
+    border: 1px solid #5BB85D !important;
+}
+
+.multiselect:focus{
+    border: 1px solid #5BB85D !important;
+}
+
+textarea{
+    border-radius: 1px !important;
+}
+
+textarea:focus{
+    border: 1px solid #5BB85D !important;
+    box-shadow: none !important;
+    background-color: #eaeaea !important;
+}
