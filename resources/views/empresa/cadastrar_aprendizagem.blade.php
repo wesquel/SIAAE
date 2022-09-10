@@ -1,6 +1,8 @@
 @extends('layouts.appLayout', ['userType' => 'empresa'])
 
 @push('custom-styles')
+    <link href="{{asset('css/multiSelect/bootstrap-multiselect.css')}}" rel="stylesheet"/>
+    <script src="{{asset('css/multiSelect/bootstrap-multiselect.min.js')}}"></script>
     <link rel="stylesheet" href="{{ asset('css/empresa/cadastroDeVagas.css') }}">
 @endpush
 
@@ -17,8 +19,6 @@
             </div>
         </div>
         <h4 class="subtitle">Aprendizagem</h4>
-
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
         <form method="POST" action="{{route('cadastrar.vaga.aprendizagem', ["inclusao" => $inclusao])}}">
             @csrf
@@ -46,7 +46,7 @@
                                 @enderror
                             </div>
                             <div class="group meio-input-dir">
-                                <select name="auxilios" class="espacamento-inputs select-siaae">
+                                <select id="Auxilios" multiple name="auxilios" class="espacamento-inputs select-siaae">
                                     <option class="text-select-itens-siaae" value="null">Auxílios</option>
                                     <option value="Auxílio Transporte">Auxílio Transporte</option>
                                     <option value="Auxílio Alimentação">Auxílio Alimentação</option>
@@ -59,7 +59,9 @@
 
                         <div class="div-turno next-input-siaae">
                             <div class="group meio-input-esq">
-                                <input name="ch_semanal" class="input-siaae @error('ch_semanal') input-error-siaae @enderror" value="{{ old('ch_semanal') }}" required>
+                                <input onfocus="(this.type='time')" name="ch_semanal"
+                                       class="time input-siaae @error('ch_semanal') input-error-siaae @enderror"
+                                       value="{{ old('ch_semanal') }}" required>
                                 <label class="label-siaae">Carga Horaria Semanal:</label>
                                 @error('ch_semanal')
                                 <div class="error-text">{{ 'Horário inválido.' }}</div>
@@ -78,8 +80,7 @@
                             </div>
                         </div>
                         <div class="next-input-siaae">
-                            <select name="cursos" class="select-siaae" type="cadastro">
-                                <option value="0">Cursos</option>
+                            <select id="Cursos" multiple name="cursos" class="select-siaae" type="cadastro">
                                 <option value="1">Superior em Engenharia de Computação</option>
                                 <option value="2">Superior em Telemática</option>
                                 <option value="3">Ensino Médio em Informática</option>
@@ -90,15 +91,27 @@
                         </div>
 
                         <div class="div-ch next-input-siaae">
+
                             <div class="group meio-input-esq">
-                                <input name="ch_pratica" class="input-siaae @error('ch_pratica') input-error-siaae @enderror" value="{{ old('ch_pratica') }}" required>
+
+                                <input onfocus="(this.type='time')" name="ch_pratica"
+                                       class="time input-siaae @error('ch_pratica') input-error-siaae @enderror"
+                                       value="{{ old('ch_pratica') }}"
+                                       required>
+
                                 <label class="label-siaae">Carga Horaria Pratica:</label>
+
                                 @error('ch_pratica')
                                     <div class="error-text">{{ 'Horário inválido.' }}</div>
                                 @enderror
+
                             </div>
+
                             <div class="group meio-input-dir">
-                                <input name="ch_teorica" class="input-siaae @error('ch_teorica') input-error-siaae @enderror" value="{{ old('ch_teorica') }}" required>
+                                <input onfocus="(this.type='time')" name="ch_teorica"
+                                       class="time input-siaae @error('ch_teorica') input-error-siaae @enderror"
+                                       value="{{ old('ch_teorica') }}"
+                                       required>
                                 <label class="label-siaae">Carga Horaria Teorica:</label>
                                 @error('ch_teorica')
                                     <div class="error-text">{{ 'Horário inválido.' }}</div>
@@ -107,14 +120,14 @@
                         </div>
                         <div class="div-data next-input-siaae">
                             <div class="group meio-input-esq">
-                                <input name="data_inicio" class="input-siaae @error('data_inicio') input-error-siaae @enderror" value="{{ old('data_inicio') }}" onfocus="(this.type='date')"  required>
+                                <input name="data_inicio" class="date input-siaae @error('data_inicio') input-error-siaae @enderror" value="{{ old('data_inicio') }}" onfocus="(this.type='date')"  required>
                                 <label class="label-siaae">Data Início:</label>
                                 @error('data_inicio')
                                 <div class="error-text">{{ 'Data inválida.' }}</div>
                                 @enderror
                             </div>
                             <div class="group meio-input-dir">
-                                <input name="data_fim" class="input-siaae @error('data_fim') input-error-siaae @enderror" value="{{ old('data_fim') }}" onfocus="(this.type='date')" required>
+                                <input name="data_fim" class="date input-siaae @error('data_fim') input-error-siaae @enderror" value="{{ old('data_fim') }}" onfocus="(this.type='date')" required>
                                 <label class="label-siaae">Data Fim:</label>
                                 @error('data_fim')
                                 <div class="error-text">{{ 'Data inválida.' }}</div>
@@ -123,7 +136,7 @@
                         </div>
                         <div class="div-data next-input-siaae">
                             <div class="group meio-input-esq">
-                                <input name="data_limite" class="input-siaae @error('data_limite') input-error-siaae @enderror" value="{{ old('data_limite')}}" onfocus="(this.type='date')" required>
+                                <input name="data_limite" class="date input-siaae @error('data_limite') input-error-siaae @enderror" value="{{ old('data_limite')}}" onfocus="(this.type='date')" required>
                                 <label class="label-siaae">Data Limite:</label>
                                 @error('data_limite')
                                 <div class="error-text">{{ 'Data inválida.' }}</div>
@@ -161,8 +174,22 @@
         let checkBoxBolsa = document.getElementById('checkBoxBolsa')
         let inputBolsa = document.getElementById('bolsa')
         let valueBolsa = ''
-        elementList = document.getElementsByClassName('input-siaae');
+        let elementList = document.getElementsByClassName('input-siaae');
+        let inputsTime = document.getElementsByClassName("time");
+        let inputsDate = document.getElementsByClassName("date");
 
+        timeConvert(inputsDate)
+        timeConvert(inputsTime)
+
+        function timeConvert(inputsTime){
+            for (let input of inputsTime){
+                input.addEventListener('focusout' , e => {
+                    if (e.target.value === ""){
+                        e.target.removeAttribute("type")
+                    }
+                })
+            }
+        }
 
         // label remove.
         for (let i = 0; i < elementList.length; i++){
@@ -207,6 +234,11 @@
         }
         document.getElementById('bolsa').addEventListener('input', mascaraMoeda);
     </script>
+
+    <script type="text/javascript">
+        $('select[multiple]').multiselect();
+    </script>
+
 
 @endsection
 
