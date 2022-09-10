@@ -35,7 +35,8 @@ class Vaga extends Model
     ];
 
     protected $casts = [
-        'cursos' => 'array'
+        'cursos' => 'array',
+        'auxilios' => 'array'
     ];
 
     public function empresa(){
