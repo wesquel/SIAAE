@@ -22,10 +22,10 @@
             @foreach($vagas as $vaga)
                 <div class="div-card col-md-3 mb-4">
                     <div class="card-vaga">
-                        <strong>Nome</strong>
+                        <p class="subtitle-card">Título</p>
                         <p>{{$vaga->titulo}}</p>
 
-                        <strong>Data de Publicação</strong>
+                        <p class="subtitle-card next-subtitle">Data de Publicação</p>
                         <p>{{$vaga->created_at}}</p>
 
                         <div class="row mt-2 mb-2">

@@ -3,10 +3,10 @@
 @push('custom-styles')
     <link href="{{asset('css/multiSelect/bootstrap-multiselect.css')}}" rel="stylesheet"/>
     <script src="{{asset('css/multiSelect/bootstrap-multiselect.min.js')}}"></script>
-    <link rel="stylesheet" href="{{ asset('css/empresa/cadastroDeVagas.css') }}">
 @endpush
 
 @section('content')
+    <link rel="stylesheet" href="{{ asset('css/empresa/cadastroDeVagas.css') }}">
     <div class="divisao-superior col-lg" id="div-page-content">
         <div class="div-title">
             <p class="col">Cadastra Vaga</p>

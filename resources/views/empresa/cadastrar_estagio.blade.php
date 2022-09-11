@@ -74,7 +74,7 @@
                                 @enderror
                             </div>
                             <div class="group meio-input-dir">
-                                <select class="espacamento-inputs select-siaae" name="turno" type="cadastro">
+                                <select class="espacamento-inputs select-siaae" name="turno">
                                     <option value="0">Turno</option>
                                     <option value="Manhã">Manhã</option>
                                     <option value="Tarde">Tarde</option>
@@ -87,7 +87,7 @@
                         </div>
 
                         <div class="next-input-siaae group">
-                            <select multiple id="Cursos" name="cursos[]" class="multiSelect-siaae" type="cadastro">
+                            <select multiple id="Cursos" name="cursos[]" class="multiSelect-siaae">
                                 <option value="Superior em Engenharia de Computação">Superior em Engenharia de
                                     Computação
                                 </option>
@@ -102,7 +102,7 @@
                         </div>
 
                         <div class="next-input-siaae">
-                            <select name="modalidade" class="select-siaae" type="cadastro">
+                            <select name="modalidade" class="select-siaae">
                                 <option value="0">Modalidade</option>
                                 <option value="1">Remoto</option>
                                 <option value="2">Presencial</option>
