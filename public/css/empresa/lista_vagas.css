@@ -15,9 +15,17 @@
 }
 
 .card-vaga {
-    border: 1px solid var(--cor-grafite);
+    border: 2px solid #C4C4C4;
     border-radius: 10px;
-    padding: 3px;
+    padding: 10px;
+}
+
+.subtitle-card{
+    font-weight: 600;
+}
+
+.next-subtitle{
+    margin-top: 5px;
 }
 
 #div-acoes {
@@ -34,7 +42,7 @@ thead {
 }
 
 td {
-    border-bottom: 1px solid var(--cor-grafite);
+    border-bottom: 1px solid #C4C4C4;
     color: #444444;
 }
 
