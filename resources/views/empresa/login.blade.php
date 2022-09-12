@@ -57,7 +57,7 @@
                     </div>
                     <div class="col-md-6">
                         <label>Endereço</label>
-                        <input type="text" class="system-input" name="cep" placeholder="CEP" value="{{old('cep')}}" required>
+                        <input type="text" class="system-input" id="cep" name="cep" placeholder="CEP" value="{{old('cep')}}" required>
                         <input type="text" class="system-input" name="estado" placeholder="ESTADO" value="{{old('estado')}}" required>
                         <input type="text" class="system-input" name="cidade" placeholder="CIDADE" value="{{old('cidade')}}" required>
                         <div class="row" style="margin-left: 0px; width: 100%">
@@ -84,6 +84,10 @@
     </div>
     <script src="{{asset('js/mask.js')}}"></script>
     <script>
+
+        $(document).ready(function(){
+            $("#cep").mask("99999-999");
+        });
 
         let modalFormRegistrar = document.getElementById('modal-form-registrar');
         let openModalRegistrar = function () {

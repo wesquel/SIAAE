@@ -178,6 +178,7 @@
         $('select[multiple]').multiselect();
     </script>
 
+
     <script src="{{asset('js/indexMulti.js')}}"></script>
     <script>
         // variaveis
