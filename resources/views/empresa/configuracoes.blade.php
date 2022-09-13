@@ -74,7 +74,7 @@
                 <label>Endereço</label>
 
                 <div class="group">
-                    <input name="cep" class="input-siaae @error('cep') input-error-siaae @enderror" value="{{Auth::user()->endereco->cep}}" required>
+                    <input id="cep" name="cep" class="input-siaae @error('cep') input-error-siaae @enderror" value="{{Auth::user()->endereco->cep}}" required>
                     <label class="label-siaae">CEP:</label>
                 </div>
                 @error('cep')
@@ -175,6 +175,10 @@
 
     <script src="{{asset('js/mask.js')}}"></script>
     <script>
+
+        $(document).ready(function(){
+            $("#cep").mask("99999-999");
+        });
 
         var fileInput = document.getElementById('input-curriculo');
 
