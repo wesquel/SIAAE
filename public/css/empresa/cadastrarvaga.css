@@ -97,15 +97,33 @@
 
 .input-contain{
     position: relative;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .input-new{
-    padding: 0.375rem 0.75rem;
+    color: #797979;
+    font-size:15px;
+    /*padding:10px 10px 10px 5px;*/
+    padding-bottom: 0.5em;
+    padding-top: 1.2em;
+    padding-left: 0.5em;
     width: 100%;
-    border: 2px solid transparent;
-    background-color: #e9ecef;
-    border-radius: 7px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    background-color: #eaeaea;
+}
+
+.label-new {
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+    top: 4px;
+    left:0.6em;
+    color: #757575;
+    font-size:12px;
 }
 
 .input-new:focus{
