@@ -41,7 +41,7 @@ class ControllerVagaAprendizagem extends Controller
             'bolsa' => ['bail', 'string', 'regex:/^\$?([0-9]{1,3}.([0-9]{3},)*[0-9]{2}|[0-9]+)(,[0-9][0-9])?$/', 'max:10'],
             'turno' => ['required', 'string', 'max:255'],
             'cursos' => ['required', 'string', 'max:255'],
-            'auxilios' => ['string', 'max:255'],
+            'auxilios' => ['required' ,'array', 'max:255'],
             'ch_semanal' => ['required', 'string', 'regex:/^(((0[0-9])|(1[0-9])|(2[0-3])):[0-5][0-9])$/', 'max:99'],
             'ch_pratica' => ['required', 'string', 'regex:/^(((0[0-9])|(1[0-9])|(2[0-3])):[0-5][0-9])$/', 'max:99'],
             'ch_teorica' => ['required', 'string', 'regex:/^(((0[0-9])|(1[0-9])|(2[0-3])):[0-5][0-9])$/', 'max:99'],
