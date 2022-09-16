@@ -2,6 +2,7 @@
 
 @push('custom-styles')
     <link rel="stylesheet" href="{{ asset('css/configuracoes_aluno.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/empresa/cadastroDeVagas.css') }}">
 @endpush
 @section('content')
 
@@ -36,7 +37,20 @@
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label>Telefone: </label>
+
+                    <div class="group">
+                        <input name="titulo_vaga"
+                               class="input-siaae @error('titulo_vaga') input-error-siaae @enderror"
+                               value="{{ old('titulo_vaga') }}" required>
+                        <label class="label-siaae">Titulo da Vaga:</label>
+                    </div>
+                    <div class="group">
+                        <input id="telefone" name="telefone" onkeydown="return mascaraTelefone(event)" maxlength="15"
+                               value="{{Auth::user()->telefone}}" type="text" placeholder="Telefone"
+                               class="input-siaae system-input mb-4">
+                        <label class="label-siaae">Telefone: </label>
+                    </div>
+
                     <input id="telefone" name="telefone" onkeydown="return mascaraTelefone(event)" maxlength="15"  value="{{Auth::user()->telefone}}" type="text" placeholder="Telefone" class="system-input mb-4">
                     <label>Email: </label>
                     <input id="email" name="email"  type="email" value="{{Auth::user()->email}}" placeholder="Email" class="system-input mb-4">
