@@ -16,7 +16,7 @@ Route::get('/aluno/registro', [registroAlunoController::class, 'create']);
 Route::post('/aluno/registro', [registroAlunoController::class, 'store'])->name('registro.aluno');
 
 Route::group(['middleware' => 'auth:aluno'], function(){
-    Route::get('/aluno/logout', [loginAlunoController::class, 'destroy'])->name('logout');
+    Route::get('/aluno/logout', [loginAlunoController::class, 'destroy'])->name('aluno.logout');
     Route::get('/aluno/home', [homeController::class, 'create'])->name('home.aluno');
 
     Route::get('/aluno/configuracoes', [configController::class, 'create'])->name('config.aluno');

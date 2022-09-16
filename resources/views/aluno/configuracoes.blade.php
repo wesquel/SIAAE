@@ -36,18 +36,45 @@
                 </div>
                 <hr>
                 <div class="form-group">
-                    <label>Telefone: </label>
-                    <input id="telefone" name="telefone" onkeydown="return mascaraTelefone(event)" maxlength="15"  value="{{Auth::user()->telefone}}" type="text" placeholder="Telefone" class="system-input mb-4">
-                    <label>Email: </label>
-                    <input id="email" name="email"  type="email" value="{{Auth::user()->email}}" placeholder="Email" class="system-input mb-4">
-                    <label>Linkedin: </label>
-                    <input id="linkedin" name="linkedin" type="text" value="{{Auth::user()->linkedin}}" placeholder="Linkedin" class="system-input mb-4">
-                    <label>Lattes: </label>
-                    <input id="lattes" name="lattes" type="text" value="{{Auth::user()->lattes}}" placeholder="Lattes" class="system-input mb-4">
-                    <label>Github: </label>
-                    <input id="github" name="github" type="text" value="{{Auth::user()->github}}" placeholder="Github" class="system-input mb-4">
-                    <label>Descrição: </label>
-                    <textarea id="desc div-descricao" name="desc" placeholder="Descrição" class="system-input mb-4">{{Auth::user()->desc}}</textarea>
+
+                    <div class="group">
+                        <input name="telefone"
+                               class="input-siaae @error('telefone') input-error-siaae @enderror"
+                               value="{{Auth::user()->telefone}}" onkeydown="return mascaraTelefone(event)" maxlength="15">
+                        <label class="label-siaae">Telefone</label>
+                    </div>
+
+                    <div class="group next-input-siaae">
+                        <input name="email"
+                               class="input-siaae @error('email') input-error-siaae @enderror"
+                               value="{{Auth::user()->email}}" type="email">
+                        <label class="label-siaae">Email</label>
+                    </div>
+
+                    <div class="group next-input-siaae">
+                        <input name="linkedin"
+                               class="input-siaae @error('linkedin') input-error-siaae @enderror"
+                               value="{{Auth::user()->linkedin}}">
+                        <label class="label-siaae">Linkedin</label>
+                    </div>
+
+                    <div class="group next-input-siaae">
+                        <input name="lattes"
+                               class="input-siaae @error('lattes') input-error-siaae @enderror"
+                               value="{{Auth::user()->lattes}}">
+                        <label class="label-siaae">Lattes</label>
+                    </div>
+
+                    <div class="group next-input-siaae">
+                        <input name="github"
+                               class="input-siaae @error('github') input-error-siaae @enderror"
+                               value="{{Auth::user()->github}}">
+                        <label class="label-siaae">Github</label>
+                    </div>
+
+
+                    <textarea id="desc div-descricao" name="desc" placeholder="Descrição"
+                              class="next-input-siaae form-control desc-input text-area-vaga">{{Auth::user()->desc}}</textarea>
                 </div>
                 <button id="button-atualizar" type="submit" class="system-button system-button-verde">Atualizar</button>
             </form>

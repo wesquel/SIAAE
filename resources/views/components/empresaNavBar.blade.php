@@ -29,14 +29,22 @@
         text-decoration: none;
         color: #000;
     }
+
     #div-nav-itens {
         align-items: flex-start;
         padding-left: 20px;
     }
+
     #div-nav-itens .icon {
         color: var(--cor-verde);
         margin-right: 5px;
     }
+
+     .logout-icon{
+         margin-right: 7px;
+         width: 1em;
+         content:url({{asset('images/icon/logout-icon.svg')}});
+     }
 
      @media (max-width: 1230px) {
          #div-nav {
@@ -45,27 +53,22 @@
      }
 
 
-    .logout-icon{
-        margin-right: 7px;
-        width: 1em;
-        content:url({{asset('images/icon/logout-icon.svg')}});
-    }
+     @media (max-width: 767px) {
+         #div-nav {
+             height: fit-content;
+             flex-direction: row;
+         }
 
-    @media (max-width: 767px) {
-        #div-nav {
-            width: 100%;
-            height: fit-content;
-            flex-direction: row;
-        }
-        #div-nav .navbar-brand {
-            width: 50%;
-        }
-        #div-nav button {
-            position: absolute;
-            right: 40px;
-            font-size: 30px;
-        }
-    }
+         #div-nav .navbar-brand {
+             width: 50%;
+         }
+
+         #div-nav button {
+             position: absolute;
+             right: 40px;
+             font-size: 30px;
+         }
+     }
 
     .logout-text{
         text-decoration: none;
