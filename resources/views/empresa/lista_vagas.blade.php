@@ -48,43 +48,6 @@
                 </div>
             @endforeach
         </div>
-{{--        <div id="div-lista-vagas">--}}
-{{--            <h4 class="title-page-content col-md-9 col-sm-9">Lista Vagas</h4>--}}
-{{--            <table class="row">--}}
-{{--                <thead>--}}
-{{--                <tr class="row">--}}
-{{--                    <td class="col-md-2">Nome</td>--}}
-{{--                    <td class="col-md-2">Definir Status</td>--}}
-{{--                    <td class="col-md-1">Idade</td>--}}
-{{--                    <td class="col-md-2" style="text-align: right">Curso</td>--}}
-{{--                    <td class="col-md-1">Período</td>--}}
-{{--                    <td class="col-md-2">Disponibilidade</td>--}}
-{{--                    <td class="col-md-1"></td>--}}
-{{--                    <td class="col-md-1"></td>--}}
-{{--                </tr>--}}
-{{--                </thead>--}}
-{{--                <tbody>--}}
-{{--                @for($i = 0; $i < 5; $i++)--}}
-{{--                    <tr class="row">--}}
-{{--                        <td class="col-md-2" style="text-align: right"><label class="system-icon-circle aceito" ></label>João Pereira</td>--}}
-{{--                        <td class="col-md-2">--}}
-{{--                            <select>--}}
-{{--                                <option selected value="em_analise">Em análise</option>--}}
-{{--                                <option>Aceito</option>--}}
-{{--                                <option>Recusado</option>--}}
-{{--                            </select>--}}
-{{--                        </td>--}}
-{{--                        <td class="col-md-1">20</td>--}}
-{{--                        <td class="col-md-2">Engenharia</td>--}}
-{{--                        <td class="col-md-1">05</td>--}}
-{{--                        <td class="col-md-2">Disponível</td>--}}
-{{--                        <td class="col-md-1"><i class="icon icon-eye"></i></td>--}}
-{{--                        <td class="col-md-1"><input type="checkbox"></td>--}}
-{{--                    </tr>--}}
-{{--                @endfor--}}
-{{--                </tbody>--}}
-{{--            </table>--}}
-{{--        </div>--}}
     </div>
 
 

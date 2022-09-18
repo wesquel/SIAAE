@@ -5,8 +5,6 @@
 @endpush
 
 @section('content')
-
-
     <div class="div-title">
         <p class="col">Candidaturas</p>
         <div class="div-button-previous">
