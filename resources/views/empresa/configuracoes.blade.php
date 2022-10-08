@@ -18,13 +18,13 @@
             </a>
         </div>
     </div>
-    <x-auth-validation-errors class="mb-4" :errors="$errors" />
+
     <div class="container">
     <form method="POST" class="container" action="{{ route('configuracoes.empresa.put') }}">
         <!--Verificar rota-->
         @csrf
         @method('PUT')
-        <div class="row">
+        <div class="row" >
             <div id="div-input-logo">
                 <div class='input-wrapper'>
                     <label id="label-input-logo" for='input-logo-empresa'>

@@ -170,6 +170,10 @@ input[type='file'] {
     border: 1px solid #5BB85D;
 }
 
+.tesdas{
+    display: flex;
+}
+
 
 .label-siaae {
     color: #979797;
