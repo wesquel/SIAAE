@@ -37,6 +37,22 @@ class registroDeCampi extends Controller
                 ]);
                 $contador += 1;
             }
+            $campus = Campus::create([
+                'nome' => "PEDRAS DE FOGO",
+                'sigla' => "PF",
+            ]);
+
+
+            $campus = Campus::create([
+                'nome' => "AREIA",
+                'sigla' => "AR",
+            ]);
+
+            $campus = Campus::create([
+                'nome' => "SOLEDADE",
+                'sigla' => "SL",
+            ]);
+
             event(new Registered($campus));
         }
         catch (QueryException $ex){

@@ -34,10 +34,19 @@ class registroDeCursos extends Controller
                 foreach ($jsonData['results'] as $item){
                     $campiId = 1;
                     foreach ($campi as $campus){
+                        if (str_contains($item['diretoria'], "-JP")){
+                            $campiId = 2;
+                            break;
+                        }
                         if ($campus['nome'] != 'REITORIA' && (
-                            str_contains($item['diretoria'], $campus['nome']) ||
-                            str_contains($item['descricao'], $campus['nome']
-                            ))){
+                            str_contains($item['diretoria'], $campus['nome'])
+                            ||
+                            str_contains($item['descricao'], $campus['nome'])
+                            ||
+                            str_contains($item['descricao'], $campus['sigla'])
+                            ||
+                            str_contains($item['descricao'], $campus['sigla'])
+                            )){
                             $campiId = $campus['id'];
                             break;
                         }
