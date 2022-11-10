@@ -88,13 +88,13 @@
 
                         <div class="next-input-siaae group">
                             <select multiple id="Cursos" name="cursos[]" class="multiSelect-siaae">
-                                <option value="Superior em Engenharia de Computação">Superior em Engenharia de
-                                    Computação
-                                </option>
-                                <option value="Superior em Telemática">Superior em Telemática</option>
-                                <option value="Ensino Médio em Informática">Ensino Médio em Informática</option>
-                                <option value="Ensino Médio em Informática">Ensino Médio em Informática</option>
-                                <option value="Ensino Médio em Informática">Ensino Médio em Informática</option>
+                                @foreach($cursosAll as $campi)
+                                    <optgroup style="width: 10px" label="{{$campi[0]}}">
+                                        @foreach($campi[1] as $curso)
+                                        <option value="{{$curso['nome']}}">{{$curso['nome']}}</option>
+                                        @endforeach
+                                    </optgroup>
+                                @endforeach
                             </select>
                             @error('cursos')
                             <div class="error-text">{{ 'Selecione ao menos 1 curso.' }}</div>

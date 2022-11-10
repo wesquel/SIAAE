@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Empresa;
 
 use App\Http\Controllers\Controller;
+use App\Models\Campus;
+use App\Models\Curso;
 use App\Models\Vaga;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
@@ -26,7 +28,26 @@ class ControllerVagaEstagio extends Controller
             return redirect(route('cadastrar.vaga.empresa'));
         }
 
-        return view('empresa.cadastrar_estagio', ["inclusao" => $inclusao]);
+        $cursos = $this->splitCursos();
+
+        return view('empresa.cadastrar_estagio', [
+            "inclusao" => $inclusao,
+            "cursosAll" => $cursos
+            ]
+        );
+    }
+
+    public function splitCursos(){
+        $campi = Campus::all();
+        $elements = [];
+        foreach ($campi as $campus)
+        {
+            if ($campus['id'] != 1){
+                $cursos = Curso::where("campi_id", $campus['id'])->get();
+                $elements[] = [$campus['nome'], $cursos];
+            }
+        }
+        return $elements;
     }
 
     public function store(Request $request){
