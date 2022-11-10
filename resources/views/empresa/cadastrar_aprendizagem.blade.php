@@ -79,11 +79,15 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="next-input-siaae">
-                            <select id="Cursos" multiple name="cursos" class="select-siaae" type="cadastro">
-                                <option value="1">Superior em Engenharia de Computação</option>
-                                <option value="2">Superior em Telemática</option>
-                                <option value="3">Ensino Médio em Informática</option>
+                        <div class="next-input-siaae group">
+                            <select multiple id="Cursos" name="cursos[]" class="multiSelect-siaae">
+                                @foreach($cursosAll as $campi)
+                                    <optgroup style="width: 10px" label="{{$campi[0]}}">
+                                        @foreach($campi[1] as $curso)
+                                            <option value="{{$curso['nome']}}">{{$curso['nome']}}</option>
+                                        @endforeach
+                                    </optgroup>
+                                @endforeach
                             </select>
                             @error('cursos')
                             <div class="error-text">{{ 'Selecione ao menos 1 curso.' }}</div>
